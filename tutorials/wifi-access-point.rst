@@ -10,7 +10,7 @@ configuration (this is the default).
 
 .. note::
   All the features shown in this page will work on
-  any OpenWISP instance.
+  any Immunity instance.
 
 .. contents:: **Table of Contents**:
    :backlinks: none
@@ -135,7 +135,7 @@ Fast transition enables WiFi clients to seamlessly roam between
 access points without interrupting media flows, such as video or
 phone calls, streaming, etc., caused by delays in re-authentication.
 
-Enabling 802.11r on OpenWrt via OpenWISP can be easily done with the
+Enabling 802.11r on OpenWrt via Immunity can be easily done with the
 following steps:
 
 1. Prepare a WiFi AP template as explained in the previous sections,
@@ -173,9 +173,9 @@ Monitoring WiFi Clients
 .. image:: ../images/demo/ap/ap-wifi-sessions.png
   :target: ../_images/ap-wifi-sessions.png
 
-Since OpenWISP 23, in the device page, whenever any WiFi
+Since Immunity 23, in the device page, whenever any WiFi
 client data is collected by the
-:doc:`Monitoring module of OpenWISP <../user/monitoring>`,
+:doc:`Monitoring module of Immunity <../user/monitoring>`,
 a "WiFi Sessions" tab will appear as in the screenshot above,
 showing WiFi clients connected right now.
 

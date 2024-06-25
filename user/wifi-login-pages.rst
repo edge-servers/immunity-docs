@@ -13,29 +13,29 @@ Screenshots
 .. raw:: html
 
    <p align="center">
-     <img src="https://github.com/openwisp/openwisp-wifi-login-pages/raw/media/docs/login-desktop.png" alt="">
+     <img src="https://github.com/edge-servers/immunity-wifi-login-pages/raw/media/docs/login-desktop.png" alt="">
    </p>
    <p align="center">
-     <img src="https://github.com/openwisp/openwisp-wifi-login-pages/raw/media/docs/sign-up-desktop.png" alt="">
+     <img src="https://github.com/edge-servers/immunity-wifi-login-pages/raw/media/docs/sign-up-desktop.png" alt="">
    </p>
    <p align="center">
-     <img src="https://github.com/openwisp/openwisp-wifi-login-pages/raw/media/docs/verify-mobile-phone-desktop.png" alt="">
+     <img src="https://github.com/edge-servers/immunity-wifi-login-pages/raw/media/docs/verify-mobile-phone-desktop.png" alt="">
    </p>
    <p align="center">
-     <img src="https://github.com/openwisp/openwisp-wifi-login-pages/raw/media/docs/login-mobile.png" alt="">
+     <img src="https://github.com/edge-servers/immunity-wifi-login-pages/raw/media/docs/login-mobile.png" alt="">
    </p>
    <p align="center">
-     <img src="https://github.com/openwisp/openwisp-wifi-login-pages/raw/media/docs/signup-mobile.png" alt="">
+     <img src="https://github.com/edge-servers/immunity-wifi-login-pages/raw/media/docs/signup-mobile.png" alt="">
    </p>
 
 Overview
 --------
 
-OpenWISP WiFi login pages provides unified and consistent user
+Immunity WiFi login pages provides unified and consistent user
 experience for public/private WiFi services.
 
 In short, this app replaces the classic captive/login page of a WiFi
-service by integrating the `OpenWISP Radius API`_ to provide the
+service by integrating the `Immunity Radius API`_ to provide the
 following features:
 
 -  Mobile first design (responsive UI)
@@ -43,7 +43,7 @@ following features:
 -  Optional support for mobile phone verification: verify phone number
    by inserting token sent via SMS, resend the SMS token
 -  Login to the wifi service (by getting a radius user token from
-   OpenWISP Radius and sending a POST to the captive portal login URL
+   Immunity Radius and sending a POST to the captive portal login URL
    behind the scenes)
 -  Session status information
 -  Logout from the wifi service (by sending a POST to the captive portal
@@ -68,10 +68,10 @@ following features:
 -  Support for `credit/debit card verification and paid subscription
    plans`_
 
-.. _OpenWISP Radius API: https://openwisp-radius.readthedocs.io/
-.. _Social Login: https://github.com/openwisp/openwisp-wifi-login-pages/tree/1.0#configuring-social-login
-.. _SAML: https://github.com/openwisp/openwisp-wifi-login-pages/tree/1.0#configuring-saml-login--logout
-.. _credit/debit card verification and paid subscription plans: https://github.com/openwisp/openwisp-wifi-login-pages/tree/1.0#signup-with-payment-flow
+.. _Immunity Radius API: https://immunity-radius.readthedocs.io/
+.. _Social Login: https://github.com/edge-servers/immunity-wifi-login-pages/tree/1.0#configuring-social-login
+.. _SAML: https://github.com/edge-servers/immunity-wifi-login-pages/tree/1.0#configuring-saml-login--logout
+.. _credit/debit card verification and paid subscription plans: https://github.com/edge-servers/immunity-wifi-login-pages/tree/1.0#signup-with-payment-flow
 
 For more information please see the
-`OpenWISP WiFi Login Pages documentation <https://github.com/openwisp/openwisp-wifi-login-pages/tree/1.0>`_.
+`Immunity WiFi Login Pages documentation <https://github.com/edge-servers/immunity-wifi-login-pages/tree/1.0>`_.

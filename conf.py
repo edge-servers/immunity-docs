@@ -36,7 +36,7 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.githubpages',
     'notfound.extension',
-    'openwisp.sphinx.theme',
+    'immunity.sphinx.theme',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -58,9 +58,9 @@ master_doc = 'index'
 # General information about the project.
 from datetime import date
 
-project = 'OpenWISP'
-copyright = f'2017-{date.today().year}, OpenWISP'
-author = 'OpenWISP Community'
+project = 'Immunity'
+copyright = f'2017-{date.today().year}, Immunity'
+author = 'Immunity Community'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -129,9 +129,9 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'openwisp-sphinx-theme'
+html_theme = 'immunity-sphinx-theme'
 html_favicon = 'assets/design/favicon.png'
-html_logo = 'assets/design/openwisp-logo-black.svg'
+html_logo = 'assets/design/immunity-logo-black.svg'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
@@ -240,7 +240,7 @@ html_logo = 'assets/design/openwisp-logo-black.svg'
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'openwisp2-docs'
+htmlhelp_basename = 'immunity2-docs'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -263,7 +263,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'openwisp2-docs.tex', 'OpenWISP2', 'OpenWISP Community', 'manual')
+    (master_doc, 'immunity2-docs.tex', 'Immunity2', 'Immunity Community', 'manual')
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -303,7 +303,7 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [(master_doc, 'openwisp2-docs', 'OpenWISP2 Documentation', [author], 1)]
+man_pages = [(master_doc, 'immunity2-docs', 'Immunity2 Documentation', [author], 1)]
 
 # If true, show URL addresses after external links.
 #
@@ -318,11 +318,11 @@ man_pages = [(master_doc, 'openwisp2-docs', 'OpenWISP2 Documentation', [author],
 texinfo_documents = [
     (
         master_doc,
-        'openwisp2-docs',
-        'OpenWISP2 Documentation',
+        'immunity2-docs',
+        'Immunity2 Documentation',
         author,
-        'OpenWISP2 Documentation',
-        'Comprehensive user and developer documentation for OpenWISP2.',
+        'Immunity2 Documentation',
+        'Comprehensive user and developer documentation for Immunity2.',
         'Miscellaneous',
     )
 ]

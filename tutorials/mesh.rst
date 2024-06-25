@@ -29,7 +29,7 @@ WiFi coverage while controlling deployment and maintenance costs.
 In this tutorial, we'll guide you through the process of setting up
 a *wireless mesh network* using the
 `802.11s mesh mode <https://en.wikipedia.org/wiki/IEEE_802.11s>`_
-on `OpenWrt <https://openwrt.org/>`_ through OpenWISP.
+on `OpenWrt <https://openwrt.org/>`_ through Immunity.
 Additionally, we'll provide valuable tips on monitoring
 and maintaining the mesh network.
 
@@ -48,7 +48,7 @@ for more information.
 .. note::
 
   The **OpenWrt** firmware image provided
-  for the :doc:`OpenWISP Demo System <./demo>` includes
+  for the :doc:`Immunity Demo System <./demo>` includes
   the full ``wpad`` package by default.
 
 General Assumptions
@@ -61,7 +61,7 @@ At Least 2 Devices
 ~~~~~~~~~~~~~~~~~~
 
 We assume you are already managing and monitoring at least two devices
-through your OpenWISP instance.
+through your Immunity instance.
 
 One Radio Available
 ~~~~~~~~~~~~~~~~~~~
@@ -106,10 +106,10 @@ Creating the Template
 
   This template is also available in our :doc:`Demo System <./demo>` as
   `Mesh Demo
-  <https://demo.openwisp.io/admin/config/template/ae564575-f251-4f78-aaaf-7821e7a06ad3/change/>`_,
+  <https://demo.immunity.io/admin/config/template/ae564575-f251-4f78-aaaf-7821e7a06ad3/change/>`_,
   **feel free to try it out!**
 
-From the OpenWISP navigation menu, go to ``Configurations``
+From the Immunity navigation menu, go to ``Configurations``
 and then ``Templates``, from here click on the ``Add template``.
 
 .. image:: ../images/mesh/create-template.png
@@ -206,9 +206,9 @@ Once the advanced mode editor is open you can paste the following NetJSON:
         ],
         "files": [
             {
-                "path": "/etc/openwisp/pre-reload-hook",
+                "path": "/etc/immunity/pre-reload-hook",
                 "mode": "0700",
-                "contents": "#!/bin/sh\n\n# delete any br-lan definition to avoid conflicts\nuci delete network.device1\n\n# make sure radio is enabled and on the same channel\nband=$(uci get wireless.radio0.band)\nhwmode=$(uci get wireless.radio0.hwmode)\nif [ \"$band\" = \"2g\" ] || [ \"$hwmode\" = \"11g\" ]; then\n  channel=1\nelif [ \"$band\" = \"5g\" ] || [ \"$hwmode\" = \"11a\" ]; then\n  channel=36\nfi\nuci set wireless.radio0.channel=\"$channel\"\nuci set wireless.radio0.disabled='0'\nuci set wireless.radio0.country='US'  # feel free to customize the country code\nuci commit wireless\n\n# ensure DHCP server on the lan is disabled\nuci set dhcp.lan.ignore='1'\nuci set dhcp.lan.dhcpv6='disabled'\nuci set dhcp.lan.ra='disabled'\nuci commit dhcp\n\n# increase retries of the config test to account for\n# temporary network failures caused by the reloading of the wifi stack\nuci set openwisp.http.test_retries=8\nuci commit openwisp\n"
+                "contents": "#!/bin/sh\n\n# delete any br-lan definition to avoid conflicts\nuci delete network.device1\n\n# make sure radio is enabled and on the same channel\nband=$(uci get wireless.radio0.band)\nhwmode=$(uci get wireless.radio0.hwmode)\nif [ \"$band\" = \"2g\" ] || [ \"$hwmode\" = \"11g\" ]; then\n  channel=1\nelif [ \"$band\" = \"5g\" ] || [ \"$hwmode\" = \"11a\" ]; then\n  channel=36\nfi\nuci set wireless.radio0.channel=\"$channel\"\nuci set wireless.radio0.disabled='0'\nuci set wireless.radio0.country='US'  # feel free to customize the country code\nuci commit wireless\n\n# ensure DHCP server on the lan is disabled\nuci set dhcp.lan.ignore='1'\nuci set dhcp.lan.dhcpv6='disabled'\nuci set dhcp.lan.ra='disabled'\nuci commit dhcp\n\n# increase retries of the config test to account for\n# temporary network failures caused by the reloading of the wifi stack\nuci set immunity.http.test_retries=8\nuci commit immunity\n"
             }
         ]
     }
@@ -241,7 +241,7 @@ Why we use a ``pre-reload-hook`` script
 
 In the template shared above, we utilize a
 `pre-reload-hook
-<https://github.com/openwisp/openwisp-config?tab=readme-ov-file#pre-reload-hook>`_
+<https://github.com/edge-servers/immunity-config?tab=readme-ov-file#pre-reload-hook>`_
 script to execute the following configuration changes:
 
 - Ensure that ``radio0``  is enabled, set on a specific channel and
@@ -255,9 +255,9 @@ script to execute the following configuration changes:
 - Disable the default DHCP server preconfigured in OpenWrt on the
   ``br-lan`` interface to prevent interference with the existing
   DHCP server in the LAN.
-- Increase the ``test_retries`` option of the openwisp-config agent to 8.
+- Increase the ``test_retries`` option of the immunity-config agent to 8.
   This enhancement enhances the agent's resilience to temporary failures
-  in reaching the OpenWISP server after applying configuration changes.
+  in reaching the Immunity server after applying configuration changes.
   Mesh configuration changes trigger a reload of the WiFi stack,
   which may take a few minutes to become effective.
   During this period, we want to avoid the agent to mistakenly consider
@@ -265,7 +265,7 @@ script to execute the following configuration changes:
   the upgrade as failed and rollback to the previous configuration.
 
 We could have redefined the entire configuration for ``radio0``,
-the LAN DHCP server and openwisp-config, but doing so would have posed
+the LAN DHCP server and immunity-config, but doing so would have posed
 some issues:
 
 - There's no guarantee that the same radio settings will work
@@ -395,8 +395,8 @@ output, this should help you to fix it.
 Monitoring the Mesh Nodes
 -------------------------
 
-If everything has worked out successfully and you have the `OpenWISP
-monitoring agent <https://github.com/openwisp/openwrt-openwisp-monitoring>`_
+If everything has worked out successfully and you have the `Immunity
+monitoring agent <https://github.com/edge-servers/openwrt-immunity-monitoring>`_
 running correctly on your device, you should start
 seeing monitoring information about the mesh network in the status tab
 of the device page.
@@ -426,7 +426,7 @@ Mesh Topology Collection and Visualization
   :target: ../_images/mesh-network-topology.gif
 
 In June 2023, we introduced a new feature to the Network Topology
-module of OpenWISP, enabling the automatic collection of network
+module of Immunity, enabling the automatic collection of network
 topology data from mesh interfaces for visualization purposes.
 
 Setting up this feature is beyond the scope of this tutorial,
@@ -435,17 +435,17 @@ in finding the information needed to set it up:
 
 - Github pull request:
   `[feature] WiFi Mesh integration
-  <https://github.com/openwisp/openwisp-network-topology/pull/179>`_
+  <https://github.com/edge-servers/immunity-network-topology/pull/179>`_
 - `Network Topology README
-  <https://github.com/openwisp/openwisp-network-topology/blob/master/README.rst>`_,
-  look for "Integration with OpenWISP Controller and OpenWISP Monitoring"
+  <https://github.com/edge-servers/immunity-network-topology/blob/master/README.rst>`_,
+  look for "Integration with Immunity Controller and Immunity Monitoring"
 
 If you have been playing with our **Demo System**,
 you can try this feature there!
 You only have to register at least 2 devices to the
 :doc:`Demo System <./demo>`,
 enable the `Mesh Demo
-<https://demo.openwisp.io/admin/config/template/ae564575-f251-4f78-aaaf-7821e7a06ad3/change/>`_
+<https://demo.immunity.io/admin/config/template/ae564575-f251-4f78-aaaf-7821e7a06ad3/change/>`_
 template on your devices and wait a few minutes until the data is
 collected and shown in the **Network Topology List** as shown below.
 

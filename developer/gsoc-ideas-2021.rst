@@ -31,18 +31,18 @@ General suggestions and warnings
   (which means the code may be thrown out entirely) which will help you
   understand the challenges of the project you want to work on; your
   application should refer to the prototype or other Github contributions
-  you made to OpenWISP that show you have the capability to succeed in the
+  you made to Immunity that show you have the capability to succeed in the
   project idea you are applying for.
 
 - **Students who have either shown to have or have shown to be
   fast learners for the required hard and soft skills by
-  contributing to OpenWISP have a lot more chances of being accepted**:
+  contributing to Immunity have a lot more chances of being accepted**:
   in order to get started contributing refer to the
-  :doc:`OpenWISP Contributing Guidelines <../developer/contributing>`
+  :doc:`Immunity Contributing Guidelines <../developer/contributing>`
 
 - **Get trained in the projects you want to apply for**: once
   applicants have completed some basic training by
-  :doc:`contributing to OpenWISP <../developer/contributing>`
+  :doc:`contributing to Immunity <../developer/contributing>`
   we highly suggest to start working on
   some aspects of the project they are
   interested in applying: all projects
@@ -57,7 +57,7 @@ General suggestions and warnings
 Project Ideas
 -------------
 
-Improve resiliency and packaging of OpenWISP Monitoring on OpenWRT
+Improve resiliency and packaging of Immunity Monitoring on OpenWRT
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. Important::
@@ -68,15 +68,15 @@ Improve resiliency and packaging of OpenWISP Monitoring on OpenWRT
 
   **Mentors**: Federico Capoano.
 
-`OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring#openwisp-monitoring>`_
+`Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring#immunity-monitoring>`_
 depends on specific lua code to be deployed on the OpenWRT
 devices, this code collects monitoring information and sends it to the
-OpenWISP server in `NetJSON format <https://netjson.org/>`_ (see
-`Monitoring Scripts <https://github.com/openwisp/openwisp-monitoring#monitoring-scripts>`_).
+Immunity server in `NetJSON format <https://netjson.org/>`_ (see
+`Monitoring Scripts <https://github.com/edge-servers/immunity-monitoring#monitoring-scripts>`_).
 
 At the moment, this code is deployed using a
 :doc:`configuration template <../user/templates>` which is created with
-a `database migration <https://github.com/openwisp/openwisp-monitoring/blob/ee2271be25649c4c262e8eaf76b6fdc5d5d002ca/openwisp_monitoring/device/migrations/0002_create_template.py>`_
+a `database migration <https://github.com/edge-servers/immunity-monitoring/blob/ee2271be25649c4c262e8eaf76b6fdc5d5d002ca/immunity_monitoring/device/migrations/0002_create_template.py>`_
 when the monitoring module is installed,
 but we need to convert this existing code
 in a new OpenWRT package, well tested,
@@ -85,24 +85,24 @@ documented and with a key improvement regarding its resiliency.
 **Pre-requisites to work on this project**:
 
 The student should be familiar with
-:doc:`OpenWISP Templates <../user/templates>`,
+:doc:`Immunity Templates <../user/templates>`,
 `OpenWRT <https://openwrt.org>`_,
-`OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring#openwisp-monitoring>`__
+`Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring#immunity-monitoring>`__
 and should have a basic knowledge of
 `NetJSON format <https://netjson.org/>`_.
 
 **Measurable outcomes**:
 
-- Convert `lua-monitoring <https://github.com/openwisp/lua-monitoring>`_ into
+- Convert `lua-monitoring <https://github.com/edge-servers/lua-monitoring>`_ into
   two OpenWRT packages:
 
     1. One package for the netjson-monitoring utility,
        which aims to simply return NetJSON DeviceMonitoring output
-    2. One package which provides the OpenWISP Monitoring deamon,
+    2. One package which provides the Immunity Monitoring deamon,
        which depends on
        netjson-monitoring and
-       `openwisp-config <https://github.com/openwisp/openwisp-config>`_
-       (it takes the server information from the openwisp config file)
+       `immunity-config <https://github.com/edge-servers/immunity-config>`_
+       (it takes the server information from the immunity config file)
 
 - The ``netjson-monitoring.lua`` file is becoming too big,ç
   we have to split it over multiple files
@@ -132,10 +132,10 @@ and should have a basic knowledge of
   file and proceed with the next file, until every stored
   data file is sent and deleted
 - Write a README like the one of
-  `openwisp-config <https://github.com/openwisp/openwisp-config>`_
+  `immunity-config <https://github.com/edge-servers/immunity-config>`_
   which explains the features of the module,
   how to install it/compile it
-- The `OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring#openwisp-monitoring>`_
+- The `Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring#immunity-monitoring>`_
   module needs to be patched to allow the device metrics API
   to receive measurements that
   were taken while a device was offline. By default the server will
@@ -154,21 +154,21 @@ New General Navigation Menu and UX improvements
 
   **Mentors**: Ajay Tripathi, Federico Capoano.
 
-The OpenWISP Admin site has become the most important web interface
-of OpenWISP, but its usability has not improved much in the
+The Immunity Admin site has become the most important web interface
+of Immunity, but its usability has not improved much in the
 last versions, in this project we aim to fix this.
 
 **Pre-requisites to work on this project**:
 
-The student should have installed a full OpenWISP
+The student should have installed a full Immunity
 instance running different modules (controller, monitoring and radius)
 and should be familiar with
-`openwisp-utils <https://github.com/openwisp/openwisp-utils>`_.
+`immunity-utils <https://github.com/edge-servers/immunity-utils>`_.
 
 **Measurable outcomes**:
 
 - Create a navigation menu with one level nesting which allows
-  to navigate the whole OpenWISP administration site easily and quickly:
+  to navigate the whole Immunity administration site easily and quickly:
 
     - the menu should look good on major browsers and mobile devices
       (Chrome/Chromium, Firefox, Microsoft Edge, Safari,
@@ -186,23 +186,23 @@ and should be familiar with
   specify their order
   (needs also tests and documentation)
 - Ensure the old
-  `register_menu_items <https://github.com/openwisp/openwisp-utils#openwisp-utils-utils-register-menu-items>`_
+  `register_menu_items <https://github.com/edge-servers/immunity-utils#immunity-utils-utils-register-menu-items>`_
   function keeps working in a backward
   compatible way: we could add all the items on their own level and
   log a warning message in the python code which encourages developers
   to upgrade
-- Register the menu items of all the django modules of OpenWISP, by
+- Register the menu items of all the django modules of Immunity, by
   opening a pull request in each respective module:
 
-    - `Controller <https://github.com/openwisp/openwisp-controller>`_
-    - `Monitoring <https://github.com/openwisp/openwisp-monitoring>`_
-    - `RADIUS <https://github.com/openwisp/openwisp-radius>`_
-    - `Network Topology <https://github.com/openwisp/openwisp-network-topology>`_
-    - `Firmware Upgrader <https://github.com/openwisp/openwisp-firmware-upgrader>`_
-    - `IPAM <https://github.com/openwisp/openwisp-ipam>`_
+    - `Controller <https://github.com/edge-servers/immunity-controller>`_
+    - `Monitoring <https://github.com/edge-servers/immunity-monitoring>`_
+    - `RADIUS <https://github.com/edge-servers/immunity-radius>`_
+    - `Network Topology <https://github.com/edge-servers/immunity-network-topology>`_
+    - `Firmware Upgrader <https://github.com/edge-servers/immunity-firmware-upgrader>`_
+    - `IPAM <https://github.com/edge-servers/immunity-ipam>`_
 
-- Improve the general theme of the OpenWISP application to be more similar
-  to `openwisp.org <https://openwisp.org>`_, we should use a lighter
+- Improve the general theme of the Immunity application to be more similar
+  to `immunity.org <https://immunity.org>`_, we should use a lighter
   color for, the header, a bigger font, more spacing between elements
   and we should use bigger buttons and more similar in style to the
   ones used in the website
@@ -214,7 +214,7 @@ and should be familiar with
     - Click on an element of the menu
     - Go to a list page and check the filters
 
-OpenWISP REST API
+Immunity REST API
 ~~~~~~~~~~~~~~~~~
 
 .. Important::
@@ -226,27 +226,27 @@ OpenWISP REST API
 
 The goal of this project is to add the much needed missing
 REST API endpoints for some of the django models of the oldest
-OpenWISP modules which do not ship a complete REST API.
+Immunity modules which do not ship a complete REST API.
 
 **Pre-requisites to work on this project**:
 
-The student should have installed a full OpenWISP
+The student should have installed a full Immunity
 instance running different modules (controller, network topology)
 and should be familiar with
-`openwisp-controller <https://github.com/openwisp/openwisp-controller>`_,
-`openwisp-users <https://github.com/openwisp/openwisp-users>`_ and
-`openwisp-network-topology <https://github.com/openwisp/openwisp-network-topology>`_.
+`immunity-controller <https://github.com/edge-servers/immunity-controller>`_,
+`immunity-users <https://github.com/edge-servers/immunity-users>`_ and
+`immunity-network-topology <https://github.com/edge-servers/immunity-network-topology>`_.
 
 **Measurable outcomes**:
 
-- Create API endpoints for openwisp-controller:
+- Create API endpoints for immunity-controller:
 
-  - `REST API for main controller features <https://github.com/openwisp/openwisp-controller/issues/379>`_
+  - `REST API for main controller features <https://github.com/edge-servers/immunity-controller/issues/379>`_
   - pki app models CRUD operations
   - geo app models CRUD operations
   - connection app models CRUD operations
 
-- Create API endpoints for openwisp-users:
+- Create API endpoints for immunity-users:
 
   - users (include possibility of changing/updating
     permissions, groups, organization-users)
@@ -262,22 +262,22 @@ and should be familiar with
   either be organization managers and/or superusers,
   please read the entire **Django REST Framework Permission Classes**
   section and its subsections Mixins in the
-  `openwisp-users documentation <https://github.com/openwisp/openwisp-users#django-rest-framework-permission-classes>`_
+  `immunity-users documentation <https://github.com/edge-servers/immunity-users#django-rest-framework-permission-classes>`_
 - Each endpoint which is writable and generates a form in the
   Django REST Framework browsable API shall respect
   multi-tenancy when showing objects that are related to organizations,
   please see `Multi-tenant serializers for the browsable web UI
-  <https://github.com/openwisp/openwisp-users#multi-tenant-serializers-for-the-browsable-web-ui>`_
-  in the openwisp-users documentation
+  <https://github.com/edge-servers/immunity-users#multi-tenant-serializers-for-the-browsable-web-ui>`_
+  in the immunity-users documentation
 - Include basic tests for each endpoint, test coverage must not decrease
 - Add a basic REST API documentation like the one we have in
-  `firmware-upgrader <https://github.com/openwisp/openwisp-firmware-upgrader#rest-api>`_
+  `firmware-upgrader <https://github.com/edge-servers/immunity-firmware-upgrader#rest-api>`_
 - Ensure the package DRF YASG is included in the test/dev
   environment of each module touched in this project,
-  as in the `Firmware Upgrader <https://github.com/openwisp/openwisp-firmware-upgrader>`_
-  and `RADIUS <https://github.com/openwisp/openwisp-radius>`_ modules
+  as in the `Firmware Upgrader <https://github.com/edge-servers/immunity-firmware-upgrader>`_
+  and `RADIUS <https://github.com/edge-servers/immunity-radius>`_ modules
 
-Revamp Netengine and add its SNMP capability to OpenWISP Monitoring
+Revamp Netengine and add its SNMP capability to Immunity Monitoring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. Important::
@@ -288,8 +288,8 @@ Revamp Netengine and add its SNMP capability to OpenWISP Monitoring
   **Mentors**: Gagan Deep, Federico Capoano.
 
 The goal of this project is to add support for SNMP
-(Simple Network Management Protocol) to OpenWISP Monitoring
-by using `netengine <https://github.com/openwisp/netengine>`_ a python
+(Simple Network Management Protocol) to Immunity Monitoring
+by using `netengine <https://github.com/edge-servers/netengine>`_ a python
 library which aims to make easy to access monitoring information via
 different protocols.
 
@@ -299,13 +299,13 @@ we have the freedom to change the library how we think is best.
 **Pre-requisites to work on this project**:
 
 The student should be familiar with
-`OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring#openwisp-monitoring>`__
+`Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring#immunity-monitoring>`__
 and should have a basic knowledge of
 `NetJSON format <https://netjson.org/>`_ and SNMP.
 
 **Measurable outcomes**:
 
-- Revamp the OpenWRT backend of `netengine <https://github.com/openwisp/netengine>`__,
+- Revamp the OpenWRT backend of `netengine <https://github.com/edge-servers/netengine>`__,
   making it compliant with `NetJSON DeviceMonitoring specification <https://netjson.org/rfc.html#rfc.section.6>`_
 - Revamp the backend for Ubiquiti making it compliant with
   *NetJSON DeviceMonitoring* as well
@@ -320,14 +320,14 @@ and should have a basic knowledge of
 - Update docs to reflect the changes introduced in this project
 - Remove any code not being used anymore by the new implementation
 - Ensure the test coverage stays above 95%
-- Modify `OpenWISP Controller <https://github.com/openwisp/openwisp-controller>`__
+- Modify `Immunity Controller <https://github.com/edge-servers/immunity-controller>`__
   to allow setting the management IP from the web UI
 - Add an SNMP check in
-  `OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring>`__
+  `Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring>`__
   that pulls the monitoring information and creates
   the device status and charts
 
-Bring professional efficiency to OpenWISP WiFi Login Pages
+Bring professional efficiency to Immunity WiFi Login Pages
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. Important::
@@ -338,7 +338,7 @@ Bring professional efficiency to OpenWISP WiFi Login Pages
   **Mentors**: Noumbissi Valere, Federico Capoano.
 
 The goal of this project is to improve
-`OpenWISP WiFi Login Pages <https://github.com/openwisp/openwisp-wifi-login-pages>`__
+`Immunity WiFi Login Pages <https://github.com/edge-servers/immunity-wifi-login-pages>`__
 by reducing boilerplate code, reduce the amount of configuration lines
 in the configuration files, improve test coverage and make the code
 more robust.
@@ -346,8 +346,8 @@ more robust.
 **Pre-requisites to work on this project**:
 
 The student should be familiar with
-`OpenWISP WiFi Login Pages <https://github.com/openwisp/openwisp-wifi-login-pages>`__,
-`OpenWISP RADIUS <https://github.com/openwisp/openwisp-radius>`__
+`Immunity WiFi Login Pages <https://github.com/edge-servers/immunity-wifi-login-pages>`__,
+`Immunity RADIUS <https://github.com/edge-servers/immunity-radius>`__
 and should be proficient with Javascript, React JS, NodeJS, HTML and CSS.
 
 **Measurable outcomes**:
@@ -373,9 +373,9 @@ and should be proficient with Javascript, React JS, NodeJS, HTML and CSS.
 - Rename the directory ``org-configurations`` to ``config``,
   rename ``{slug}-configuration.yml`` to ``{slug}.yml``,
   ensure backward compatibility is maintained
-- Implement `server side logging <https://github.com/openwisp/openwisp-wifi-login-pages/issues/82>`_
+- Implement `server side logging <https://github.com/edge-servers/immunity-wifi-login-pages/issues/82>`_
   with a standard logger
-- Implement `reusable token validation logic <https://github.com/openwisp/openwisp-wifi-login-pages/issues/100>`_
+- Implement `reusable token validation logic <https://github.com/edge-servers/immunity-wifi-login-pages/issues/100>`_
 - Increase test coverage to 95%
 - Implement basic browser testing with selenium
   for the following features:
@@ -399,12 +399,12 @@ Improve netjsongraph.js for its new release
 The goal of this project is to improve the new version of the
 netjsongraph.js visualization library, which is has not been released yet
 and is available in the `gsoc2019 branch of netjsongraph.js on github
-<https://github.com/openwisp/netjsongraph.js/tree/gsoc2019>`_.
+<https://github.com/edge-servers/netjsongraph.js/tree/gsoc2019>`_.
 
 **Pre-requisites to work on this project**:
 
 The student should be familiar with
-`OpenWISP Network Topology <https://github.com/openwisp/openwisp-network-topology>`__
+`Immunity Network Topology <https://github.com/edge-servers/immunity-network-topology>`__
 and should be proficient with Javascript, React JS, NodeJS, HTML and CSS.
 
 **Measurable outcomes**:
@@ -440,18 +440,18 @@ and should be proficient with Javascript, React JS, NodeJS, HTML and CSS.
   be configurable and have a good default), load more data from the API
   by specifying geographic extent, implement a mocking server for this
   feature on the server side
-- Update `OpenWISP Network Topology <https://github.com/openwisp/openwisp-network-topology>`__
+- Update `Immunity Network Topology <https://github.com/edge-servers/immunity-network-topology>`__
   to use the new version of this library
-- Modify `OpenWISP Network Topology <https://github.com/openwisp/openwisp-network-topology>`__
-  to provide `real time updates <https://github.com/openwisp/netjsongraph.js/tree/gsoc2019#realtime-update>`_
-- Change the code of `OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring>`__
+- Modify `Immunity Network Topology <https://github.com/edge-servers/immunity-network-topology>`__
+  to provide `real time updates <https://github.com/edge-servers/netjsongraph.js/tree/gsoc2019#realtime-update>`_
+- Change the code of `Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring>`__
   so that the map dashboard is implemented
   using this library instead of using its own custom implementation
 
 Keep in mind the underlying visualization library
 can be changed if needed.
 
-Second release of OpenWISP Monitoring
+Second release of Immunity Monitoring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. Important::
@@ -461,20 +461,20 @@ Second release of OpenWISP Monitoring
 
   **Mentors**: Gagan Deep, Federico Capoano.
 
-The goal of this project is to improve OpenWISP Monitoring
+The goal of this project is to improve Immunity Monitoring
 by working on features and changes that have been noted down during the
 last year of usage of this module.
 
 **Pre-requisites to work on this project**:
 
 The student should be familiar with
-:doc:`OpenWISP Templates <../user/templates>`,
+:doc:`Immunity Templates <../user/templates>`,
 `OpenWRT <https://openwrt.org>`_,
-`OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring#openwisp-monitoring>`__
+`Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring#immunity-monitoring>`__
 and should have a basic knowledge of
 `NetJSON format <https://netjson.org/>`_.
 
 **Measurable outcomes**:
 
-See the `OpenWISP Monitoring 0.2 Release Milestone on Github
-<https://github.com/openwisp/openwisp-monitoring/milestone/2>`_.
+See the `Immunity Monitoring 0.2 Release Milestone on Github
+<https://github.com/edge-servers/immunity-monitoring/milestone/2>`_.

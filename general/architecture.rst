@@ -5,8 +5,8 @@ Architecture, Modules, Technologies
 Architecture Overview
 ---------------------
 
-The following SVG image summarizes the architecture of OpenWISP, the main
-technologies used, the structure of the OpenWISP modules and their
+The following SVG image summarizes the architecture of Immunity, the main
+technologies used, the structure of the Immunity modules and their
 most important dependencies and the way they interact with one another.
 
 .. note::
@@ -22,17 +22,17 @@ most important dependencies and the way they interact with one another.
     `Inkscape <https://inkscape.org/>`__ is an open source
     vector editing software which has been used to produce this diagram.
 
-.. image:: ../images/architecture/openwisp-architecture.svg
-   :target: ../_images/openwisp-architecture.svg
+.. image:: ../images/architecture/immunity-architecture.svg
+   :target: ../_images/immunity-architecture.svg
    :align: center
-   :alt: OpenWISP Architecture Overview
+   :alt: Immunity Architecture Overview
 
-OpenWISP Modules
+Immunity Modules
 ----------------
 
 .. note::
     If you want to know more about the motivations and philosophy
-    that have shaped the modular architecture of OpenWISP,
+    that have shaped the modular architecture of Immunity,
     please see `Applying the Unix Philosophy to Django projects:
     a report from the real world
     <https://www.slideshare.net/FedericoCapoano/applying-the-unix-philosophy-to-django-projects-a-report-from-the-real-world>`__.
@@ -40,34 +40,34 @@ OpenWISP Modules
 Deployment
 ~~~~~~~~~~
 
-- `Ansible OpenWISP2 <https://github.com/openwisp/ansible-openwisp2>`_:
-  Recommended way to deploy OpenWISP on virtual machines.
-- `Docker OpenWISP <https://github.com/openwisp/docker-openwisp>`_
-  (alpha): allows to deploy OpenWISP on dockerized cloud infrastructure.
-  It's still being improved but the basic features of OpenWISP
+- `Ansible Immunity2 <https://github.com/edge-servers/ansible-immunity2>`_:
+  Recommended way to deploy Immunity on virtual machines.
+- `Docker Immunity <https://github.com/edge-servers/docker-immunity>`_
+  (alpha): allows to deploy Immunity on dockerized cloud infrastructure.
+  It's still being improved but the basic features of Immunity
   are working.
-- `Ansible OpenWISP WiFi Login Pages
-  <https://github.com/openwisp/ansible-openwisp-wifi-login-pages>`_:
-  ansible role that allows to deploy `OpenWISP WiFi Login Pages
-  <https://github.com/openwisp/openwisp-wifi-login-pages>`_.
-- `Ansible OpenWISP2 Image Generator
-  <https://github.com/openwisp/ansible-openwisp2-imagegenerator>`_:
+- `Ansible Immunity WiFi Login Pages
+  <https://github.com/edge-servers/ansible-immunity-wifi-login-pages>`_:
+  ansible role that allows to deploy `Immunity WiFi Login Pages
+  <https://github.com/edge-servers/immunity-wifi-login-pages>`_.
+- `Ansible Immunity2 Image Generator
+  <https://github.com/edge-servers/ansible-immunity2-imagegenerator>`_:
   useful to generate many OpenWrt firmware images for different
-  organizations with the OpenWISP packages preinstalled.
-- `Ansible Wireguard OpenWISP.
-  <https://github.com/openwisp/ansible-wireguard-openwisp>`_:
+  organizations with the Immunity packages preinstalled.
+- `Ansible Wireguard Immunity.
+  <https://github.com/edge-servers/ansible-wireguard-immunity>`_:
   ansible role that allows to deploy the `Wireguard integration
-  for OpenWISP Controller
-  <https://github.com/openwisp/openwisp-controller/#how-to-setup-vxlan-over-wireguard-tunnels>`_.
+  for Immunity Controller
+  <https://github.com/edge-servers/immunity-controller/#how-to-setup-vxlan-over-wireguard-tunnels>`_.
 
 Server Side
 ~~~~~~~~~~~
 
-- `OpenWISP Users <https://github.com/openwisp/openwisp-users>`_:
+- `Immunity Users <https://github.com/edge-servers/immunity-users>`_:
   User management, multi-tenancy, authentication backend,
   REST API utilities and classes to implement multi-tenancy.
 
-- `OpenWISP Controller <https://github.com/openwisp/openwisp-controller>`_:
+- `Immunity Controller <https://github.com/edge-servers/immunity-controller>`_:
   Configuration management and templating,
   automatic provisioning of VPN tunnels like OpenVPN, Wireguard,
   Wireguard over VXLAN, shell commands,
@@ -75,96 +75,96 @@ Server Side
   programmable IP address management and subnet provisioning.
 
   This module depends on several django apps or python libraries developed
-  or maintained by OpenWISP:
+  or maintained by Immunity:
 
-  - `netjsonconfig <https://github.com/openwisp/netjsonconfig>`__:
+  - `netjsonconfig <https://github.com/edge-servers/netjsonconfig>`__:
     configuration generation, validation and parsing.
-  - `django-x509 <https://github.com/openwisp/django-x509>`__:
+  - `django-x509 <https://github.com/edge-servers/django-x509>`__:
     Public Key Infrastructure (management of
     certification authorities and x509 certificates).
-  - `django-loci <https://github.com/openwisp/django-loci>`__:
+  - `django-loci <https://github.com/edge-servers/django-loci>`__:
     Geographic and indoor mapping features.
-  - `openwisp-ipam <https://github.com/openwisp/openwisp-ipam>`__:
+  - `immunity-ipam <https://github.com/edge-servers/immunity-ipam>`__:
     IP and Subnet administration.
-  - `django-rest-framework-gis <https://github.com/openwisp/django-rest-framework-gis>`__:
+  - `django-rest-framework-gis <https://github.com/edge-servers/django-rest-framework-gis>`__:
     GIS addons for Django REST Framework.
 
-- `OpenWISP Monitoring
-  <https://github.com/openwisp/openwisp-monitoring>`__:
+- `Immunity Monitoring
+  <https://github.com/edge-servers/immunity-monitoring>`__:
   Monitors and tracks device information like uptime, packet loss,
   round trip time, traffic, WiFi clients,memory, CPU load, flash space,
   ARP/neighbor information, DHCP leases, provides charts and
   configurable alerts, allows to write custom checks or reconfigure
   tolerance thresholds and charts.
 
-- `OpenWISP Network Topology
-  <https://github.com/openwisp/openwisp-network-topology>`_:
+- `Immunity Network Topology
+  <https://github.com/edge-servers/immunity-network-topology>`_:
   Network topology collector and visualizer.
   Collects network topology datafrom dynamic mesh routing protocols or
   other popular networking software like OpenVPN, allows to visualize the
   network graph and save daily snapshots that can be viewed in the future.
 
   This module depends on a couple of libraries developed
-  and maintained by OpenWISP:
+  and maintained by Immunity:
 
-  - `netdiff <https://github.com/openwisp/netdiff>`__:
+  - `netdiff <https://github.com/edge-servers/netdiff>`__:
     network topology parsing.
-  - `netjsongraph.js <https://github.com/openwisp/netjsongraph.js>`__:
+  - `netjsongraph.js <https://github.com/edge-servers/netjsongraph.js>`__:
     Javascript library for network graph visualization.
 
-- `OpenWISP Firmware Upgrader
-  <https://github.com/openwisp/openwisp-firmware-upgrader>`_:
+- `Immunity Firmware Upgrader
+  <https://github.com/edge-servers/immunity-firmware-upgrader>`_:
   Firmware upgrade solution for OpenWRT with possibility to add support
   for other embedded OSes.
   Provides features like automatic retry for network failures,
   mass upgrades, REST API and more.
 
-- `OpenWISP RADIUS <https://github.com/openwisp/openwisp-radius>`_:
+- `Immunity RADIUS <https://github.com/edge-servers/immunity-radius>`_:
   provides a web interface to a freeradius database,
   a rich REST HTTP API and features like user self registration,
   SMS verification, import of users from CSV files, generation of
   new users for events, Captive Portal Social Login,
   Captive Portal SAML login and more.
 
-- `OpenWISP Notifications
-  <https://github.com/openwisp/openwisp-notifications>`_:
-  provides email and web notifications to OpenWISP.
-  Its main goal is to allow any OpenWISP module to notify users
+- `Immunity Notifications
+  <https://github.com/edge-servers/immunity-notifications>`_:
+  provides email and web notifications to Immunity.
+  Its main goal is to allow any Immunity module to notify users
   about meaningful events that happen in their network.
 
-- `OpenWISP Utils
-  <https://github.com/openwisp/openwisp-utils>`_:
-  common utilities and classes shared by all the OpenWISP python
+- `Immunity Utils
+  <https://github.com/edge-servers/immunity-utils>`_:
+  common utilities and classes shared by all the Immunity python
   modules, it includes a lot of utilities for QA checks and
   automated testing which are heavily used in the continous integration
-  builds of most if not all the OpenWISP github repositories.
+  builds of most if not all the Immunity github repositories.
 
-- `OpenWISP WiFi Login Pages
-  <https://github.com/openwisp/openwisp-wifi-login-pages>`_:
+- `Immunity WiFi Login Pages
+  <https://github.com/edge-servers/immunity-wifi-login-pages>`_:
   Configurable captive page for public/private WiFi services providing
   login, sign up, social login, SMS verification, change password,
   reset password, change phone number and more.
-  It is a frontend of the OpenWISP RADIUS REST API and it's designed to
+  It is a frontend of the Immunity RADIUS REST API and it's designed to
   be used by end users of a public WiFi network.
 
 Network Device Side
 ~~~~~~~~~~~~~~~~~~~
 
-- `OpenWISP Config <https://github.com/openwisp/openwisp-config>`_:
-  OpenWrt package which integrates with OpenWISP Controller.
-- `OpenWISP Monitoring
-  <https://github.com/openwisp/openwrt-openwisp-monitoring>`__:
-  OpenWrt package which integrates with OpenWISP Monitoring.
+- `Immunity Config <https://github.com/edge-servers/immunity-config>`_:
+  OpenWrt package which integrates with Immunity Controller.
+- `Immunity Monitoring
+  <https://github.com/edge-servers/openwrt-immunity-monitoring>`__:
+  OpenWrt package which integrates with Immunity Monitoring.
 
 Website and Documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- `openwisp2-docs <https://github.com/openwisp/openwisp2-docs>`_:
-  repository for the documentation of OpenWISP,
-  hosted on `openwisp.io/docs <https://openwisp.io/docs/>`_.
-- `OpenWISP-Website <https://github.com/openwisp/OpenWISP-Website>`_:
-  repository of the OpenWISP website, hosted on
-  `openwisp.org <https://openwisp.org/>`_.
+- `immunity2-docs <https://github.com/edge-servers/immunity2-docs>`_:
+  repository for the documentation of Immunity,
+  hosted on `immunity.io/docs <https://immunity.io/docs/>`_.
+- `Immunity-Website <https://github.com/edge-servers/Immunity-Website>`_:
+  repository of the Immunity website, hosted on
+  `immunity.org <https://immunity.org/>`_.
 
 Main Technologies Used
 ----------------------
@@ -175,11 +175,11 @@ Python
 `Python <https://www.python.org/>`_ it's the main programming language
 used by the server side application (web admin, API, controller, workers).
 
-In the past OpenWISP was built in Ruby On Rails, but we later switched
+In the past Immunity was built in Ruby On Rails, but we later switched
 to Python because it's much more suited to networking and it has a wider
 pool of potential contributors.
 
-Find out more on :ref:`why OpenWISP chose Python
+Find out more on :ref:`why Immunity chose Python
 as its main language <why_python>`.
 
 Django
@@ -192,9 +192,9 @@ It is used extensively in our modules. Django allows rapid development
 and has a very rich ecosystem.
 
 It's the base framework used in most of the server side
-modules of OpenWISP.
+modules of Immunity.
 
-Find out more on :ref:`why OpenWISP chose Django
+Find out more on :ref:`why Immunity chose Django
 as its main web framework <why_django>`.
 
 Django REST Framework
@@ -202,10 +202,10 @@ Django REST Framework
 
 `Django REST framework <https://www.django-rest-framework.org>`_
 is a powerful and flexible toolkit for building Web APIs based on Django
-and it's widely used in most of the Django and web based based OpenWISP
+and it's widely used in most of the Django and web based based Immunity
 modules.
 
-Find out more on :ref:`why OpenWISP chose Django
+Find out more on :ref:`why Immunity chose Django
 REST Framework to build its REST API <why_DRF>`.
 
 Celery
@@ -213,7 +213,7 @@ Celery
 
 `Celery <https://docs.celeryq.dev/en/stable/index.html>`_ is a python
 implementation of a distributed task queue and is heavily used in
-OpenWISP to execute background tasks, perform network operations
+Immunity to execute background tasks, perform network operations
 like monitoring checks, configuration updates, firmware upgrades
 and so on.
 
@@ -237,10 +237,10 @@ Lua is cross-platform, since the interpreter is written in ANSI C,
 and has a relatively simple C API.
 
 It is the official scripting language of OpenWRT and it's used heavily
-in the OpenWrt packages of OpenWISP:
-`openwisp-config <https://github.com/openwisp/openwisp-config>`__
-and `openwisp-monitoring
-<https://github.com/openwisp/openwrt-openwisp-monitoring>`_.
+in the OpenWrt packages of Immunity:
+`immunity-config <https://github.com/edge-servers/immunity-config>`__
+and `immunity-monitoring
+<https://github.com/edge-servers/openwrt-immunity-monitoring>`_.
 
 Node.js and React JS
 ~~~~~~~~~~~~~~~~~~~~
@@ -248,10 +248,10 @@ Node.js and React JS
 `NodeJS <https://nodejs.org/en/>`_ is javascript runtime to build
 JS based applications.
 
-In OpenWISP it's used as a base for frontend applications
+In Immunity it's used as a base for frontend applications
 along with `React <https://reactjs.org/>`_, like
-`openwisp-wifi-login-pages
-<https://github.com/openwisp/openwisp-wifi-login-pages/>`__.
+`immunity-wifi-login-pages
+<https://github.com/edge-servers/immunity-wifi-login-pages/>`__.
 
 Ansible
 ~~~~~~~
@@ -262,21 +262,21 @@ software provisioning, configuration management and application
 deployment.
 
 We use `Ansible <https://www.ansible.com/>`_ to provide automated
-procedures to `deploy OpenWISP
-<https://github.com/openwisp/ansible-openwisp2>`__,
+procedures to `deploy Immunity
+<https://github.com/edge-servers/ansible-immunity2>`__,
 to `compile custom OpenWRT images for different
-organizations <https://github.com/openwisp/ansible-openwisp2-imagegenerator>`__,
-to `deploy OpenWISP WiFi Login Pages
-<https://github.com/openwisp/openwisp-wifi-login-pages>`__
-and to deploy the `Wireguard integration for OpenWISP Controller
-<https://github.com/openwisp/ansible-wireguard-openwisp>`__.
+organizations <https://github.com/edge-servers/ansible-immunity2-imagegenerator>`__,
+to `deploy Immunity WiFi Login Pages
+<https://github.com/edge-servers/immunity-wifi-login-pages>`__
+and to deploy the `Wireguard integration for Immunity Controller
+<https://github.com/edge-servers/ansible-wireguard-immunity>`__.
 
 Docker
 ~~~~~~
 
 We use docker in
-`docker-openwisp <https://github.com/openwisp/docker-openwisp>`_,
-which aims to ease the deployment of OpenWISP in a
+`docker-immunity <https://github.com/edge-servers/docker-immunity>`_,
+which aims to ease the deployment of Immunity in a
 containerized infrastructure.
 
 NetJSON
@@ -299,7 +299,7 @@ Freeradius
 
 `Freeradius <https://freeradius.org/>`_ is the most popular open source
 implementation of the RADIUS protocol and is heavily relied on in
-`OpenWISP RADIUS <https://github.com/openwisp/openwisp-radius>`_.
+`Immunity RADIUS <https://github.com/edge-servers/immunity-radius>`_.
 
 Mesh Networking
 ~~~~~~~~~~~~~~~
@@ -309,7 +309,7 @@ local network topology in which the infrastructure nodes connect directly,
 dynamically and non-hierarchically to as many other nodes as possible
 and cooperate with one another to efficiently route data from/to clients.
 
-OpenWrt supports the standard mesh mode (802.11s) and OpenWISP supports
+OpenWrt supports the standard mesh mode (802.11s) and Immunity supports
 this mode out of the box.
 
 It is also possible to support other popular dynamic  open source
@@ -320,13 +320,13 @@ InfluxDB
 ~~~~~~~~
 
 `InfluxDB <https://www.influxdata.com/>`_ is the deafult open source
-timeseries DB used in OpenWISP Monitoring.
+timeseries DB used in Immunity Monitoring.
 
 Elasticsearch
 ~~~~~~~~~~~~~
 
 `Elasticsearch <https://www.elastic.co/>`_ is an alternative option which
-can be used in OpenWISP Monitoring as timeseries DB, although it was
+can be used in Immunity Monitoring as timeseries DB, although it was
 designed with different purposes related to storing and retrieving data in
 a fast and efficient way.
 
@@ -335,9 +335,9 @@ Networkx
 
 `Networkx <https://networkx.org/>`_ is a network graph analysis library
 written in Python and used under the hood by `netdiff
-<https://github.com/openwisp/openwisp-network-topology>`_
-and the `OpenWISP Network Topology module
-<https://github.com/openwisp/openwisp-network-topology>`__.
+<https://github.com/edge-servers/immunity-network-topology>`_
+and the `Immunity Network Topology module
+<https://github.com/edge-servers/immunity-network-topology>`__.
 
 Relational Databases
 ~~~~~~~~~~~~~~~~~~~~
@@ -358,19 +358,19 @@ For development we recommend SQLite for it simplicity.
 Other notable dependencies
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- `paramiko <https://www.paramiko.org/>`_ (used in OpenWISP Controller
+- `paramiko <https://www.paramiko.org/>`_ (used in Immunity Controller
   and Firmware Upgrader)
 - `django-allauth <https://github.com/pennersr/django-allauth>`_
-  (used in OpenWISP Users)
+  (used in Immunity Users)
 - `django-organizations <https://github.com/bennylope/django-organizations>`_
-  (used in OpenWISP Users)
-- `django-swappable-models <https://github.com/openwisp/django-swappable-models>`_
+  (used in Immunity Users)
+- `django-swappable-models <https://github.com/edge-servers/django-swappable-models>`_
   (used in all the major Django modules)
 - `django-private-storage <https://github.com/edoburu/django-private-storage>`_
-  (used in OpenWISP RADIUS and Firmware Upgrader)
+  (used in Immunity RADIUS and Firmware Upgrader)
 - `dj-rest-auth <https://github.com/iMerica/dj-rest-auth>`_
-  (used in OpenWISP RADIUS)
+  (used in Immunity RADIUS)
 - `django-sendsms <https://github.com/stefanfoulis/django-sendsms>`_
-  (used in OpenWISP RADIUS)
+  (used in Immunity RADIUS)
 - `django-saml2 <https://github.com/IdentityPython/djangosaml2>`_
-  (used in OpenWISP RADIUS)
+  (used in Immunity RADIUS)

@@ -7,7 +7,7 @@ GSoC Project Ideas 2023
   **This page is currently a work in progress and not final.**
 
   If you want to apply to GSoC 2023 with us please focus on
-  :doc:`contributing to OpenWISP <../developer/contributing>`
+  :doc:`contributing to Immunity <../developer/contributing>`
   before spending effort on any idea listed on this page,
   at least until the GSoC application period opens.
 
@@ -39,18 +39,18 @@ General suggestions and warnings
   (which means the code may be thrown out entirely) which will help you
   understand the challenges of the project you want to work on; your
   application should refer to the prototype or other Github contributions
-  you made to OpenWISP that show you have the capability to succeed in the
+  you made to Immunity that show you have the capability to succeed in the
   project idea you are applying for.
 
 - **Applicants who have either shown to have or have shown to be
   fast learners for the required hard and soft skills by
-  contributing to OpenWISP have a lot more chances of being accepted**:
+  contributing to Immunity have a lot more chances of being accepted**:
   in order to get started contributing refer to the
-  :doc:`OpenWISP Contributing Guidelines <../developer/contributing>`
+  :doc:`Immunity Contributing Guidelines <../developer/contributing>`
 
 - **Get trained in the projects you want to apply for**: once
   applicants have completed some basic training by
-  :doc:`contributing to OpenWISP <../developer/contributing>`
+  :doc:`contributing to Immunity <../developer/contributing>`
   we highly suggest to start working on
   some aspects of the project they are
   interested in applying: all projects
@@ -81,7 +81,7 @@ Adding support for automatic management of ZeroTier Tunnels
 
   **Difficulty rate**: hard.
 
-`OpenWISP Controller <https://github.com/openwisp/openwisp-controller#openwisp-controller>`_
+`Immunity Controller <https://github.com/edge-servers/immunity-controller#immunity-controller>`_
 already supports configuring **OpenVPN**, **WireGuard** and
 **VXLAN over WireGuard** tunnels. The goal of this project is to
 add support for another VPN backend: `ZeroTier <https://www.zerotier.com>`_.
@@ -90,11 +90,11 @@ Pre-requisites to work on this project
 ######################################
 
 The contributor must demonstrate good understanding of the following
-OpenWISP modules:
+Immunity modules:
 
-- `netjsonconfig <https://netjsonconfig.openwisp.org/en/latest/>`_
-- `OpenWISP Controller <https://github.com/openwisp/openwisp-controller#openwisp-controller>`_
-- `OpenWISP Network Topology <https://github.com/openwisp/openwisp-network-topology#openwisp-network-topology>`_
+- `netjsonconfig <https://netjsonconfig.immunity.org/en/latest/>`_
+- `Immunity Controller <https://github.com/edge-servers/immunity-controller#immunity-controller>`_
+- `Immunity Network Topology <https://github.com/edge-servers/immunity-network-topology#immunity-network-topology>`_
 
 Any merged patches on any of those modules is considered
 an important plus point.
@@ -107,7 +107,7 @@ toward learning and implementing IT network automation.
 Expected outcomes
 #################
 
-- Add support for ZeroTier in `netjsonconfig <https://netjsonconfig.openwisp.org/en/latest/>`_:
+- Add support for ZeroTier in `netjsonconfig <https://netjsonconfig.immunity.org/en/latest/>`_:
 
   - Add capability for generating ZeroTier configuration
     in OpenWrt backend.
@@ -117,32 +117,32 @@ Expected outcomes
     OpenWrt and ZeroTier Controller using netjsonconfig.
   - GitHub Issues:
 
-    - `netjsonconfig #207: [feature] Add support for ZeroTier tunnels to OpenWRT backend <https://github.com/openwisp/netjsonconfig/issues/207>`_
-    - `netjsonconfig #208: [feature] Add ZeroTier backend <https://github.com/openwisp/netjsonconfig/issues/208>`_
+    - `netjsonconfig #207: [feature] Add support for ZeroTier tunnels to OpenWRT backend <https://github.com/edge-servers/netjsonconfig/issues/207>`_
+    - `netjsonconfig #208: [feature] Add ZeroTier backend <https://github.com/edge-servers/netjsonconfig/issues/208>`_
 
-- Add ZeroTier as a VPN backend in `OpenWISP Controller <https://github.com/openwisp/openwisp-controller#openwisp-controller>`_.
+- Add ZeroTier as a VPN backend in `Immunity Controller <https://github.com/edge-servers/immunity-controller#immunity-controller>`_.
 
   - Add automatic generation of templates for ZeroTier VPN backend
     similar to OpenVPN and WireGuard VPN backends.
   - Integrate `ZeroTier Controller APIs <https://docs.zerotier.com/central/v1>`_
-    in OpenWISP Controller to allow managing networks directly
-    from OpenWISP.
+    in Immunity Controller to allow managing networks directly
+    from Immunity.
   - Write a step by step documentation which explains how to set up
     and use the new ZeroTier VPN backend with a device.
   - GitHub Issues:
 
-    - `openwisp-controller #604 : [feature] Add support for ZeroTier VPN backend <https://github.com/openwisp/openwisp-controller/issues/604>`_
-    - `openwisp-controller #606 : [feature] Authorize member in ZeroTier network when a new device is added <https://github.com/openwisp/openwisp-controller/issues/606>`_
-    - `openwisp-controller #605 : [feature] Allow managing ZeroTier networks from OpenWISP <https://github.com/openwisp/openwisp-controller/issues/605>`_
+    - `immunity-controller #604 : [feature] Add support for ZeroTier VPN backend <https://github.com/edge-servers/immunity-controller/issues/604>`_
+    - `immunity-controller #606 : [feature] Authorize member in ZeroTier network when a new device is added <https://github.com/edge-servers/immunity-controller/issues/606>`_
+    - `immunity-controller #605 : [feature] Allow managing ZeroTier networks from Immunity <https://github.com/edge-servers/immunity-controller/issues/605>`_
 
-- Add a parser in `OpenWISP Network Topology <https://github.com/openwisp/openwisp-network-topology#openwisp-network-topology>`_
+- Add a parser in `Immunity Network Topology <https://github.com/edge-servers/immunity-network-topology#immunity-network-topology>`_
   that can parse ZeroTier peer information.
 
   - Write documentation for using this parser to generate topology
     from data received from multiple devices.
   - GitHub Issues:
 
-    - `openwisp-network-topology #135: [feature] Add a parser for ZeroTier <https://github.com/openwisp/openwisp-network-topology/issues/135>`_
+    - `immunity-network-topology #135: [feature] Add a parser for ZeroTier <https://github.com/edge-servers/immunity-network-topology/issues/135>`_
 
 - Achieve at least 99% test coverage for the code added for this feature.
 
@@ -170,12 +170,12 @@ Pre-requisites to work on this project
 ######################################
 
 The applicant must demonstrate good understanding of Python, Django,
-Javascript and `OpenWISP Controller
-<https://github.com/openwisp/openwisp-controller#openwisp-controller>`__.
+Javascript and `Immunity Controller
+<https://github.com/edge-servers/immunity-controller#immunity-controller>`__.
 
 They must demonstrate also a basic understanding of
-`OpenWISP Firmware Upgrader
-<https://github.com/openwisp/openwisp-firmware-upgrader#openwisp-firmware-upgrader>`__,
+`Immunity Firmware Upgrader
+<https://github.com/edge-servers/immunity-firmware-upgrader#immunity-firmware-upgrader>`__,
 OpenWrt and UI development.
 
 Prior experience with OpenWrt is not extremely required but welcome.
@@ -187,13 +187,13 @@ The applicant must open pull-requests for the following issues which must
 be merged by the final closing date of the program:
 
 - `[feature] REST API is missing endpoints for DeviceFirmware
-  <https://github.com/openwisp/openwisp-firmware-upgrader/issues/208>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/issues/208>`_
 - `[feature:UI] Show upgrade progress in real time in the UI
-  <https://github.com/openwisp/openwisp-firmware-upgrader/issues/224>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/issues/224>`_
 - `[feature] Allow to perform mass upgrade of devices by their group
-  <https://github.com/openwisp/openwisp-firmware-upgrader/issues/213>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/issues/213>`_
 - `[feature] Allow to perform mass upgrade of devices by their location
-  <https://github.com/openwisp/openwisp-firmware-upgrader/issues/225>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/issues/225>`_
 
 Each issue contains the details which the applicant needs to know
 in order to complete the project successfully.
@@ -209,11 +209,11 @@ on the following issues:
 
 - `[bug] FileNotFoundError when trying to delete an image
   which links a non existing file
-  <https://github.com/openwisp/openwisp-firmware-upgrader/issues/140>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/issues/140>`_
 - `[change] Improve endpoints to download firmware images
-  <https://github.com/openwisp/openwisp-firmware-upgrader/issues/69>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/issues/69>`_
 - `[feature] Allow management of UpgradeOperation objects in the admin
-  <https://github.com/openwisp/openwisp-firmware-upgrader/issues/145>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/issues/145>`_
 
 Improve UX of the Notifications Module
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -239,13 +239,13 @@ Pre-requisites to work on this project
 ######################################
 
 The applicant must demonstrate good understanding of
-`OpenWISP Notifications
-<https://github.com/openwisp/openwisp-notifications#openwisp-notifications>`__,
+`Immunity Notifications
+<https://github.com/edge-servers/immunity-notifications#immunity-notifications>`__,
 it's integration in
-`OpenWISP Controller
-<https://github.com/openwisp/openwisp-controller#openwisp-controller>`_
-and `OpenWISP Monitoring
-<https://github.com/openwisp/openwisp-monitoring#openwisp-monitoring>`_.
+`Immunity Controller
+<https://github.com/edge-servers/immunity-controller#immunity-controller>`_
+and `Immunity Monitoring
+<https://github.com/edge-servers/immunity-monitoring#immunity-monitoring>`_.
 
 The applicant must demonstrate at least basic UI/UX development skills
 and eagerness to learn more about this subject.
@@ -257,20 +257,20 @@ The applicant must open pull-requests for the following issues which must
 be merged by the final closing date of the program:
 
 - `[feature] Batch email notifications to prevent email flooding
-  <https://github.com/openwisp/openwisp-notifications/issues/132>`_:
+  <https://github.com/edge-servers/immunity-notifications/issues/132>`_:
   this issue has priority because when this happens it causes most
   users to want to disable email notifications.
 - `[feature] Allow to disable notifications for all organizations or
   keep everything disabled except notifications for specific organizations
-  <https://github.com/openwisp/openwisp-notifications/issues/148>`_.
+  <https://github.com/edge-servers/immunity-notifications/issues/148>`_.
 - `[feature] Add REST API to manage notification
   preferences of other users
-  <https://github.com/openwisp/openwisp-notifications/issues/255>`_.
+  <https://github.com/edge-servers/immunity-notifications/issues/255>`_.
 - `[feature] Add a dedicated view for managing notification preferences
-  <https://github.com/openwisp/openwisp-notifications/issues/110>`_.
+  <https://github.com/edge-servers/immunity-notifications/issues/110>`_.
 - `[feature] Add link to manage notification
   preferences to email notifications
-  <https://github.com/openwisp/openwisp-notifications/issues/256>`_.
+  <https://github.com/edge-servers/immunity-notifications/issues/256>`_.
 
 Each issue contains the details which the applicant needs to know
 in order to complete the project successfully.
@@ -293,11 +293,11 @@ The applicant may warm up in the application phase by working
 on the following issues:
 
 - `[feature] Add dedicated notification type for internal errors
-  <https://github.com/openwisp/openwisp-notifications/issues/254>`_
+  <https://github.com/edge-servers/immunity-notifications/issues/254>`_
 - `[change] Allow relative paths
-  <https://github.com/openwisp/openwisp-notifications/issues/249>`_
+  <https://github.com/edge-servers/immunity-notifications/issues/249>`_
 
-Add more timeseries database clients to OpenWISP Monitoring
+Add more timeseries database clients to Immunity Monitoring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ../images/gsoc/ideas/tsdb.png
@@ -313,14 +313,14 @@ Add more timeseries database clients to OpenWISP Monitoring
 
   **Difficulty rate**: medium.
 
-The goal of this project is to add more Timseries DB options to OpenWISP
+The goal of this project is to add more Timseries DB options to Immunity
 while keeping good maintainability.
 
 Pre-requisites to work on this project
 ######################################
 
 The applicant must demonstrate good understanding of
-`OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring#openwisp-monitoring>`__,
+`Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring#immunity-monitoring>`__,
 and demonstrate basic knowledge of
 `NetJSON format <https://netjson.org/>`_, **InfluxDB** and **Elasticsearch**.
 
@@ -328,24 +328,24 @@ Expected outcomes
 #################
 
 - Complete the support to `Elasticsearch <https://github.com/elastic/elasticsearch>`_.
-  `Support to Elasticsearch was added in 2020 <https://github.com/openwisp/openwisp-monitoring/pull/164>`_
+  `Support to Elasticsearch was added in 2020 <https://github.com/edge-servers/immunity-monitoring/pull/164>`_
   but was not completed.
 
   - The old pull request has to be updated on the current code base
   - The merge conflicts have to be resolved
   - All the tests must pass, new tests for new charts and
     metrics added to influxdb must be added
-    (see `[feature] Chart mobile (LTE/5G/UMTS/GSM) signal strength #270 <https://github.com/openwisp/openwisp-monitoring/pull/294>`_)
+    (see `[feature] Chart mobile (LTE/5G/UMTS/GSM) signal strength #270 <https://github.com/edge-servers/immunity-monitoring/pull/294>`_)
   - The usage shall be documented, we must make sure there's at
     least one dedicated CI build for **Elasticsearch**
   - We must allow to install and use **Elasticsearch**
     instead of **InfluxDB**
-    from `ansible-openwisp2 <https://github.com/openwisp/ansible-openwisp2>`_
-    and `docker-openwisp <https://github.com/openwisp/docker-openwisp/>`_
+    from `ansible-immunity2 <https://github.com/edge-servers/ansible-immunity2>`_
+    and `docker-immunity <https://github.com/edge-servers/docker-immunity/>`_
   - The requests to Elasticsearch shall be optimizesd as described in
-    `[timeseries] Optimize elasticsearch #168 <https://github.com/openwisp/openwisp-monitoring/issues/168>`_.
+    `[timeseries] Optimize elasticsearch #168 <https://github.com/edge-servers/immunity-monitoring/issues/168>`_.
 
-- `Add support for InfluxDB 2.0 <https://github.com/openwisp/openwisp-monitoring/issues/274>`_
+- `Add support for InfluxDB 2.0 <https://github.com/edge-servers/immunity-monitoring/issues/274>`_
   as a new timeseries backend,
   this way we can support both
   ``InfluxDB <= 1.8`` and ``InfluxDB >= 2.0``.
@@ -357,5 +357,5 @@ Expected outcomes
     dedicated CI build for Elasticsearch
   - We must allow choosing between
     **InfluxDB 1.8** and **InfluxDB 2.0**
-    from `ansible-openwisp2 <https://github.com/openwisp/ansible-openwisp2>`_
-    and `docker-openwisp <https://github.com/openwisp/docker-openwisp/>`_.
+    from `ansible-immunity2 <https://github.com/edge-servers/ansible-immunity2>`_
+    and `docker-immunity <https://github.com/edge-servers/docker-immunity/>`_.

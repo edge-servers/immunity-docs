@@ -1,4 +1,4 @@
-OpenWISP Demo
+Immunity Demo
 =============
 
 .. image:: ../images/demo/demo.png
@@ -11,14 +11,14 @@ OpenWISP Demo
 Accessing the demo system
 -------------------------
 
-- **URL**: `demo.openwisp.io <https://demo.openwisp.io/>`_
+- **URL**: `demo.immunity.io <https://demo.immunity.io/>`_
 - **Username**: demo
 - **Password**: tester123
 
 The content of the demo organization is reset every day
 at 1:00 AM UTC, while the demo user's password is reset every minute.
 
-To ensure the safety and integrity of our managed OpenWISP system,
+To ensure the safety and integrity of our managed Immunity system,
 certain features are disabled for the demo user, including:
 
 * Deleting existing devices
@@ -36,14 +36,14 @@ using the demo system, or by
 
 .. _demo_firmware:
 
-Firmware instructions (flashing OpenWISP Firmware)
+Firmware instructions (flashing Immunity Firmware)
 --------------------------------------------------
 
 We offer an OpenWrt-based firmware that includes all the packages
-typically used in OpenWISP installations.
+typically used in Immunity installations.
 
 This firmware can help you quickly get started and test
-the core features of OpenWISP Cloud.
+the core features of Immunity Cloud.
 
 If you prefer to use your existing firmware,
 please refer to the :ref:`the alternative firmware instructions
@@ -52,8 +52,8 @@ please refer to the :ref:`the alternative firmware instructions
 1. Downloading the firmware
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To download the OpenWISP firmware for your device, visit
-`downloads.openwisp.io <http://downloads.openwisp.io/?prefix=firmware/22.03/ath79/>`_
+To download the Immunity firmware for your device, visit
+`downloads.immunity.io <http://downloads.immunity.io/?prefix=firmware/22.03/ath79/>`_
 and select the appropriate target architecture and image.
 
 At present, we are generating firmware only for ath79, but we plan to add
@@ -61,7 +61,7 @@ support for more targets in the future.
 
 If your device is not currently
 supported, please let us know through our
-`support channels <https://openwisp.org/support.html>`__. In the meantime,
+`support channels <https://immunity.org/support.html>`__. In the meantime,
 you can use the
 :ref:`alternative firmware instructions
 <alternative_firmware_instructions>`
@@ -90,8 +90,8 @@ following packages on your device:
 
 - openvpn (management tunnel, needed for
   active checks and push operations)
-- openwisp-config
-- openwisp-monitoring (and its dependency netjson-monitoring)
+- immunity-config
+- immunity-monitoring (and its dependency netjson-monitoring)
 
 The easiest thing is to use the following commands:
 
@@ -100,14 +100,14 @@ The easiest thing is to use the following commands:
     opkg update
     # install OpenVPN
     opkg install openvpn-wolfssl
-    # install OpenWISP agents
-    opkg install openwisp-config
-    opkg install openwisp-monitoring
+    # install Immunity agents
+    opkg install immunity-config
+    opkg install immunity-monitoring
 
 However, if you want to install more recent
-versions of the OpenWISP packages
+versions of the Immunity packages
 you can download them from
-`downloads.openwisp.io <http://downloads.openwisp.io/>`__ on your
+`downloads.immunity.io <http://downloads.immunity.io/>`__ on your
 device and install them, eg:
 
 .. code-block::
@@ -118,15 +118,15 @@ device and install them, eg:
     cd /tmp
 
     # WARNING: the URL may change overtime, so verify the right URL
-    # from downloads.openwisp.io
+    # from downloads.immunity.io
 
-    wget https://downloads.openwisp.io/openwisp-config/latest/openwisp-config_1.1.0a-1_all.ipk
-    wget https://downloads.openwisp.io/openwisp-monitoring/latest/netjson-monitoring_0.1.1-1_all.ipk
-    wget https://downloads.openwisp.io/openwisp-monitoring/latest/openwisp-monitoring_0.1.1-1_all.ipk
-    opkg install openwisp-config_1.1.0a-1_all.ipk
+    wget https://downloads.immunity.io/immunity-config/latest/immunity-config_1.1.0a-1_all.ipk
+    wget https://downloads.immunity.io/immunity-monitoring/latest/netjson-monitoring_0.1.1-1_all.ipk
+    wget https://downloads.immunity.io/immunity-monitoring/latest/immunity-monitoring_0.1.1-1_all.ipk
+    opkg install immunity-config_1.1.0a-1_all.ipk
     opkg install netjson-monitoring_0.1.1-1_all.ipk
     opkg install netjson-monitoring_0.1.1-1_all.ipk
-    opkg install openwisp-monitoring_0.1.1-1_all.ipk
+    opkg install immunity-monitoring_0.1.1-1_all.ipk
 
 .. note::
   If ``wget`` doesn't work (eg: SSL issues), you can use ``curl``,
@@ -134,12 +134,12 @@ device and install them, eg:
   and from there upload them to your device via ``scp``.
 
 Once the packages are installed, copy the following contents to
-``/etc/config/openwisp``:
+``/etc/config/immunity``:
 
 .. code-block::
 
   config controller 'http'
-      option url 'https://cloud.openwisp.io'
+      option url 'https://cloud.immunity.io'
       # the following shared secret is for the demo organization
       option shared_secret 'nzXTd7qpXKPNdrWZDsYoMxbGpOrEVjeD'
       option management_interface 'tun0'
@@ -149,9 +149,9 @@ the agent:
 
 .. code-block::
 
-    service openwisp_config restart
+    service immunity_config restart
 
-Connecting your device to OpenWISP
+Connecting your device to Immunity
 ----------------------------------
 
 .. image:: ../images/demo/lan-ports.jpg
@@ -166,7 +166,7 @@ Assuming your LAN is equipped with a DHCP server (usually your main
 ISP router), after booting up, the device will be assigned an IP
 address from the LAN DHCP server. At this point, the device should
 be able to reach the internet and register to the
-OpenWISP demo system.
+Immunity demo system.
 
 Static address mode
 ~~~~~~~~~~~~~~~~~~~
@@ -193,7 +193,7 @@ established and the device will start collecting monitoring information.
 Monitoring charts and status
 ----------------------------
 
-After a few minutes, OpenWISP will start collecting metrics from your
+After a few minutes, Immunity will start collecting metrics from your
 device. You will be able to see this information displayed in the UI,
 which will be similar to the screenshots shown below.
 
@@ -206,53 +206,53 @@ Health status
 Device Status
 ~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/device-status-1.png
-    :target: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/device-status-1.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/device-status-1.png
+    :target: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/device-status-1.png
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/device-status-2.png
-   :target: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/device-status-2.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/device-status-2.png
+   :target: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/device-status-2.png
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/device-status-3.png
-   :target: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/device-status-3.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/device-status-3.png
+   :target: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/device-status-3.png
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/device-status-4.png
-   :target: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/device-status-4.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/device-status-4.png
+   :target: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/device-status-4.png
 
 Charts
 ~~~~~~
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/uptime.png
-   :target: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/uptime.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/uptime.png
+   :target: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/uptime.png
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/packet-loss.png
-   :target: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/packet-loss.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/packet-loss.png
+   :target: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/packet-loss.png
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/rtt.png
-   :target: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/rtt.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/rtt.png
+   :target: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/rtt.png
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/traffic.png
-   :target: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/traffic.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/traffic.png
+   :target: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/traffic.png
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/wifi-clients.png
-   :target: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/wifi-clients.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/wifi-clients.png
+   :target: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/wifi-clients.png
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/cpu-load.png
-   :target: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/cpu-load.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/cpu-load.png
+   :target: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/cpu-load.png
 
 The following charts are displayed only for devices
 with mobile connections (eg: 3G, LTE).
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/access-technology.png
-   :target: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/access-technology.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/access-technology.png
+   :target: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/access-technology.png
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/signal-strength.png
-   :target: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/signal-strength.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/signal-strength.png
+   :target: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/signal-strength.png
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/signal-quality.png
-   :target: https://raw.githubusercontent.com/openwisp/openwisp-monitoring/docs/docs/signal-quality.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/signal-quality.png
+   :target: https://raw.githubusercontent.com/immunity/immunity-monitoring/docs/docs/signal-quality.png
 
 Find out more information about the
-:doc:`Monitoring module of OpenWISP <../user/monitoring>`.
+:doc:`Monitoring module of Immunity <../user/monitoring>`.
 
 .. _get_help:
 
@@ -261,7 +261,7 @@ Get help
 
 If you need help or want to request a free 30-day trial of the
 full feature set, you can write to the
-`support channels <https://openwisp.org/support.html>`__ or just click
+`support channels <https://immunity.org/support.html>`__ or just click
 on "Contact support" as indicated in the screenshot below.
 
 .. image:: ../images/demo/contact-support.png

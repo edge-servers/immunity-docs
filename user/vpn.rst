@@ -16,7 +16,7 @@ Installing OpenVPN Server and importing the OpenVPN configuration
 
 We will be installing OpenVPN Server using
 `this ansible role Stouts.openvpn <https://github.com/Stouts/Stouts.openvpn>`_
-and then import the VPN configuration into OpenWISP. If you have
+and then import the VPN configuration into Immunity. If you have
 already setup your VPN server or would like to install the VPN server
 via some other way, you can skip to
 `Step 4 <#importing-the-ca-and-the-server-ceritficate>`_
@@ -117,7 +117,7 @@ You need to change your directory to ``/etc/easyrsa/pki/``
 
 **Importing the CA**:
 
-On your openwisp dashboard go to ``/admin/pki/ca/add/``
+On your immunity dashboard go to ``/admin/pki/ca/add/``
 
 In **Operation Type** choose :guilabel:`Import Existing`
 
@@ -126,7 +126,7 @@ Get your CA Ceritficate from ``ca.crt`` file and Private Key from
 
 **Importing the Server Certificate**:
 
-On your openwisp dashboard go to ``/admin/pki/cert/add/``
+On your immunity dashboard go to ``/admin/pki/cert/add/``
 
 In **Operation Type** choose :guilabel:`Import Existing` and in **CA**
 choose the CA you just created.
@@ -138,7 +138,7 @@ respective fields.
 4. Creating VPN Server
 ~~~~~~~~~~~~~~~~~~~~~~
 
-On your openwisp dashboard go to ``/admin/config/vpn/add/``
+On your immunity dashboard go to ``/admin/config/vpn/add/``
 
 In **Host** enter you Server IP, in **Certification Authority** select
 the CA you created and in **X509 Certificate** select the certificate you
@@ -165,7 +165,7 @@ Preparing the configuration template for VPN Clients
 Create VPN Template
 ~~~~~~~~~~~~~~~~~~~
 
-On your openwisp dashboard go to ``/admin/config/template/add/``.
+On your immunity dashboard go to ``/admin/config/template/add/``.
 
 Change **Type** to :guilabel:`VPN-client`.
 For **VPN** select the VPN you created in the previous steps.

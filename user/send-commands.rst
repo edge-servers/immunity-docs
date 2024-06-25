@@ -15,8 +15,8 @@ While the first two options are self-explanatory, the
 allows you to execute any command on the device as shown
 in the example below.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/commands_demo.gif
-   :target: https://github.com/openwisp/openwisp-controller/tree/docs/docs/commands_demo.gif
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/commands_demo.gif
+   :target: https://github.com/edge-servers/immunity-controller/tree/docs/docs/commands_demo.gif
    :alt: Executing commands on device example
 
 **Note**: in order for this feature to work, a device needs to have
@@ -35,7 +35,7 @@ commands menu" section below.
 If you are an advanced user and want to register commands
 programatically, then refer to
 `"Register / Unregistering commands"
-<https://github.com/openwisp/openwisp-controller/tree/1.0#registering--unregistering-commands>`_
+<https://github.com/edge-servers/immunity-controller/tree/1.0#registering--unregistering-commands>`_
 section.
 
 How to define new options in the commands menu
@@ -49,7 +49,8 @@ be Linux/Unix experts and know the exact shell
 command syntax (because the system generates the
 command for them based on the input received via the UI).
 
-We can do so by using the ``OPENWISP_CONTROLLER_USER_COMMANDS``
+We can do so by using the ``IMMUNITY
+_CONTROLLER_USER_COMMANDS``
 django setting (see
 :doc:`How to Edit Django Settings <./django-settings>`).
 
@@ -66,7 +67,8 @@ The following example defines a simple command that can ``ping`` an input
             command += f' -I {interface_name}'
         return command
 
-    OPENWISP_CONTROLLER_USER_COMMANDS = [
+    IMMUNITY
+_CONTROLLER_USER_COMMANDS = [
         (
             'ping',
             {
@@ -96,11 +98,12 @@ The following example defines a simple command that can ``ping`` an input
 The above code will add the "Ping" command in the user interface as show
 in the GIF below:
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/ping_command_example.gif
-   :target: https://github.com/openwisp/openwisp-controller/tree/docs/docs/ping_command_example.gif
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/ping_command_example.gif
+   :target: https://github.com/edge-servers/immunity-controller/tree/docs/docs/ping_command_example.gif
    :alt: Adding a "ping" command
 
-The ``OPENWISP_CONTROLLER_USER_COMMANDS`` setting takes a
+The ``IMMUNITY
+_CONTROLLER_USER_COMMANDS`` setting takes a
 ``list`` of ``tuple`` each containing two elements.
 The first element of the tuple should contain an identifier
 for the command and the second element should contain a ``dict``

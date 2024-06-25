@@ -36,7 +36,7 @@ In the device configuration section you can find a section named
 "Configuration variables" where it is possible to define the configuration
 variables and their values, as shown in the example below:
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/device-context.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/device-context.png
    :alt: context
 
 Template default values
@@ -58,15 +58,16 @@ These default values will be overridden by the
 The default values of variables can be manipulated from the section
 "configuration variables" in the edit template page:
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/template-default-values.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/template-default-values.png
   :alt: default values
 
 Global variables
 ~~~~~~~~~~~~~~~~
 
 Variables can also be defined globally using the
-`OPENWISP_CONTROLLER_CONTEXT
-<https://github.com/openwisp/openwisp-controller#openwisp_controller_context>`_
+`IMMUNITY
+_CONTROLLER_CONTEXT
+<https://github.com/edge-servers/immunity-controller#immunity_controller_context>`_
 setting, see also :doc:`How to Edit Django Settings <./django-settings>`.
 
 System defined variables
@@ -77,7 +78,7 @@ are automatically managed by the system (eg: when using templates of
 type VPN-client) are displayed in the admin UI as
 *System Defined Variables* in read-only mode.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/system-defined-variables.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/system-defined-variables.png
    :alt: system defined variables
 
 Example usage of variables

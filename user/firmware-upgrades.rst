@@ -1,7 +1,7 @@
 Firmware Upgrades
 =================
 
-OpenWISP Firmware Upgrader has been introduced in OpenWISP 20 and focuses
+Immunity Firmware Upgrader has been introduced in Immunity 20 and focuses
 on allowing users to maintain the firmware of their network
 devices up to date.
 
@@ -13,11 +13,11 @@ Deploy instructions
 -------------------
 
 See `Enabling the firmware upgrader module
-on the OpenWISP 22.05 ansible role documentation
-<https://github.com/openwisp/ansible-openwisp2/tree/22.05#enabling-the-firmware-upgrader-module>`_.
+on the Immunity 22.05 ansible role documentation
+<https://github.com/edge-servers/ansible-immunity2/tree/22.05#enabling-the-firmware-upgrader-module>`_.
 
 This module is also available in
-`docker-openwisp <https://github.com/openwisp/docker-openwisp>`_
+`docker-immunity <https://github.com/edge-servers/docker-immunity>`_
 although its usage is not recommended for production usage yet, unless
 the reader is willing to invest effort in adapting the docker images
 and configurations to overcome any roadblocks encountered.
@@ -41,7 +41,7 @@ by going to
 if you use only one firmware type in your network, you could simply
 name the category "default" or "standard".
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-firmware-upgrader/docs/docs/images/quickstart-category.gif
+.. image:: https://raw.githubusercontent.com/immunity/immunity-firmware-upgrader/docs/docs/images/quickstart-category.gif
 
 If you use multiple firmware images with different features,
 create one category for each firmware type, eg:
@@ -67,7 +67,7 @@ The version field indicates the firmware version,
 the change log field is optional but we recommend filling it to help
 operators know the differences between each version.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-firmware-upgrader/docs/docs/images/quickstart-build.gif
+.. image:: https://raw.githubusercontent.com/immunity/immunity-firmware-upgrader/docs/docs/images/quickstart-build.gif
 
 An important but optional field of the build model is **OS identifier**,
 this field should match the value of the **Operating System**
@@ -97,23 +97,24 @@ Now save the build object to create it.
 
 Now is time to add images to the build, we suggest adding one
 image at time. Alternatively the
-`REST API <https://github.com/openwisp/openwisp-firmware-upgrader/tree/1.0#rest-api>`__
+`REST API <https://github.com/edge-servers/immunity-firmware-upgrader/tree/1.0#rest-api>`__
 can be used to automate this step.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-firmware-upgrader/docs/docs/images/quickstart-firmwareimage.gif
+.. image:: https://raw.githubusercontent.com/immunity/immunity-firmware-upgrader/docs/docs/images/quickstart-firmwareimage.gif
 
 If you use a hardware model which is not listed in the image types, if the
 hardware model is officially supported by OpenWRT,
 you can send us a pull-request to add it,
 otherwise you can use
-`the setting OPENWISP_CUSTOM_OPENWRT_IMAGES
-<https://github.com/openwisp/openwisp-firmware-upgrader/tree/1.0#openwisp_custom_openwrt_images>`__
+`the setting IMMUNITY
+_CUSTOM_OPENWRT_IMAGES
+<https://github.com/edge-servers/immunity-firmware-upgrader/tree/1.0#immunity_custom_openwrt_images>`__
 to add it.
 
 4. Perform a firmware upgrade to a specific device
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-firmware-upgrader/docs/docs/images/quickstart-devicefirmware.gif
+.. image:: https://raw.githubusercontent.com/immunity/immunity-firmware-upgrader/docs/docs/images/quickstart-devicefirmware.gif
 
 Once a new build is ready, has been created in the system and its
 image have been uploaded, it will be the time to finally
@@ -150,7 +151,7 @@ At this stage you can try a mass upgrade by doing the following:
   want the devices to be upgraded with
 - click on "Mass-upgrade devices related to the selected build".
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-firmware-upgrader/docs/docs/images/quickstart-batch-upgrade.gif
+.. image:: https://raw.githubusercontent.com/immunity/immunity-firmware-upgrader/docs/docs/images/quickstart-batch-upgrade.gif
 
 At this point you should see a summary page which will inform you of
 which devices are going to be upgraded, you can either confirm the
@@ -164,20 +165,20 @@ so you will have to reload the page periodically to find new information.
 
 This will be addressed in a future release.
 
-Find out more about OpenWISP Firmware Upgrader
+Find out more about Immunity Firmware Upgrader
 ----------------------------------------------
 
 For more information about the features offered by
-OpenWISP Firmware Upgrader we refer to the following sections
+Immunity Firmware Upgrader we refer to the following sections
 of its documentation:
 
 - `List of the available features
-  <https://github.com/openwisp/openwisp-firmware-upgrader/tree/1.0#openwisp-firmware-upgrader>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/tree/1.0#immunity-firmware-upgrader>`_
 - `Automatic device firmware detection
-  <https://github.com/openwisp/openwisp-firmware-upgrader/tree/1.0#automatic-device-firmware-detection>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/tree/1.0#automatic-device-firmware-detection>`_
 - `Writing Custom Firmware Upgrader Classes
-  <https://github.com/openwisp/openwisp-firmware-upgrader/tree/1.0#writing-custom-firmware-upgrader-classes>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/tree/1.0#writing-custom-firmware-upgrader-classes>`_
 - `Rest API
-  <https://github.com/openwisp/openwisp-firmware-upgrader/tree/1.0#rest-api>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/tree/1.0#rest-api>`_
 - `Django Settings
-  <https://github.com/openwisp/openwisp-firmware-upgrader/tree/1.0#settings>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/tree/1.0#settings>`_

@@ -2,16 +2,16 @@ How to Configure Push Updates
 =============================
 
 Follow the procedure described below to enable secure SSH access
-from OpenWISP to your devices, this is required to enable push updates
-(whenever the configuration is changed, OpenWISP will trigger the
+from Immunity to your devices, this is required to enable push updates
+(whenever the configuration is changed, Immunity will trigger the
 update in the background) and/or `firmware upgrades (via the
-additional module openwisp-firmware-upgrader)
-<https://github.com/openwisp/openwisp-firmware-upgrader>`_.
+additional module immunity-firmware-upgrader)
+<https://github.com/edge-servers/immunity-firmware-upgrader>`_.
 
 .. note::
 
-    If you have installed OpenWISP with the
-    `ansible-openwisp2 role <https://galaxy.ansible.com/openwisp/openwisp2>`_
+    If you have installed Immunity with the
+    `ansible-immunity2 role <https://galaxy.ansible.com/immunity/immunity2>`_
     then you can skip the following steps.
     The Ansible role automatically creates a default template to update
     ``authorized_keys`` on networking devices using the
@@ -21,12 +21,12 @@ additional module openwisp-firmware-upgrader)
 ~~~~~~~~~~~~~~~~~~~
 
 First of all, we need to generate the SSH key which will be
-used by OpenWISP to access the devices, to do so, you can use
+used by Immunity to access the devices, to do so, you can use
 the following command:
 
 .. code-block:: shell
 
-    echo './sshkey' | ssh-keygen -t ed25519 -C "openwisp"
+    echo './sshkey' | ssh-keygen -t ed25519 -C "immunity"
 
 This will create two files in the current directory, one called ``sshkey``
 (the private key) and one called
@@ -42,15 +42,15 @@ Store the content of these files in a secure location.
 
     .. code-block:: shell
 
-       echo './sshkey' | ssh-keygen -t rsa -b 4096 -C "openwisp"
+       echo './sshkey' | ssh-keygen -t rsa -b 4096 -C "immunity"
 
-2. Save SSH private key in OpenWISP (access credentials)
+2. Save SSH private key in Immunity (access credentials)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/add-ssh-credentials-private-key.png
-  :alt: add SSH private key as access credential in OpenWISP
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/add-ssh-credentials-private-key.png
+  :alt: add SSH private key as access credential in Immunity
 
-From the first page of OpenWISP click on "Access credentials", then click
+From the first page of Immunity click on "Access credentials", then click
 on the **"ADD ACCESS CREDENTIALS"** button in the upper right corner
 (alternatively, go to the following URL:
 ``/admin/connection/credentials/add/``).
@@ -69,15 +69,15 @@ be added in the future).
 3. Add the public key to your devices
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/add-authorized-ssh-keys-template.png
-  :alt: Add authorized SSH public keys template to OpenWISP (OpenWRT)
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/add-authorized-ssh-keys-template.png
+  :alt: Add authorized SSH public keys template to Immunity (OpenWRT)
 
-Now we need to instruct your devices to allow OpenWISP accessing
+Now we need to instruct your devices to allow Immunity accessing
 via SSH, in order to do this we need to add the contents of the
 public key file created in step 1 (``sshkey.pub``) in the file
 ``/etc/dropbear/authorized_keys`` on the devices, the recommended
-way to do this is to create a configuration template in OpenWISP:
-from the first page of OpenWISP, click on "Templates", then and
+way to do this is to create a configuration template in Immunity:
+from the first page of Immunity, click on "Templates", then and
 click on the **"ADD TEMPLATE"** button in the upper right corner
 (alternatively, go to the following URL:
 ``/admin/config/template/add/``).
@@ -101,16 +101,16 @@ Once you have performed the 3 steps above, you can test it
 as follows:
 
 1. Ensure there's at least one device turned on and connected
-   to OpenWISP, ensure this device has the "SSH Authorized Keys"
+   to Immunity, ensure this device has the "SSH Authorized Keys"
    assigned to it.
-2. Ensure the celery worker of OpenWISP Controller is
+2. Ensure the celery worker of Immunity Controller is
    running (eg: ``ps aux | grep celery``)
 3. SSH into the device and wait (maximum 2 minutes)
    until ``/etc/dropbear/authorized_keys``
    appears as specified in the template.
 4. While connected via SSH to the device run the following
    command in the console: ``logread -f``, now try changing
-   the device name in OpenWISP
-5. Shortly after you change the name in OpenWISP, you should
+   the device name in Immunity
+5. Shortly after you change the name in Immunity, you should
    see some output in the SSH console indicating another SSH
    access and the configuration update being performed.

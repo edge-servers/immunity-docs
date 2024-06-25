@@ -2023,7 +2023,7 @@
              style="fill:#1c5078;fill-opacity:1;stroke:#ffffff;stroke-width:0.913566;stroke-opacity:1" />
           <a
              id="a120896"
-             xlink:href="https://github.com/openwisp/openwisp-users">
+             xlink:href="https://github.com/edge-servers/immunity-users">
             <path
                fill="#ffffff"
                d="m 872.85896,380.06994 q 0,1.57813 -0.45313,2.89063 -0.45312,1.29687 -1.32812,2.21875 -0.85938,0.92187 -2.0625,1.4375 -1.20313,0.5 -2.6875,0.5 -1.46875,0 -2.67188,-0.5 -1.20312,-0.51563 -2.0625,-1.4375 -0.85937,-0.92188 -1.34375,-2.21875 -0.48437,-1.3125 -0.48437,-2.89063 0,-1.5625 0.48437,-2.85937 0.5,-1.29688 1.375,-2.20313 0.875,-0.92187 2.07813,-1.42187 1.20312,-0.5 2.625,-0.5 1.4375,0 2.64062,0.5 1.20313,0.5 2.0625,1.42187 0.85938,0.90625 1.34375,2.20313 0.48438,1.29687 0.48438,2.85937 z m -3.84375,0 q 0,-1.75 -0.70313,-2.75 -0.70312,-1 -1.98437,-1 -1.29688,0 -2.01563,1 -0.70312,1 -0.70312,2.75 0,1.75 0.70312,2.78125 0.71875,1.01563 2.01563,1.01563 1.28125,0 1.98437,-1.01563 0.70313,-1.03125 0.70313,-2.78125 z m 15.29608,0.125 q 0,-1.75 -0.79687,-2.79687 -0.78125,-1.04688 -2.32813,-1.04688 -0.5,0 -0.9375,0.0469 -0.42187,0.0312 -0.70312,0.0781 v 6.8125 q 0.35937,0.23438 0.92187,0.39063 0.57813,0.14062 1.15625,0.14062 2.6875,0 2.6875,-3.625 z m 3.84375,-0.0937 q 0,1.54688 -0.375,2.8125 -0.375,1.26563 -1.125,2.17188 -0.73437,0.90625 -1.82812,1.42187 -1.07813,0.5 -2.5,0.5 -0.78125,0 -1.46875,-0.15625 -0.67188,-0.14062 -1.3125,-0.42187 v 5.01564 h -3.78125 v -17.54689 q 0.51562,-0.15625 1.17187,-0.29688 0.65625,-0.14062 1.375,-0.23437 0.73438,-0.10938 1.46875,-0.17188 0.75,-0.0625 1.4375,-0.0625 1.64063,0 2.9375,0.5 1.29688,0.48438 2.17188,1.39063 0.89062,0.89062 1.35937,2.1875 0.46875,1.29687 0.46875,2.89062 z m 2.28256,0.0937 q 0,-1.76562 0.54688,-3.09375 0.54687,-1.34375 1.42187,-2.21875 0.89063,-0.89062 2.04688,-1.34375 1.15625,-0.45312 2.35937,-0.45312 2.84375,0 4.48438,1.73437 1.65625,1.73438 1.65625,5.09375 0,0.32813 -0.0312,0.73438 -0.0312,0.39062 -0.0469,0.6875 h -8.5625 q 0.125,1.17187 1.07813,1.85937 0.96875,0.67188 2.59375,0.67188 1.03125,0 2.03125,-0.1875 1.01562,-0.1875 1.64062,-0.46875 l 0.5,3.0625 q -0.29687,0.15625 -0.8125,0.3125 -0.5,0.14062 -1.125,0.25 -0.60937,0.125 -1.32812,0.20312 -0.70313,0.0781 -1.40625,0.0781 -1.8125,0 -3.14063,-0.53125 -1.32812,-0.53125 -2.20312,-1.45313 -0.875,-0.9375 -1.29688,-2.20312 -0.40625,-1.26563 -0.40625,-2.73438 z m 8.85938,-1.4375 q -0.0156,-0.48437 -0.15625,-0.9375 -0.14063,-0.45312 -0.4375,-0.8125 -0.28125,-0.35937 -0.73438,-0.57812 -0.4375,-0.23438 -1.09375,-0.23438 -0.64062,0 -1.09375,0.21875 -0.45312,0.21875 -0.76562,0.57813 -0.29688,0.34375 -0.46875,0.8125 -0.15625,0.46875 -0.23438,0.95312 z m 6.55728,-4.85937 q 0.96875,-0.28125 2.48438,-0.51563 1.53125,-0.25 3.20312,-0.25 1.6875,0 2.8125,0.45313 1.125,0.4375 1.78125,1.25 0.67188,0.79687 0.9375,1.92187 0.28125,1.10938 0.28125,2.48438 v 7.51562 h -3.76562 v -7.0625 q 0,-1.82812 -0.48438,-2.57812 -0.48437,-0.76563 -1.79687,-0.76563 -0.40625,0 -0.85938,0.0469 -0.45312,0.0312 -0.8125,0.0781 v 10.28125 h -3.78125 z m 22.77432,5.20312 q -0.5,1.9375 -1.07812,3.84375 -0.5625,1.89063 -1.20313,3.8125 h -2.9375 q -0.45312,-1.0625 -0.98437,-2.53125 -0.53125,-1.46875 -1.10938,-3.20312 -0.5625,-1.73438 -1.15625,-3.67188 -0.59375,-1.9375 -1.15625,-3.92187 h 3.98438 q 0.20312,0.92187 0.4375,2 0.23437,1.0625 0.5,2.20312 0.28125,1.14063 0.5625,2.29688 0.29687,1.15625 0.59375,2.21875 0.32812,-1.10938 0.64062,-2.26563 0.32813,-1.17187 0.60938,-2.29687 0.29687,-1.14063 0.5625,-2.1875 0.26562,-1.04688 0.46875,-1.96875 h 2.73437 q 0.20313,0.92187 0.45313,1.96875 0.26562,1.04687 0.53125,2.1875 0.28125,1.125 0.57812,2.29687 0.3125,1.15625 0.64063,2.26563 0.3125,-1.0625 0.60937,-2.21875 0.3125,-1.15625 0.57813,-2.29688 0.26562,-1.14062 0.5,-2.20312 0.23437,-1.07813 0.4375,-2 h 3.9375 q -0.5625,1.98437 -1.15625,3.92187 -0.59375,1.9375 -1.17188,3.67188 -0.5625,1.73437 -1.10937,3.20312 -0.54688,1.46875 -1,2.53125 h -2.9375 q -0.64063,-1.92187 -1.25,-3.8125 -0.59375,-1.90625 -1.10938,-3.84375 z m 15.52915,7.65625 h -3.78125 v -13.32812 h 3.78125 z m 0.35937,-17.17187 q 0,1.03125 -0.67187,1.64062 -0.67188,0.59375 -1.59375,0.59375 -0.90625,0 -1.57813,-0.59375 -0.67187,-0.60937 -0.67187,-1.64062 0,-1.04688 0.67187,-1.64063 0.67188,-0.59375 1.57813,-0.59375 0.92187,0 1.59375,0.59375 0.67187,0.59375 0.67187,1.64063 z m 7.00736,14.46875 q 1.04687,0 1.46875,-0.20313 0.4375,-0.20312 0.4375,-0.79687 0,-0.45313 -0.5625,-0.79688 -0.5625,-0.34375 -1.6875,-0.76562 -0.89063,-0.32813 -1.625,-0.6875 -0.71875,-0.35938 -1.21875,-0.84375 -0.5,-0.5 -0.78125,-1.17188 -0.28125,-0.6875 -0.28125,-1.65625 0,-1.875 1.39062,-2.95312 1.39063,-1.09375 3.82813,-1.09375 1.21875,0 2.32812,0.21875 1.10938,0.20312 1.76563,0.45312 l -0.65625,2.9375 q -0.65625,-0.21875 -1.4375,-0.39062 -0.76563,-0.1875 -1.71875,-0.1875 -1.78125,0 -1.78125,0.98437 0,0.23438 0.0781,0.42188 0.0781,0.17187 0.29688,0.34375 0.23437,0.15625 0.625,0.34375 0.39062,0.1875 1,0.42187 1.25,0.45313 2.04687,0.90625 0.8125,0.4375 1.28125,0.95313 0.46875,0.51562 0.65625,1.15625 0.20313,0.625 0.20313,1.46875 0,1.96875 -1.48438,2.98437 -1.48437,1.01563 -4.1875,1.01563 -1.78125,0 -2.96875,-0.3125 -1.17187,-0.29688 -1.625,-0.5 l 0.64063,-3.0625 q 0.95312,0.375 1.96875,0.59375 1.01562,0.21875 2,0.21875 z m 17.0029,-3.85938 q 0,-1.75 -0.79688,-2.79687 -0.78125,-1.04688 -2.32812,-1.04688 -0.5,0 -0.9375,0.0469 -0.42188,0.0312 -0.70313,0.0781 v 6.8125 q 0.35938,0.23438 0.92188,0.39063 0.57812,0.14062 1.15625,0.14062 2.6875,0 2.6875,-3.625 z m 3.84375,-0.0937 q 0,1.54688 -0.375,2.8125 -0.375,1.26563 -1.125,2.17188 -0.73438,0.90625 -1.82813,1.42187 -1.07812,0.5 -2.5,0.5 -0.78125,0 -1.46875,-0.15625 -0.67187,-0.14062 -1.3125,-0.42187 v 5.01564 h -3.78125 v -17.54689 q 0.51563,-0.15625 1.17188,-0.29688 0.65625,-0.14062 1.375,-0.23437 0.73437,-0.10938 1.46875,-0.17188 0.75,-0.0625 1.4375,-0.0625 1.64062,0 2.9375,0.5 1.29687,0.48438 2.17187,1.39063 0.89063,0.89062 1.35938,2.1875 0.46875,1.29687 0.46875,2.89062 z m 2.08661,-2.60937 h 7.34375 v 3.42187 h -7.34375 z m 21.11157,8.8125 q -0.95313,0.28125 -2.48438,0.51562 -1.51562,0.23438 -3.1875,0.23438 -1.6875,0 -2.82812,-0.45313 -1.125,-0.45312 -1.78125,-1.26562 -0.65625,-0.82813 -0.9375,-1.96875 -0.28125,-1.14063 -0.28125,-2.51563 v -7.42187 h 3.78125 v 6.96875 q 0,1.82812 0.46875,2.64062 0.48437,0.8125 1.8125,0.8125 0.40625,0 0.85937,-0.0312 0.45313,-0.0469 0.8125,-0.10937 v -10.28125 h 3.76563 z m 7.37141,-2.25 q 1.0469,0 1.4687,-0.20313 0.4375,-0.20312 0.4375,-0.79687 0,-0.45313 -0.5625,-0.79688 -0.5625,-0.34375 -1.6875,-0.76562 -0.8906,-0.32813 -1.625,-0.6875 -0.7187,-0.35938 -1.21871,-0.84375 -0.5,-0.5 -0.78125,-1.17188 -0.28125,-0.6875 -0.28125,-1.65625 0,-1.875 1.39061,-2.95312 1.3906,-1.09375 3.8281,-1.09375 1.2188,0 2.3282,0.21875 1.1093,0.20312 1.7656,0.45312 l -0.6563,2.9375 q -0.6562,-0.21875 -1.4375,-0.39062 -0.7656,-0.1875 -1.7187,-0.1875 -1.7813,0 -1.7813,0.98437 0,0.23438 0.078,0.42188 0.078,0.17187 0.2969,0.34375 0.2344,0.15625 0.625,0.34375 0.3906,0.1875 1,0.42187 1.25,0.45313 2.0469,0.90625 0.8125,0.4375 1.2812,0.95313 0.4688,0.51562 0.6563,1.15625 0.2031,0.625 0.2031,1.46875 0,1.96875 -1.4844,2.98437 -1.4843,1.01563 -4.1875,1.01563 -1.7812,0 -2.96871,-0.3125 -1.17187,-0.29688 -1.625,-0.5 l 0.64063,-3.0625 q 0.95312,0.375 1.96878,0.59375 1.0156,0.21875 2,0.21875 z m 7.831,-3.85938 q 0,-1.76562 0.5469,-3.09375 0.5469,-1.34375 1.4219,-2.21875 0.8906,-0.89062 2.0469,-1.34375 1.1562,-0.45312 2.3593,-0.45312 2.8438,0 4.4844,1.73437 1.6563,1.73438 1.6563,5.09375 0,0.32813 -0.031,0.73438 -0.031,0.39062 -0.047,0.6875 h -8.5625 q 0.125,1.17187 1.0781,1.85937 0.9688,0.67188 2.5938,0.67188 1.0312,0 2.0312,-0.1875 1.0156,-0.1875 1.6406,-0.46875 l 0.5,3.0625 q -0.2968,0.15625 -0.8125,0.3125 -0.5,0.14062 -1.125,0.25 -0.6093,0.125 -1.3281,0.20312 -0.7031,0.0781 -1.4062,0.0781 -1.8125,0 -3.1407,-0.53125 -1.3281,-0.53125 -2.2031,-1.45313 -0.875,-0.9375 -1.2969,-2.20312 -0.4062,-1.26563 -0.4062,-2.73438 z m 8.8594,-1.4375 q -0.016,-0.48437 -0.1562,-0.9375 -0.1407,-0.45312 -0.4375,-0.8125 -0.2813,-0.35937 -0.7344,-0.57812 -0.4375,-0.23438 -1.0938,-0.23438 -0.6406,0 -1.0937,0.21875 -0.4531,0.21875 -0.7656,0.57813 -0.2969,0.34375 -0.4688,0.8125 -0.1562,0.46875 -0.2344,0.95312 z m 14.5885,-1.98437 q -0.5,-0.125 -1.1875,-0.26563 -0.6875,-0.14062 -1.4687,-0.14062 -0.3594,0 -0.8594,0.0625 -0.4844,0.0625 -0.7344,0.14062 v 10.1875 h -3.7812 v -12.60937 q 1.0156,-0.35938 2.3906,-0.67188 1.3906,-0.3125 3.0937,-0.3125 0.2969,0 0.7188,0.0312 0.4375,0.0312 0.8594,0.0937 0.4375,0.0625 0.8593,0.15625 0.4375,0.0937 0.75,0.21875 z m 6.4854,7.28125 q 1.0468,0 1.4687,-0.20313 0.4375,-0.20312 0.4375,-0.79687 0,-0.45313 -0.5625,-0.79688 -0.5625,-0.34375 -1.6875,-0.76562 -0.8906,-0.32813 -1.625,-0.6875 -0.7187,-0.35938 -1.2187,-0.84375 -0.5,-0.5 -0.7813,-1.17188 -0.2812,-0.6875 -0.2812,-1.65625 0,-1.875 1.3906,-2.95312 1.3906,-1.09375 3.8281,-1.09375 1.2188,0 2.3281,0.21875 1.1094,0.20312 1.7657,0.45312 l -0.6563,2.9375 q -0.6562,-0.21875 -1.4375,-0.39062 -0.7656,-0.1875 -1.7187,-0.1875 -1.7813,0 -1.7813,0.98437 0,0.23438 0.078,0.42188 0.078,0.17187 0.2969,0.34375 0.2344,0.15625 0.625,0.34375 0.3906,0.1875 1,0.42187 1.25,0.45313 2.0469,0.90625 0.8125,0.4375 1.2812,0.95313 0.4688,0.51562 0.6563,1.15625 0.2031,0.625 0.2031,1.46875 0,1.96875 -1.4844,2.98437 -1.4843,1.01563 -4.1875,1.01563 -1.7812,0 -2.9687,-0.3125 -1.1719,-0.29688 -1.625,-0.5 l 0.6406,-3.0625 q 0.9531,0.375 1.9688,0.59375 1.0156,0.21875 2,0.21875 z"
@@ -2215,7 +2215,7 @@
              id="path74-0" />
           <a
              id="a121088"
-             xlink:href="https://github.com/openwisp/openwisp-network-topology"
+             xlink:href="https://github.com/edge-servers/immunity-network-topology"
              transform="translate(0,-2)">
             <text
                xml:space="preserve"
@@ -2226,7 +2226,7 @@
                  id="tspan83976-5"
                  x="791.46234"
                  y="1024.4115"
-                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:ubuntu;-inkscape-font-specification:'ubuntu Bold';fill:#ffffff">openwisp-network-topology</tspan></text>
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:ubuntu;-inkscape-font-specification:'ubuntu Bold';fill:#ffffff">immunity-network-topology</tspan></text>
           </a>
           <g
              id="g15632-3-5"
@@ -2283,7 +2283,7 @@
              id="path97173" />
           <a
              id="a121111"
-             xlink:href="https://github.com/openwisp/netdiff"
+             xlink:href="https://github.com/edge-servers/netdiff"
              transform="translate(0,-2)">
             <g
                id="g91816"
@@ -2296,7 +2296,7 @@
                  style="fill:#552200;stroke:none;stroke-width:0.724253;stroke-opacity:1" />
               <a
                  id="a120383"
-                 xlink:href="https://github.com/openwisp/netdiff">
+                 xlink:href="https://github.com/edge-servers/netdiff">
                 <text
                    xml:space="preserve"
                    style="font-style:normal;font-weight:normal;font-size:18px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -2495,7 +2495,7 @@
           </a>
           <a
              id="a120267"
-             xlink:href="https://github.com/openwisp/openwisp-network-topology"
+             xlink:href="https://github.com/edge-servers/immunity-network-topology"
              transform="translate(0,4)">
             <text
                xml:space="preserve"
@@ -2522,7 +2522,7 @@
            transform="translate(0,-569.44607)">
           <a
              id="a180565"
-             xlink:href="https://github.com/openwisp/openwisp-monitoring"
+             xlink:href="https://github.com/edge-servers/immunity-monitoring"
              transform="translate(0,440.9094)">
             <path
                fill="#900000"
@@ -2658,7 +2658,7 @@
              transform="translate(0,440.9094)">
             <a
                id="a121088-8"
-               xlink:href="https://github.com/openwisp/openwisp-monitoring"
+               xlink:href="https://github.com/edge-servers/immunity-monitoring"
                transform="translate(41.475624,-4)">
               <text
                  xml:space="preserve"
@@ -2669,11 +2669,11 @@
                    id="tspan83976-5-1"
                    x="791.46234"
                    y="1024.4115"
-                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:ubuntu;-inkscape-font-specification:'ubuntu Bold';fill:#ffffff">openwisp-monitoring</tspan></text>
+                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:ubuntu;-inkscape-font-specification:'ubuntu Bold';fill:#ffffff">immunity-monitoring</tspan></text>
             </a>
             <a
                id="a120267-1"
-               xlink:href="https://github.com/openwisp/openwisp-monitoring"
+               xlink:href="https://github.com/edge-servers/immunity-monitoring"
                transform="translate(0,2)">
               <text
                  xml:space="preserve"
@@ -2935,7 +2935,7 @@
              transform="translate(0,440.9094)">
             <a
                id="a121088-8-5"
-               xlink:href="https://github.com/openwisp/openwisp-wifi-login-pages"
+               xlink:href="https://github.com/edge-servers/immunity-wifi-login-pages"
                transform="translate(12.183678,-4)"
                style="fill:#483745">
               <text
@@ -2947,11 +2947,11 @@
                    id="tspan83976-5-1-7"
                    x="791.46234"
                    y="1024.4115"
-                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:ubuntu;-inkscape-font-specification:'ubuntu Bold';fill:#483745">openwisp-wifi-login-pages</tspan></text>
+                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:ubuntu;-inkscape-font-specification:'ubuntu Bold';fill:#483745">immunity-wifi-login-pages</tspan></text>
             </a>
             <a
                id="a120267-1-9"
-               xlink:href="https://github.com/openwisp/openwisp-wifi-login-pages"
+               xlink:href="https://github.com/edge-servers/immunity-wifi-login-pages"
                transform="translate(-7.1444113,2)"
                style="fill:#483745">
               <text
@@ -3060,12 +3060,12 @@
              id="path97167-1-3" />
           <a
              id="a286287"
-             xlink:href="https://github.com/openwisp/openwisp-firmware-upgrader/">
+             xlink:href="https://github.com/edge-servers/immunity-firmware-upgrader/">
             <g
                id="g286285">
               <a
                  id="a180565-7"
-                 xlink:href="https://github.com/openwisp/openwisp-firmware-upgrader"
+                 xlink:href="https://github.com/edge-servers/immunity-firmware-upgrader"
                  transform="matrix(1,0,0,0.45810192,0,954.55795)"
                  style="fill:#d4aa00">
                 <path
@@ -3080,7 +3080,7 @@
                  transform="translate(2.0939868e-5,425.20933)">
                 <a
                    id="a121088-8-6"
-                   xlink:href="https://github.com/openwisp/openwisp-firmware-upgrader"
+                   xlink:href="https://github.com/edge-servers/immunity-firmware-upgrader"
                    transform="translate(-4.3162941,-4)">
                   <text
                      xml:space="preserve"
@@ -3091,11 +3091,11 @@
                        id="tspan83976-5-1-3"
                        x="791.46234"
                        y="1024.4115"
-                       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:ubuntu;-inkscape-font-specification:'ubuntu Bold';fill:#ffffff">openwisp-firmware-upgrader</tspan></text>
+                       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:ubuntu;-inkscape-font-specification:'ubuntu Bold';fill:#ffffff">immunity-firmware-upgrader</tspan></text>
                 </a>
                 <a
                    id="a120267-1-3"
-                   xlink:href="https://github.com/openwisp/openwisp-firmware-upgrader"
+                   xlink:href="https://github.com/edge-servers/immunity-firmware-upgrader"
                    transform="translate(-7.4954132,2)">
                   <text
                      xml:space="preserve"
@@ -3118,7 +3118,7 @@
                        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:ubuntu;-inkscape-font-specification:ubuntu;text-align:center;text-anchor:middle;fill:#ffffff"
                        id="tspan277830">This module depends on <tspan
    style="font-weight:bold"
-   id="tspan280786">OpenWISP Controller</tspan> and currently <tspan
+   id="tspan280786">Immunity Controller</tspan> and currently <tspan
    style="font-weight:bold"
    id="tspan284140">relies on SSH</tspan> to perform upgrades.</tspan></text>
                 </a>
@@ -3155,7 +3155,7 @@
              id="path74" />
           <a
              id="a120798"
-             xlink:href="https://github.com/openwisp/netjsonconfig"
+             xlink:href="https://github.com/edge-servers/netjsonconfig"
              transform="translate(0,2)">
             <g
                id="g15618"
@@ -3184,7 +3184,7 @@
           </a>
           <a
              id="a120791"
-             xlink:href="https://github.com/openwisp/django-x509"
+             xlink:href="https://github.com/edge-servers/django-x509"
              transform="translate(0,2)">
             <g
                id="g15624"
@@ -3213,14 +3213,14 @@
           </a>
           <a
              id="a120775"
-             xlink:href="https://github.com/openwisp/openwisp-ipam"
+             xlink:href="https://github.com/edge-servers/immunity-ipam"
              transform="translate(0,2)">
             <g
                id="g15632"
                transform="translate(-3.1729615,74.043918)">
               <a
                  id="a109246"
-                 xlink:href="https://github.com/openwisp/openwisp-ipam"
+                 xlink:href="https://github.com/edge-servers/immunity-ipam"
                  transform="translate(473.00221,134.79814)"
                  style="fill:#ffeeaa">
                 <path
@@ -3232,7 +3232,7 @@
               </a>
               <a
                  id="a105805"
-                 xlink:href="https://github.com/openwisp/openwisp-ipam"
+                 xlink:href="https://github.com/edge-servers/immunity-ipam"
                  target=""
                  transform="translate(473.18225,134.79814)">
                 <text
@@ -3244,7 +3244,7 @@
                      x="702.52051"
                      y="659.76831"
                      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;font-family:ubuntu;-inkscape-font-specification:'ubuntu Bold';text-align:center;text-anchor:middle;fill:#000000"
-                     id="tspan13243-7-4">openwisp-ipam</tspan><tspan
+                     id="tspan13243-7-4">immunity-ipam</tspan><tspan
                      x="702.52051"
                      y="682.26831"
                      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:ubuntu;-inkscape-font-specification:ubuntu;text-align:center;text-anchor:middle;fill:#000000"
@@ -3254,7 +3254,7 @@
           </a>
           <a
              id="a120784"
-             xlink:href="https://github.com/openwisp/django-loci"
+             xlink:href="https://github.com/edge-servers/django-loci"
              transform="translate(0,2)">
             <g
                id="g15638"
@@ -3283,7 +3283,7 @@
           </a>
           <a
              id="a120885"
-             xlink:href="https://github.com/openwisp/openwisp-controller">
+             xlink:href="https://github.com/edge-servers/immunity-controller">
             <text
                xml:space="preserve"
                style="font-style:normal;font-weight:normal;font-size:24px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -3293,7 +3293,7 @@
                  id="tspan83976"
                  x="838.06561"
                  y="640.22131"
-                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:ubuntu;-inkscape-font-specification:'ubuntu Bold';fill:#ffffff">openwisp-controller</tspan></text>
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:ubuntu;-inkscape-font-specification:'ubuntu Bold';fill:#ffffff">immunity-controller</tspan></text>
           </a>
           <a
              id="a120353"
@@ -3357,7 +3357,7 @@
           </a>
           <a
              id="a120889"
-             xlink:href="https://github.com/openwisp/openwisp-controller">
+             xlink:href="https://github.com/edge-servers/immunity-controller">
             <text
                xml:space="preserve"
                style="font-style:normal;font-weight:normal;font-size:18px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -3410,7 +3410,7 @@
              id="path74-06" />
           <a
              id="a120798-2"
-             xlink:href="https://github.com/openwisp/netjsonconfig"
+             xlink:href="https://github.com/edge-servers/netjsonconfig"
              transform="translate(0,-135.05183)">
             <a
                id="a339498"
@@ -3559,7 +3559,7 @@
           </a>
           <a
              id="a120885-0"
-             xlink:href="https://github.com/openwisp/openwisp-radius"
+             xlink:href="https://github.com/edge-servers/immunity-radius"
              transform="translate(22.595909)">
             <text
                xml:space="preserve"
@@ -3570,11 +3570,11 @@
                  id="tspan83976-4"
                  x="838.06561"
                  y="640.22131"
-                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:ubuntu;-inkscape-font-specification:'ubuntu Bold';fill:#ffffff">openwisp-radius</tspan></text>
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:ubuntu;-inkscape-font-specification:'ubuntu Bold';fill:#ffffff">immunity-radius</tspan></text>
           </a>
           <a
              id="a120889-6"
-             xlink:href="https://github.com/openwisp/openwisp-radius"
+             xlink:href="https://github.com/edge-servers/immunity-radius"
              transform="translate(0.17098112)">
             <text
                xml:space="preserve"
@@ -3585,7 +3585,7 @@
                  x="954.63031"
                  y="670.25873"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:ubuntu;-inkscape-font-specification:ubuntu;text-align:center;text-anchor:middle;fill:#ffffff"
-                 id="tspan48170-3">OpenWISP RADIUS provides a web interface to a freeradius database, a rich REST HTTP API</tspan><tspan
+                 id="tspan48170-3">Immunity RADIUS provides a web interface to a freeradius database, a rich REST HTTP API</tspan><tspan
                  x="954.63031"
                  y="693.6178"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:ubuntu;-inkscape-font-specification:ubuntu;text-align:center;text-anchor:middle;fill:#ffffff"
@@ -3630,7 +3630,7 @@
        transform="matrix(0.99621232,0,0,0.99621232,-43.086567,61.8158)">
       <a
          id="a286313"
-         xlink:href="https://github.com/openwisp/openwisp-notifications/"
+         xlink:href="https://github.com/edge-servers/immunity-notifications/"
          transform="translate(74.273136,1405.8515)"
          style="stroke-width:0.99978687;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke fill markers">
         <g
@@ -3652,7 +3652,7 @@
                id="tspan3150-3-3-2"
                x="238.15166"
                y="697.45258"
-               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1;stroke-width:0.99978687;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke fill markers">openwisp-notifications</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1;stroke-width:0.99978687;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke fill markers">immunity-notifications</tspan><tspan
                x="238.15166"
                y="720.81165"
                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1;stroke-width:0.99978687;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke fill markers"
@@ -3669,7 +3669,7 @@
            style="stroke-width:0.99978687;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke fill markers">
           <a
              id="a286313-6"
-             xlink:href="https://github.com/openwisp/openwisp-notifications/"
+             xlink:href="https://github.com/edge-servers/immunity-notifications/"
              transform="translate(74.273136,1210.6072)"
              style="display:inline;stroke-width:0.99978687;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke fill markers">
             <g
@@ -3763,7 +3763,7 @@
       </a>
       <a
          id="a286304"
-         xlink:href="https://github.com/openwisp/openwisp-utils/"
+         xlink:href="https://github.com/edge-servers/immunity-utils/"
          transform="translate(75.386587,1309.9494)"
          style="stroke-width:0.99978687;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke fill markers">
         <g
@@ -3785,11 +3785,11 @@
                id="tspan3150-3-3"
                x="195.73378"
                y="388.10904"
-               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#501616;fill-opacity:1;stroke-width:0.99978687;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke fill markers">openwisp-utils</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#501616;fill-opacity:1;stroke-width:0.99978687;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke fill markers">immunity-utils</tspan><tspan
                x="195.73378"
                y="408.4704"
                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#501616;fill-opacity:1;stroke-width:0.99978687;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke fill markers"
-               id="tspan13243-2-7">Common OpenWISP utilities,</tspan><tspan
+               id="tspan13243-2-7">Common Immunity utilities,</tspan><tspan
                x="195.73378"
                y="428.83176"
                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#501616;fill-opacity:1;stroke-width:0.99978687;stroke-miterlimit:10;stroke-dasharray:none;paint-order:stroke fill markers"
@@ -4392,7 +4392,7 @@
         </a>
         <a
            id="a23113"
-           xlink:href="https://github.com/openwisp/ansible-openwisp2">
+           xlink:href="https://github.com/edge-servers/ansible-immunity2">
           <g
              id="g417456"
              transform="translate(9.4175081,-74.305405)">
@@ -4418,11 +4418,11 @@
                  id="tspan3150-3-3-2-2-9-1"
                  x="1654.7958"
                  y="1015.4218"
-                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1">ansible-openwisp2</tspan><tspan
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1">ansible-immunity2</tspan><tspan
                  x="1654.7958"
                  y="1036.9808"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1"
-                 id="tspan416330">Deploys the OpenWISP Django</tspan><tspan
+                 id="tspan416330">Deploys the Immunity Django</tspan><tspan
                  x="1654.7958"
                  y="1058.5399"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1"
@@ -4431,7 +4431,7 @@
         </a>
         <a
            id="a23123"
-           xlink:href="https://github.com/openwisp/ansible-wireguard-openwisp">
+           xlink:href="https://github.com/edge-servers/ansible-wireguard-immunity">
           <g
              id="g417456-0"
              transform="translate(9.4175081,35.342725)">
@@ -4457,7 +4457,7 @@
                  id="tspan3150-3-3-2-2-9-1-1"
                  x="1655.3778"
                  y="1016.3734"
-                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1">ansible-wireguard-openwisp</tspan><tspan
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1">ansible-wireguard-immunity</tspan><tspan
                  x="1655.3778"
                  y="1037.0734"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1"
@@ -4465,12 +4465,12 @@
                  x="1655.3778"
                  y="1057.7734"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1"
-                 id="tspan421745">for OpenWISP Controller</tspan></text>
+                 id="tspan421745">for Immunity Controller</tspan></text>
           </g>
         </a>
         <a
            id="a23143"
-           xlink:href="https://github.com/openwisp/ansible-openwisp-wifi-login-pages">
+           xlink:href="https://github.com/edge-servers/ansible-immunity-wifi-login-pages">
           <g
              id="g394107-6"
              transform="translate(9.4175072,254.77107)">
@@ -4501,11 +4501,11 @@
                  y="1013.5948"
                  style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1"><tspan
    style="font-size:16px"
-   id="tspan399358">ansible-openwisp-wifi-login-page</tspan>s</tspan><tspan
+   id="tspan399358">ansible-immunity-wifi-login-page</tspan>s</tspan><tspan
                  x="1655.3088"
                  y="1036.0947"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1"
-                 id="tspan387200-3">Deploys the OpenWISP</tspan><tspan
+                 id="tspan387200-3">Deploys the Immunity</tspan><tspan
                  x="1655.3088"
                  y="1058.5947"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1"
@@ -4514,7 +4514,7 @@
         </a>
         <a
            id="a23133"
-           xlink:href="https://github.com/openwisp/ansible-openwisp2-imagegenerator">
+           xlink:href="https://github.com/edge-servers/ansible-immunity2-imagegenerator">
           <g
              id="g394107-6-1"
              transform="translate(9.4175072,144.25749)">
@@ -4543,7 +4543,7 @@
                  id="tspan3150-3-3-2-48-0-7"
                  x="1655.2798"
                  y="1015.6023"
-                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1">ansible-openwisp2-imagegenerator</tspan><tspan
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1">ansible-immunity2-imagegenerator</tspan><tspan
                  x="1655.2798"
                  y="1036.366"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1"
@@ -4676,7 +4676,7 @@
         </a>
         <a
            id="a23123-8"
-           xlink:href="https://github.com/openwisp/docker-openwisp"
+           xlink:href="https://github.com/edge-servers/docker-immunity"
            transform="translate(0,93.839347)">
           <g
              id="g417456-0-5"
@@ -4703,11 +4703,11 @@
                  x="1655.3778"
                  y="1016.3734"
                  style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1"
-                 id="tspan421745-6">docker-openwisp</tspan><tspan
+                 id="tspan421745-6">docker-immunity</tspan><tspan
                  x="1655.3778"
                  y="1037.0734"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1"
-                 id="tspan135071">Deploys the OpenWISP Django</tspan><tspan
+                 id="tspan135071">Deploys the Immunity Django</tspan><tspan
                  x="1655.3778"
                  y="1057.7734"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1"
@@ -4727,7 +4727,7 @@
            y="1374.9755" />
         <a
            id="a367115"
-           xlink:href="https://github.com/openwisp/openwisp-config/">
+           xlink:href="https://github.com/edge-servers/immunity-config/">
           <g
              id="g367038"
              transform="translate(0,2)">
@@ -4747,7 +4747,7 @@
                  id="tspan3150-3-3-2-2"
                  x="203.9268"
                  y="1511.7659"
-                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1">openwisp-config</tspan><tspan
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1">immunity-config</tspan><tspan
                  x="203.9268"
                  y="1533.325"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1"
@@ -4755,17 +4755,17 @@
                  x="203.9268"
                  y="1554.884"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1"
-                 id="tspan343737">OpenWISP Controller integration</tspan></text>
+                 id="tspan343737">Immunity Controller integration</tspan></text>
           </g>
         </a>
         <a
            id="a370030"
-           xlink:href="https://github.com/openwisp/openwrt-openwisp-monitoring/">
+           xlink:href="https://github.com/edge-servers/openwrt-immunity-monitoring/">
           <g
              id="g370028">
             <a
                id="a367123"
-               xlink:href="https://github.com/openwisp/openwrt-openwisp-monitoring/">
+               xlink:href="https://github.com/edge-servers/openwrt-immunity-monitoring/">
               <rect
                  style="fill:#ffffff;fill-opacity:1;stroke:#160081;stroke-width:1;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:0.415686;stop-color:#000000"
                  id="rect341825-2-6"
@@ -4783,7 +4783,7 @@
                  id="tspan3150-3-3-2-2-9"
                  x="203.9268"
                  y="1621.7659"
-                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1">openwisp-monitoring</tspan><tspan
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1">immunity-monitoring</tspan><tspan
                  x="203.9268"
                  y="1643.325"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1"
@@ -4791,7 +4791,7 @@
                  x="203.92682"
                  y="1664.884"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#4a2f2f;fill-opacity:1"
-                 id="tspan343737-8">OpenWISP Monitoring integration</tspan></text>
+                 id="tspan343737-8">Immunity Monitoring integration</tspan></text>
           </g>
         </a>
         <a
@@ -4949,7 +4949,7 @@
          transform="translate(0,439.84422)">
         <a
            id="a54307"
-           xlink:href="https://github.com/openwisp/OpenWISP-Website"
+           xlink:href="https://github.com/edge-servers/Immunity-Website"
            transform="matrix(1.0158083,0,0,1,1490.724,803.56161)">
           <path
              fill="#434343"
@@ -4968,7 +4968,7 @@
              id="tspan3150-3-3-2-8"
              x="1719.2689"
              y="1499.473"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.1417px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:1.00787">OpenWISP Website</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18.1417px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:1.00787">Immunity Website</tspan><tspan
              x="1719.2689"
              y="1523.016"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.1417px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:1.00787"
@@ -4976,11 +4976,11 @@
              x="1719.2689"
              y="1546.559"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.1417px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:1.00787"
-             id="tspan51011">openwisp.io / openwisp.org</tspan></text>
+             id="tspan51011">immunity.io / immunity.org</tspan></text>
       </g>
       <a
          id="a61510"
-         xlink:href="https://github.com/openwisp/openwisp2-docs"
+         xlink:href="https://github.com/edge-servers/immunity2-docs"
          transform="translate(0,592.79265)">
         <g
            id="g61261"
@@ -5000,7 +5000,7 @@
                x="237.76466"
                y="841.28003"
                style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1"
-               id="tspan94723-8-9">openwisp2-docs</tspan><tspan
+               id="tspan94723-8-9">immunity2-docs</tspan><tspan
                x="237.76466"
                y="864.6391"
                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1"
@@ -5008,7 +5008,7 @@
                x="237.76466"
                y="887.99817"
                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1"
-               id="tspan55819">openwisp.io/docs</tspan></text>
+               id="tspan55819">immunity.io/docs</tspan></text>
         </g>
       </a>
       <path

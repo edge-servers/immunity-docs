@@ -1,16 +1,16 @@
 WiFi Hotspot & Captive Portal
 =============================
 
-.. image:: ../images/demo/openwisp-wifi-hotspot-demo.png
-  :target: ../_images/openwisp-wifi-hotspot-demo.png
+.. image:: ../images/demo/immunity-wifi-hotspot-demo.png
+  :target: ../_images/immunity-wifi-hotspot-demo.png
 
-OpenWISP is widely used as an **open source software** solution
+Immunity is widely used as an **open source software** solution
 for **WiFi Hotspot Management** in **Public Wi-Fi** settings.
 
 In this tutorial, we'll explain some technical details of the most
 common **WiFi Hotspot** deployments and how to test the most
 important functionalities
-of this use case on the :doc:`OpenWISP Demo System <./demo>`.
+of this use case on the :doc:`Immunity Demo System <./demo>`.
 
 Firmware Requirements for Hotspot Authentication
 ------------------------------------------------
@@ -20,7 +20,7 @@ Firmware Requirements for Hotspot Authentication
   :align: center
 
 The **OpenWrt** :ref:`firmware image provided
-for the OpenWISP Demo System <demo_firmware>`
+for the Immunity Demo System <demo_firmware>`
 includes a *captive portal* package called
 `Coova-Chilli <https://coova.github.io/CoovaChilli/>`_, which
 supports the
@@ -41,7 +41,7 @@ network usage supported by a lot of networking hardware and software.
 
 The OpenVPN package is also required and included in
 the :ref:`firmware instructions for the
-OpenWISP Demo System <demo_firmware>`,
+Immunity Demo System <demo_firmware>`,
 as it's needed to facilitate secure communication between the
 Coova-Chilli captive portal and FreeRADIUS over the
 Management VPN tunnel.
@@ -57,7 +57,7 @@ Enable Captive Portal Template
   :target: ../_images/captive-portal-demo.png
 
 If you flashed the *OpenWrt* based firmware and registered your device
-as explained in the :doc:`OpenWISP Demo Page <./demo>`, proceed
+as explained in the :doc:`Immunity Demo Page <./demo>`, proceed
 to assign the captive portal template to your device:
 
 - Go to the device list.
@@ -76,7 +76,7 @@ the Public WiFi SSID will be broadcasted by the *access point*.
 Accessing the Public WiFI Hotspot
 ---------------------------------
 
-Connect your laptop or phone to the SSID "OpenWISP Public WiFi Demo".
+Connect your laptop or phone to the SSID "Immunity Public WiFi Demo".
 If everything is working correctly, your operating system should
 open a browser window showing the captive page as shown in
 the screenshot above.
@@ -123,7 +123,7 @@ features of the status page listed above.
   :width: 300
   :align: center
 
-To alleviate this issue, OpenWISP will send an email to the user with
+To alleviate this issue, Immunity will send an email to the user with
 a magic link with temporal validity that allows to access the
 status page of
 :doc:`WiFi Login Pages <../user/wifi-login-pages>`
@@ -133,7 +133,7 @@ without entering the credentials again, as shown in the image above.
   For more technical information and implementation details
   about the magic link feature,
   consult the
-  `openwisp-users documentation <https://github.com/openwisp/openwisp-users#2-openwisp_usersapiauthenticationsesameauthentication>`_
+  `immunity-users documentation <https://github.com/edge-servers/immunity-users#2-immunity_usersapiauthenticationsesameauthentication>`_
   (which briefly provides more information
   about the underlying open source
   library used to implement this feature).
@@ -168,13 +168,13 @@ Session Limits
   :width: 300
   :align: center
 
-The default session limits in the **OpenWISP RADIUS** configuration
+The default session limits in the **Immunity RADIUS** configuration
 are 300 MB of daily traffic or 3 hours of daily surfing.
 
 .. note::
     To find out more technical information about this topic please read:
-    `OpenWISP RADIUS - Enforcing session limits
-    <https://openwisp-radius.readthedocs.io/en/stable/user/enforcing_limits.html>`_.
+    `Immunity RADIUS - Enforcing session limits
+    <https://immunity-radius.readthedocs.io/en/stable/user/enforcing_limits.html>`_.
 
 Automatic Captive Portal Login
 ------------------------------
@@ -194,7 +194,7 @@ The video below demonstrates this feature:
           width="100%"
           height="820"
           src="https://www.youtube.com/embed/wUTFte2at7o"
-          title="WiFi Captive Portal Auto Login Feature of OpenWISP"
+          title="WiFi Captive Portal Auto Login Feature of Immunity"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen>
@@ -216,8 +216,8 @@ and the "WiFi session started" notification.
 
 .. note::
   The sign up process uses the
-  `OpenWISP RADIUS REST API
-  <https://openwisp-radius.readthedocs.io/en/stable/user/api.html#user-registration>`_
+  `Immunity RADIUS REST API
+  <https://immunity-radius.readthedocs.io/en/stable/user/api.html#user-registration>`_
   under the hood.
 
 Social Login
@@ -236,8 +236,8 @@ for less than 24 hours, as the demo system is reset every day.
 
 .. note::
   For more technical information about social login, please read
-  `OpenWISP RADIUS - Social Login
-  <https://openwisp-radius.readthedocs.io/en/stable/user/social_login.html>`_
+  `Immunity RADIUS - Social Login
+  <https://immunity-radius.readthedocs.io/en/stable/user/social_login.html>`_
 
 Paid WiFi Hotspot Subscription Plans
 ------------------------------------
@@ -249,7 +249,7 @@ Paid WiFi Hotspot Subscription Plans
           width="100%"
           height="820"
           src="https://www.youtube.com/embed/8zf-rDG0UjU"
-          title="OpenWISP Paid WiFi Subscription Plans"
+          title="Immunity Paid WiFi Subscription Plans"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen>
@@ -267,7 +267,7 @@ Follow these steps to try the *paid WiFi subscription* feature:
 - Enter your real email address and dummy personal information.
 - Click "Proceed with the payment."
 - Enter the following paypal credentials:
-  ``support@openwisp.io`` / ``tester123`` and click on
+  ``support@immunity.io`` / ``tester123`` and click on
   "start session".
 - Choose to pay with Paypal balance and click "Continue to Review Order."
 

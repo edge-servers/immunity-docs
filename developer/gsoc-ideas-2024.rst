@@ -5,7 +5,7 @@ GSoC Project Ideas 2024
   **This page is currently a work in progress and not final.**
 
   If you want to apply to GSoC 2024 with us please focus on
-  :doc:`contributing to OpenWISP <../developer/contributing>`
+  :doc:`contributing to Immunity <../developer/contributing>`
   before spending effort on any idea listed on this page,
   at least until the GSoC application period opens.
 
@@ -37,18 +37,18 @@ General suggestions and warnings
   (which means the code may be thrown out entirely) which will help you
   understand the challenges of the project you want to work on; your
   application should refer to the prototype or other Github contributions
-  you made to OpenWISP that show you have the capability to succeed in the
+  you made to Immunity that show you have the capability to succeed in the
   project idea you are applying for.
 
 - **Applicants who have either shown to have or have shown to be
   fast learners for the required hard and soft skills by
-  contributing to OpenWISP have a lot more chances of being accepted**:
+  contributing to Immunity have a lot more chances of being accepted**:
   in order to get started contributing refer to the
-  :doc:`OpenWISP Contributing Guidelines <../developer/contributing>`
+  :doc:`Immunity Contributing Guidelines <../developer/contributing>`
 
 - **Get trained in the projects you want to apply for**: once
   applicants have completed some basic training by
-  :doc:`contributing to OpenWISP <../developer/contributing>`
+  :doc:`contributing to Immunity <../developer/contributing>`
   we highly suggest to start working on
   some aspects of the project they are
   interested in applying: all projects
@@ -63,7 +63,7 @@ General suggestions and warnings
 Project Ideas
 -------------
 
-Improve OpenWISP General Map: Indoor, Mobile, Linkable URLs
+Improve Immunity General Map: Indoor, Mobile, Linkable URLs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ../images/gsoc/ideas/2024/maps.jpg
@@ -81,7 +81,7 @@ Improve OpenWISP General Map: Indoor, Mobile, Linkable URLs
   **Difficulty rate**: medium.
 
 This GSoC project aims to enhance the user experience of the general map
-within OpenWISP, a feature introduced in the last stable version.
+within Immunity, a feature introduced in the last stable version.
 
 By developing a dedicated map page, facilitating
 precise device tracking, and seamlessly integrating indoor floorplans,
@@ -94,32 +94,32 @@ Pre-requisites to work on this project
 
 Applicants must demonstrate a solid understanding of Python, Django,
 `Leaflet library <https://github.com/makinacorpus/django-leaflet>`_,
-JavaScript, `OpenWISP Controller
-<https://github.com/openwisp/openwisp-controller#openwisp-controller>`__,
-`OpenWISP Monitoring
-<https://github.com/openwisp/openwisp-monitoring#openwisp-monitoring>`__.
+JavaScript, `Immunity Controller
+<https://github.com/edge-servers/immunity-controller#immunity-controller>`__,
+`Immunity Monitoring
+<https://github.com/edge-servers/immunity-monitoring#immunity-monitoring>`__.
 and `netjsongraph.js
-<https://github.com/openwisp/netjsongraph.js?tab=readme-ov-file#netjsongraphjs>`__.
+<https://github.com/edge-servers/netjsongraph.js?tab=readme-ov-file#netjsongraphjs>`__.
 
 Expected outcomes
 #################
 
 - `Add a dedicated map page
-  <https://github.com/openwisp/openwisp-monitoring/issues/561>`_:
+  <https://github.com/edge-servers/immunity-monitoring/issues/561>`_:
   Introduce a dedicated page to display all network devices on a map.
   This view will offer the same functionality as the map in the
   dashboard, with the sole difference being that this page focuses on
   rendering only the map. It will be used for linking specific points
-  on the map within the rest of the OpenWISP UI.
+  on the map within the rest of the Immunity UI.
 
 - `Allow tracking mobile coordinates
-  <https://github.com/openwisp/openwisp-controller/issues/828>`_:
-  OpenWISP Controller provides a way for devices to update their
+  <https://github.com/edge-servers/immunity-controller/issues/828>`_:
+  Immunity Controller provides a way for devices to update their
   co-ordinates, we want to make the map able to update in real time
   as devices send their updated coordinates.
 
 - `Integrate indoor floor plan functionality in the map
-  <https://github.com/openwisp/openwisp-monitoring/issues/564>`_:
+  <https://github.com/edge-servers/immunity-monitoring/issues/564>`_:
   The netjsongraph.js library allows to render indoor maps,
   we want to make use of this feature to display the indoor location
   of devices and we want this feature to be accessible from the general
@@ -137,7 +137,7 @@ Expected outcomes
      API endpoint which returns location of devices on the floor plan
 
 - `Make map actions bookmarkable
-  <https://github.com/openwisp/netjsongraph.js/issues/238>`_:
+  <https://github.com/edge-servers/netjsongraph.js/issues/238>`_:
   Update the URL when clicking on a node/link to view its details.
   Visiting this URL should automatically focus on the specified
   node/link and display its details, if available. This functionality
@@ -150,7 +150,7 @@ Expected outcomes
   indoor maps and logical maps.
 
 - `Add button to general map from device detail
-  <https://github.com/openwisp/openwisp-monitoring/issues/562>`_:
+  <https://github.com/edge-servers/immunity-monitoring/issues/562>`_:
   Implement a button on the device detail page to allow users to
   navigate from the device detail to the general map and inspect
   the device's location on the map. The map should focus on the
@@ -202,8 +202,8 @@ The contributor should have a proven track record and experience with
 Javascript, React JS, NodeJS, HTML and CSS.
 
 Familiarity with
-`OpenWISP Network Topology <https://github.com/openwisp/openwisp-network-topology>`__
-and `OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring>`__
+`Immunity Network Topology <https://github.com/edge-servers/immunity-network-topology>`__
+and `Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring>`__
 is a plus.
 
 Expected outcomes
@@ -213,30 +213,30 @@ The applicant must open pull requests for the following issues which must
 be merged by the final closing date of the program:
 
 - `Allow showing node names on geo map on high zoom levels
-  <https://github.com/openwisp/netjsongraph.js/issues/189>`_:
+  <https://github.com/edge-servers/netjsongraph.js/issues/189>`_:
   The node names should be shown by default on high zoom levels.
 - `Map should respect zoom levels of tile providers
-  <https://github.com/openwisp/netjsongraph.js/issues/188>`_:
+  <https://github.com/edge-servers/netjsongraph.js/issues/188>`_:
   We shall limit the map zoom levels based on the tile provider.
   We can make the supported zoom levels configurable and provide
   sensible defaults.
 - `Prevent overlapping of clusters
-  <https://github.com/openwisp/netjsongraph.js/issues/171>`_:
+  <https://github.com/edge-servers/netjsongraph.js/issues/171>`_:
   The clusters of different categories with the same location
   are overlapped. Instead, we should find a way to prevent this
   behavior.
 - `Add resiliency for invalid data
-  <https://github.com/openwisp/netjsongraph.js/issues/164>`_:
+  <https://github.com/edge-servers/netjsongraph.js/issues/164>`_:
   The library should not crash if invalid data is provided,
   e.g. different nodes with same ID. Instead, it should handle
   such cases gracefully and log the errors.
 - `Display additional data (connected clients) on nodes
-  <https://github.com/openwisp/netjsongraph.js/issues/153>`_:
+  <https://github.com/edge-servers/netjsongraph.js/issues/153>`_:
   It shall be possible to show connected clients on nodes.
   This feature needs to be flexible, such that it can
   be used to show different kinds of data.
 - `Show node labels only after hitting a certain zoom level
-  <https://github.com/openwisp/netjsongraph.js/issues/148>`_:
+  <https://github.com/edge-servers/netjsongraph.js/issues/148>`_:
   At present, the node labels become cluttered and unreadable
   when zoomed out excessively. To enhance readability, we need
   to add a feature in the library that allows configuring
@@ -272,12 +272,12 @@ Pre-requisites to work on this project
 ######################################
 
 The applicant must demonstrate good understanding of Python, Django,
-Javascript and `OpenWISP Controller
-<https://github.com/openwisp/openwisp-controller#openwisp-controller>`__.
+Javascript and `Immunity Controller
+<https://github.com/edge-servers/immunity-controller#immunity-controller>`__.
 
 They must demonstrate also a basic understanding of
-`OpenWISP Firmware Upgrader
-<https://github.com/openwisp/openwisp-firmware-upgrader#openwisp-firmware-upgrader>`__,
+`Immunity Firmware Upgrader
+<https://github.com/edge-servers/immunity-firmware-upgrader#immunity-firmware-upgrader>`__,
 OpenWrt and UI development.
 
 Prior experience with OpenWrt is not extremely required but welcome.
@@ -289,13 +289,13 @@ The applicant must open pull-requests for the following issues which must
 be merged by the final closing date of the program:
 
 - `[feature] REST API is missing endpoints for DeviceFirmware
-  <https://github.com/openwisp/openwisp-firmware-upgrader/issues/208>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/issues/208>`_
 - `[feature:UI] Show upgrade progress in real time in the UI
-  <https://github.com/openwisp/openwisp-firmware-upgrader/issues/224>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/issues/224>`_
 - `[feature] Allow to perform mass upgrade of devices by their group
-  <https://github.com/openwisp/openwisp-firmware-upgrader/issues/213>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/issues/213>`_
 - `[feature] Allow to perform mass upgrade of devices by their location
-  <https://github.com/openwisp/openwisp-firmware-upgrader/issues/225>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/issues/225>`_
 
 Each issue contains the details which the applicant needs to know
 in order to complete the project successfully.
@@ -311,11 +311,11 @@ on the following issues:
 
 - `[bug] FileNotFoundError when trying to delete an image
   which links a non existing file
-  <https://github.com/openwisp/openwisp-firmware-upgrader/issues/140>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/issues/140>`_
 - `[change] Improve endpoints to download firmware images
-  <https://github.com/openwisp/openwisp-firmware-upgrader/issues/69>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/issues/69>`_
 - `[feature] Allow management of UpgradeOperation objects in the admin
-  <https://github.com/openwisp/openwisp-firmware-upgrader/issues/145>`_
+  <https://github.com/edge-servers/immunity-firmware-upgrader/issues/145>`_
 
 Improve UX of the Notifications Module
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -341,13 +341,13 @@ Pre-requisites to work on this project
 ######################################
 
 The applicant must demonstrate good understanding of
-`OpenWISP Notifications
-<https://github.com/openwisp/openwisp-notifications#openwisp-notifications>`__,
+`Immunity Notifications
+<https://github.com/edge-servers/immunity-notifications#immunity-notifications>`__,
 it's integration in
-`OpenWISP Controller
-<https://github.com/openwisp/openwisp-controller#openwisp-controller>`_
-and `OpenWISP Monitoring
-<https://github.com/openwisp/openwisp-monitoring#openwisp-monitoring>`_.
+`Immunity Controller
+<https://github.com/edge-servers/immunity-controller#immunity-controller>`_
+and `Immunity Monitoring
+<https://github.com/edge-servers/immunity-monitoring#immunity-monitoring>`_.
 
 The applicant must demonstrate at least basic UI/UX development skills
 and eagerness to learn more about this subject.
@@ -359,20 +359,20 @@ The applicant must open pull-requests for the following issues which must
 be merged by the final closing date of the program:
 
 - `[feature] Batch email notifications to prevent email flooding
-  <https://github.com/openwisp/openwisp-notifications/issues/132>`_:
+  <https://github.com/edge-servers/immunity-notifications/issues/132>`_:
   this issue has priority because when this happens it causes most
   users to want to disable email notifications.
 - `[feature] Allow to disable notifications for all organizations or
   keep everything disabled except notifications for specific organizations
-  <https://github.com/openwisp/openwisp-notifications/issues/148>`_.
+  <https://github.com/edge-servers/immunity-notifications/issues/148>`_.
 - `[feature] Add REST API to manage notification
   preferences of other users
-  <https://github.com/openwisp/openwisp-notifications/issues/255>`_.
+  <https://github.com/edge-servers/immunity-notifications/issues/255>`_.
 - `[feature] Add a dedicated view for managing notification preferences
-  <https://github.com/openwisp/openwisp-notifications/issues/110>`_.
+  <https://github.com/edge-servers/immunity-notifications/issues/110>`_.
 - `[feature] Add link to manage notification
   preferences to email notifications
-  <https://github.com/openwisp/openwisp-notifications/issues/256>`_.
+  <https://github.com/edge-servers/immunity-notifications/issues/256>`_.
 
 Each issue contains the details which the applicant needs to know
 in order to complete the project successfully.
@@ -395,11 +395,11 @@ The applicant may warm up in the application phase by working
 on the following issues:
 
 - `[feature] Add dedicated notification type for internal errors
-  <https://github.com/openwisp/openwisp-notifications/issues/254>`_
+  <https://github.com/edge-servers/immunity-notifications/issues/254>`_
 - `[change] Allow relative paths
-  <https://github.com/openwisp/openwisp-notifications/issues/249>`_
+  <https://github.com/edge-servers/immunity-notifications/issues/249>`_
 
-Add more timeseries database clients to OpenWISP Monitoring
+Add more timeseries database clients to Immunity Monitoring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ../images/gsoc/ideas/tsdb.png
@@ -415,14 +415,14 @@ Add more timeseries database clients to OpenWISP Monitoring
 
   **Difficulty rate**: medium.
 
-The goal of this project is to add more Timseries DB options to OpenWISP
+The goal of this project is to add more Timseries DB options to Immunity
 while keeping good maintainability.
 
 Pre-requisites to work on this project
 ######################################
 
 The applicant must demonstrate good understanding of
-`OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring#openwisp-monitoring>`__,
+`Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring#immunity-monitoring>`__,
 and demonstrate basic knowledge of
 `NetJSON format <https://netjson.org/>`_, **InfluxDB** and **Elasticsearch**.
 
@@ -430,24 +430,24 @@ Expected outcomes
 #################
 
 - Complete the support to `Elasticsearch <https://github.com/elastic/elasticsearch>`_.
-  `Support to Elasticsearch was added in 2020 <https://github.com/openwisp/openwisp-monitoring/pull/164>`_
+  `Support to Elasticsearch was added in 2020 <https://github.com/edge-servers/immunity-monitoring/pull/164>`_
   but was not completed.
 
   - The old pull request has to be updated on the current code base
   - The merge conflicts have to be resolved
   - All the tests must pass, new tests for new charts and
     metrics added to influxdb must be added
-    (see `[feature] Chart mobile (LTE/5G/UMTS/GSM) signal strength #270 <https://github.com/openwisp/openwisp-monitoring/pull/294>`_)
+    (see `[feature] Chart mobile (LTE/5G/UMTS/GSM) signal strength #270 <https://github.com/edge-servers/immunity-monitoring/pull/294>`_)
   - The usage shall be documented, we must make sure there's at
     least one dedicated CI build for **Elasticsearch**
   - We must allow to install and use **Elasticsearch**
     instead of **InfluxDB**
-    from `ansible-openwisp2 <https://github.com/openwisp/ansible-openwisp2>`_
-    and `docker-openwisp <https://github.com/openwisp/docker-openwisp/>`_
+    from `ansible-immunity2 <https://github.com/edge-servers/ansible-immunity2>`_
+    and `docker-immunity <https://github.com/edge-servers/docker-immunity/>`_
   - The requests to Elasticsearch shall be optimizesd as described in
-    `[timeseries] Optimize elasticsearch #168 <https://github.com/openwisp/openwisp-monitoring/issues/168>`_.
+    `[timeseries] Optimize elasticsearch #168 <https://github.com/edge-servers/immunity-monitoring/issues/168>`_.
 
-- `Add support for InfluxDB 2.0 <https://github.com/openwisp/openwisp-monitoring/issues/274>`_
+- `Add support for InfluxDB 2.0 <https://github.com/edge-servers/immunity-monitoring/issues/274>`_
   as a new timeseries backend,
   this way we can support both
   ``InfluxDB <= 1.8`` and ``InfluxDB >= 2.0``.
@@ -459,5 +459,5 @@ Expected outcomes
     dedicated CI build for Elasticsearch
   - We must allow choosing between
     **InfluxDB 1.8** and **InfluxDB 2.0**
-    from `ansible-openwisp2 <https://github.com/openwisp/ansible-openwisp2>`_
-    and `docker-openwisp <https://github.com/openwisp/docker-openwisp/>`_.
+    from `ansible-immunity2 <https://github.com/edge-servers/ansible-immunity2>`_
+    and `docker-immunity <https://github.com/edge-servers/docker-immunity/>`_.

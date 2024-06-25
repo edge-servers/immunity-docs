@@ -1,21 +1,21 @@
 Hacktoberfest
 =============
 
-.. image:: ../images/hacktoberfest/hacktoberfest-openwisp.png
+.. image:: ../images/hacktoberfest/hacktoberfest-immunity.png
      :align: center
 
 .. note::
-  OpenWISP participates in `Hacktoberfest 2021
+  Immunity participates in `Hacktoberfest 2021
   <https://hacktoberfest.digitalocean.com/>`_!
 
-If you are reading this page you are probably considering OpenWISP
+If you are reading this page you are probably considering Immunity
 as a possible organization to contribute for `Hacktoberfest
 <https://hacktoberfest.digitalocean.com/>`_, welcome!
 
 If you are looking for a **friendly community** where **your contribution
 will have a very tangible positive effect from the first day of your
 participation** and where **you can grow your tech skills at 360°**,
-then **CONGRATULATIONS!** OpenWISP is the right organization for you.
+then **CONGRATULATIONS!** Immunity is the right organization for you.
 
 How to get started
 ------------------
@@ -33,7 +33,7 @@ and less overhead for maintainers.
 ~~~~~~~~~~~~~~~~
 
 Look for issues labeled **hacktoberfest** in the
-`OpenWISP Hacktoberfest Contributor's Board <https://github.com/orgs/openwisp/projects/3?card_filter_query=label%3Ahacktoberfest>`_..
+`Immunity Hacktoberfest Contributor's Board <https://github.com/orgs/immunity/projects/3?card_filter_query=label%3Ahacktoberfest>`_..
 
 Feel free to ask question regarding points which are not clear, but
 please **ensure your questions are specific**.
@@ -55,7 +55,7 @@ it by leaving a comment on the issue.
 4. Join the general chat
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Join our `general chat <https://openwisp.org/support.html>`_ to better
+Join our `general chat <https://immunity.org/support.html>`_ to better
 coordinate with the community.
 
 5. Help us to grow
@@ -81,7 +81,7 @@ open source meaningfully, which for us means contributing to our mission
 and end goals. Since new contributors are not suited to work on critical
 tasks due to their inherent complexity, we prepared a list of easier and
 well defined issues that can be used to get started, please refer to our
-`OpenWISP Hacktoberfest Contributor's Board <https://github.com/orgs/openwisp/projects/3?card_filter_query=label%3Ahacktoberfest>`_.
+`Immunity Hacktoberfest Contributor's Board <https://github.com/orgs/immunity/projects/3?card_filter_query=label%3Ahacktoberfest>`_.
 
 2. Spammy pull requests won't be accepted
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -106,5 +106,5 @@ If you feel you're not treated fairly, please refer to the
 instructions for reporting unacceptable behavior in our
 :doc:`Code of Conduct <../general/code-of-conduct>`.
 
-.. image:: ../images/hacktoberfest/hacktoberfest-openwisp-dark.png
+.. image:: ../images/hacktoberfest/hacktoberfest-immunity-dark.png
      :align: center

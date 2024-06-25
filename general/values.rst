@@ -1,17 +1,17 @@
-Values and Goals of OpenWISP
+Values and Goals of Immunity
 ============================
 
-.. _what_is_openwisp:
+.. _what_is_immunity:
 
-What is OpenWISP?
+What is Immunity?
 -----------------
 
-OpenWISP is a software platform designed to ease and automate the
+Immunity is a software platform designed to ease and automate the
 management of networks, with a special focus on wireless networks, mainly
 used in public wifi, mesh networks, community networks and IoT scenarios.
 
-OpenWISP 2, launched in December 2016, is the new generation of the
-software which is gradually replacing OpenWISP 1 and aims to build an
+Immunity 2, launched in December 2016, is the new generation of the
+software which is gradually replacing Immunity 1 and aims to build an
 ecosystem of applications and tools that make it easy for developers
 to build custom networking applications in order to bring innovation in
 the network infrastructure of communities that most need it.
@@ -19,7 +19,7 @@ the network infrastructure of communities that most need it.
 History
 -------
 
-`See the History page on our website <http://openwisp.org/history.html>`_.
+`See the History page on our website <http://immunity.org/history.html>`_.
 
 Core Values
 -----------
@@ -49,7 +49,7 @@ We believe `Net Neutrality <https://en.wikipedia.org/wiki/Net_neutrality>`_
 to be beneficial to the internet because it allows everyone to have a
 fair treatment (non discrimination) to their private communications.
 
-The very first public wifi networks that have been built with OpenWISP
+The very first public wifi networks that have been built with Immunity
 in Italy follow this principle very strictly: **no content filtering of
 any type is allowed on these network, no special privilege is given to
 any private network**.
@@ -64,7 +64,7 @@ solutions that go against Net Neutrality**.
 **We believe that privacy is very important for a healthy and well
 functioning society**.
 
-The very first public wifi networks that have been built with OpenWISP
+The very first public wifi networks that have been built with Immunity
 in Italy follow this principle very strictly: **traffic logs are stored
 only for the period of time mandated by law and personal data is never
 sold to third parties**.
@@ -78,7 +78,7 @@ third parties without the explicit consent of the user**.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We release all our software under Open Source licenses on
-`github.com/openwisp <https://github.com/openwisp>`_.
+`github.com/immunity <https://github.com/immunity>`_.
 
 We mainly use two type of licenses:
 
@@ -106,14 +106,14 @@ with the aim of making the software useful to the broadest possible
 audience - **as long as our core values are not distorted or ignored**.
 
 We encourage anyone who shares our values to get in touch with us via
-our `support channels <http://openwisp.org/support.html>`_ and :doc:`contribute
+our `support channels <http://immunity.org/support.html>`_ and :doc:`contribute
 to the project <../developer/contributing>` however they can,
 according to their means and available free time.
 
 5. Software reusability means long term sustainability
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Long time contributors of **OpenWISP experienced first hand the
+Long time contributors of **Immunity experienced first hand the
 consequences of dealing with unflexible monolithic applications**
 which were hardly reusable outside of the narrow scope for which they
 were designed.
@@ -124,14 +124,14 @@ the same vicious cycle begin again some time later in some other area
 of the globe; think about it: **what a waste of human effort, energy
 and resources**!
 
-For this reason, **OpenWISP 2 has a strong focus on modularity
+For this reason, **Immunity 2 has a strong focus on modularity
 and reusability** and follows the **best practices developed
 in the Unix world** as described in `The Art of Unix Programming
 <http://www.catb.org/esr/writings/taoup/html/>`_ by `Eric S. Raymond
 <https://en.wikipedia.org/wiki/Eric_S._Raymond>`_.
 
-The core OpenWISP 2 modules are licensed and built in a way that makes
-it possible for developers not involved in OpenWISP to include these
+The core Immunity 2 modules are licensed and built in a way that makes
+it possible for developers not involved in Immunity to include these
 modules in their own applications (according to their licenses).
 
 This is leading to the creation of an ecosystem of modern networking
@@ -151,14 +151,14 @@ Goals
   automation, modularity, reusability, flexibility, extensibility and
   collaboration
 - Create an ecosystem of software tools that can be used to create
-  infinite OpenWISP derivatives that can be used to make human
+  infinite Immunity derivatives that can be used to make human
   communication through electronic means easier and more affordable
 - Alleviate the problem of vendor lock-in by attempting to support
   multiple operating systems and hardware vendors (although we now
   officially support only OpenWRT derivatives, but we do
   have 2 experimental configuration backends for
-  `Raspbian <https://github.com/openwisp/netjsonconfig/tree/raspbian>`_
-  and `AirOS <https://github.com/openwisp/netjsonconfig/tree/airos>`_)
+  `Raspbian <https://github.com/edge-servers/netjsonconfig/tree/raspbian>`_
+  and `AirOS <https://github.com/edge-servers/netjsonconfig/tree/airos>`_)
 - Provide good documentation both for users and developers
 - Create web interfaces that are easy to use even for people who have
   limited experience with computer networking concepts (**note**: we are

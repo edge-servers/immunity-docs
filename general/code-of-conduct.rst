@@ -4,7 +4,7 @@ Code of Conduct
 1. Purpose
 ~~~~~~~~~~
 
-OpenWISP aims to be a welcoming organization for contributors with the
+Immunity aims to be a welcoming organization for contributors with the
 most varied and diverse backgrounds possible. We are devoted towards
 providing a friendly, safe and welcoming environment for all, regardless
 of gender, sexual orientation, ability, ethnicity, socioeconomic status,
@@ -14,7 +14,7 @@ This code of conduct outlines our expectations for all those who
 participate in our community, as well as the consequences for unacceptable
 behavior.
 
-We invite all those who participate in OpenWISP to help us create safe
+We invite all those who participate in Immunity to help us create safe
 and positive experiences for everyone.
 
 2. Open Source Citizenship
@@ -123,7 +123,7 @@ the person experiencing distress.
 
 If you feel you have been falsely or unfairly accused of violating this
 Code of Conduct, you should
-`get in touch with the OpenWISP community managers <#contact-info>`_
+`get in touch with the Immunity community managers <#contact-info>`_
 by sending a short explanation of your grievance.
 
 Your grievance will be handled in accordance with

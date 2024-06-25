@@ -1,7 +1,7 @@
-OpenWISP Documentation
+Immunity Documentation
 ======================
 
-**Need a quick overview?** `Try the OpenWISP Demo <https://openwisp.org/demo.html>`_.
+**Need a quick overview?** `Try the Immunity Demo <https://immunity.org/demo.html>`_.
 
 Contents:
 
@@ -35,7 +35,7 @@ Contents:
    general/press
    general/code-of-conduct
    developer/contributing
-   developer/hacking-openwisp-python-django
+   developer/hacking-immunity-python-django
    developer/google-summer-of-code
    developer/gsoc-ideas-2024
    developer/google-code-in

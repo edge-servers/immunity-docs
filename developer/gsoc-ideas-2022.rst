@@ -31,18 +31,18 @@ General suggestions and warnings
   (which means the code may be thrown out entirely) which will help you
   understand the challenges of the project you want to work on; your
   application should refer to the prototype or other Github contributions
-  you made to OpenWISP that show you have the capability to succeed in the
+  you made to Immunity that show you have the capability to succeed in the
   project idea you are applying for.
 
 - **Students who have either shown to have or have shown to be
   fast learners for the required hard and soft skills by
-  contributing to OpenWISP have a lot more chances of being accepted**:
+  contributing to Immunity have a lot more chances of being accepted**:
   in order to get started contributing refer to the
-  :doc:`OpenWISP Contributing Guidelines <../developer/contributing>`
+  :doc:`Immunity Contributing Guidelines <../developer/contributing>`
 
 - **Get trained in the projects you want to apply for**: once
   applicants have completed some basic training by
-  :doc:`contributing to OpenWISP <../developer/contributing>`
+  :doc:`contributing to Immunity <../developer/contributing>`
   we highly suggest to start working on
   some aspects of the project they are
   interested in applying: all projects
@@ -73,7 +73,7 @@ Adding support for automatic management of ZeroTier Tunnels
 
   **Difficulty rate**: hard.
 
-`OpenWISP Controller <https://github.com/openwisp/openwisp-controller#openwisp-controller>`_
+`Immunity Controller <https://github.com/edge-servers/immunity-controller#immunity-controller>`_
 already supports configuring **OpenVPN**, **WireGuard** and
 **VXLAN over WireGuard** tunnels. The goal of this project is to
 add support for another VPN backend: `ZeroTier <https://www.zerotier.com>`_.
@@ -82,11 +82,11 @@ Pre-requisites to work on this project
 ######################################
 
 The contributor must demonstrate good understanding of the following
-OpenWISP modules:
+Immunity modules:
 
-- `netjsonconfig <https://netjsonconfig.openwisp.org/en/latest/>`_
-- `OpenWISP Controller <https://github.com/openwisp/openwisp-controller#openwisp-controller>`_
-- `OpenWISP Network Topology <https://github.com/openwisp/openwisp-network-topology#openwisp-network-topology>`_
+- `netjsonconfig <https://netjsonconfig.immunity.org/en/latest/>`_
+- `Immunity Controller <https://github.com/edge-servers/immunity-controller#immunity-controller>`_
+- `Immunity Network Topology <https://github.com/edge-servers/immunity-network-topology#immunity-network-topology>`_
 
 Any merged patches on any of those modules is considered
 an important plus point.
@@ -99,7 +99,7 @@ toward learning and implementing IT network automation.
 Expected outcomes
 #################
 
-- Add support for ZeroTier in `netjsonconfig <https://netjsonconfig.openwisp.org/en/latest/>`_:
+- Add support for ZeroTier in `netjsonconfig <https://netjsonconfig.immunity.org/en/latest/>`_:
 
   - Add capability for generating ZeroTier configuration
     in OpenWrt backend.
@@ -109,32 +109,32 @@ Expected outcomes
     OpenWrt and ZeroTier Controller using netjsonconfig.
   - GitHub Issues:
 
-    - `netjsonconfig #207: [feature] Add support for ZeroTier tunnels to OpenWRT backend <https://github.com/openwisp/netjsonconfig/issues/207>`_
-    - `netjsonconfig #208: [feature] Add ZeroTier backend <https://github.com/openwisp/netjsonconfig/issues/208>`_
+    - `netjsonconfig #207: [feature] Add support for ZeroTier tunnels to OpenWRT backend <https://github.com/edge-servers/netjsonconfig/issues/207>`_
+    - `netjsonconfig #208: [feature] Add ZeroTier backend <https://github.com/edge-servers/netjsonconfig/issues/208>`_
 
-- Add ZeroTier as a VPN backend in `OpenWISP Controller <https://github.com/openwisp/openwisp-controller#openwisp-controller>`_.
+- Add ZeroTier as a VPN backend in `Immunity Controller <https://github.com/edge-servers/immunity-controller#immunity-controller>`_.
 
   - Add automatic generation of templates for ZeroTier VPN backend
     similar to OpenVPN and WireGuard VPN backends.
   - Integrate `ZeroTier Controller APIs <https://docs.zerotier.com/central/v1>`_
-    in OpenWISP Controller to allow managing networks directly
-    from OpenWISP.
+    in Immunity Controller to allow managing networks directly
+    from Immunity.
   - Write a step by step documentation which explains how to set up
     and use the new ZeroTier VPN backend with a device.
   - GitHub Issues:
 
-    - `openwisp-controller #604 : [feature] Add support for ZeroTier VPN backend <https://github.com/openwisp/openwisp-controller/issues/604>`_
-    - `openwisp-controller #606 : [feature] Authorize member in ZeroTier network when a new device is added <https://github.com/openwisp/openwisp-controller/issues/606>`_
-    - `openwisp-controller #605 : [feature] Allow managing ZeroTier networks from OpenWISP <https://github.com/openwisp/openwisp-controller/issues/605>`_
+    - `immunity-controller #604 : [feature] Add support for ZeroTier VPN backend <https://github.com/edge-servers/immunity-controller/issues/604>`_
+    - `immunity-controller #606 : [feature] Authorize member in ZeroTier network when a new device is added <https://github.com/edge-servers/immunity-controller/issues/606>`_
+    - `immunity-controller #605 : [feature] Allow managing ZeroTier networks from Immunity <https://github.com/edge-servers/immunity-controller/issues/605>`_
 
-- Add a parser in `OpenWISP Network Topology <https://github.com/openwisp/openwisp-network-topology#openwisp-network-topology>`_
+- Add a parser in `Immunity Network Topology <https://github.com/edge-servers/immunity-network-topology#immunity-network-topology>`_
   that can parse ZeroTier peer information.
 
   - Write documentation for using this parser to generate topology
     from data received from multiple devices.
   - GitHub Issues:
 
-    - `openwisp-network-topology #135: [feature] Add a parser for ZeroTier <https://github.com/openwisp/openwisp-network-topology/issues/135>`_
+    - `immunity-network-topology #135: [feature] Add a parser for ZeroTier <https://github.com/edge-servers/immunity-network-topology/issues/135>`_
 
 - Achieve at least 99% test coverage for the code added for this feature.
 
@@ -157,7 +157,7 @@ Improve netjsongraph.js for its new release
 The goal of this project is to improve the new version of the
 netjsongraph.js visualization library, which is has not been released yet
 and is available in the `gsoc2019 branch of netjsongraph.js on github
-<https://github.com/openwisp/netjsongraph.js/tree/gsoc2019>`_.
+<https://github.com/edge-servers/netjsongraph.js/tree/gsoc2019>`_.
 
 Pre-requisites to work on this project
 ######################################
@@ -166,8 +166,8 @@ The contributor should have a proven track record and experience with
 Javascript, React JS, NodeJS, HTML and CSS.
 
 Familiarity with
-`OpenWISP Network Topology <https://github.com/openwisp/openwisp-network-topology>`__
-and `OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring>`__
+`Immunity Network Topology <https://github.com/edge-servers/immunity-network-topology>`__
+and `Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring>`__
 is a plus.
 
 Expected outcomes
@@ -204,18 +204,18 @@ Expected outcomes
   be configurable and have a good default), load more data from the API
   by specifying geographic extent, implement a mocking server for this
   feature on the server side
-- Update `OpenWISP Network Topology <https://github.com/openwisp/openwisp-network-topology>`__
+- Update `Immunity Network Topology <https://github.com/edge-servers/immunity-network-topology>`__
   to use the new version of this library
-- Modify `OpenWISP Network Topology <https://github.com/openwisp/openwisp-network-topology>`__
-  to provide `real time updates <https://github.com/openwisp/netjsongraph.js/tree/gsoc2019#realtime-update>`_
-- Change the code of `OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring>`__
+- Modify `Immunity Network Topology <https://github.com/edge-servers/immunity-network-topology>`__
+  to provide `real time updates <https://github.com/edge-servers/netjsongraph.js/tree/gsoc2019#realtime-update>`_
+- Change the code of `Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring>`__
   so that the map dashboard is implemented
   using this library instead of using its own custom implementation
 
 Keep in mind the underlying visualization library
 can be changed if needed.
 
-Add iperf bandwidth monitoring check to OpenWISP Monitoring
+Add iperf bandwidth monitoring check to Immunity Monitoring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ../images/gsoc/ideas/iperf3-cli.jpg
@@ -233,14 +233,14 @@ Add iperf bandwidth monitoring check to OpenWISP Monitoring
 
 The goal of this project is to add a bandwidth test using ``iperf3``,
 using the active check mechanism of
-`OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring/>`__.
+`Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring/>`__.
 
 The use case is to perform periodic bandwidth test to measure
 the max bandwidth available (TCP test) and jitter (UDP).
 
 On a macro level, the check would work this way:
 
-1. OpenWISP connects to the device (only 1 check per device at time)
+1. Immunity connects to the device (only 1 check per device at time)
    via SSH and launches iperf3 as a client, first in TCP mode,
    then in UDP mode, iperf is launched with the ``-j``
    flag to obtain json output
@@ -252,7 +252,7 @@ Pre-requisites to work on this project
 ######################################
 
 The student must demonstrate good understanding of
-`OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring#openwisp-monitoring>`__,
+`Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring#immunity-monitoring>`__,
 and familiarity with Linux and iperf3.
 
 Expected outcomes
@@ -261,7 +261,7 @@ Expected outcomes
 The outcomes we expect from this project are the following:
 
 - Create iperf check class, the check must use the connection
-  module of openwisp-controller to connect to devices using SSH
+  module of immunity-controller to connect to devices using SSH
 - If a device has no active Connection the check will be skipped and
   a warning logged
 - This check should be optional and disabled by default
@@ -271,7 +271,8 @@ The outcomes we expect from this project are the following:
 
 .. code-block:: python
 
-    OPENWISP_MONITORING_IPERF_SERVERS = {
+    IMMUNITY
+_MONITORING_IPERF_SERVERS = {
         '': ['<DEFAULT_IPERF_SERVER_HERE>'],
         '<org-pk>': ['<ORG_IPERF_SERVER>']
     }
@@ -296,12 +297,12 @@ The outcomes we expect from this project are the following:
 - Achieve at least 99% test coverage for the code added for this feature.
 
 **Github issue**:
-`[monitoring/checks] Add iperf check <https://github.com/openwisp/openwisp-monitoring/issues/120>`_.
+`[monitoring/checks] Add iperf check <https://github.com/edge-servers/immunity-monitoring/issues/120>`_.
 
-Improve UX of OpenWISP Monitoring
+Improve UX of Immunity Monitoring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ../images/gsoc/ideas/openwisp-monitoring-chart.png
+.. image:: ../images/gsoc/ideas/immunity-monitoring-chart.png
 
 .. Important::
 
@@ -314,7 +315,7 @@ Improve UX of OpenWISP Monitoring
 
   **Difficulty rate**: easy.
 
-The goal of this project is to improve OpenWISP Monitoring
+The goal of this project is to improve Immunity Monitoring
 by working on features and changes that have been noted down during the
 last 2 years of usage of this module and have the aim of improving
 the user experience in analyzing the collected monitoring data, as well
@@ -324,22 +325,22 @@ Pre-requisites to work on this project
 ######################################
 
 The student must demonstrate good understanding of
-`OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring#openwisp-monitoring>`__,
+`Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring#immunity-monitoring>`__,
 and should have a basic knowledge of
 `NetJSON format <https://netjson.org/>`_.
 
 Expected outcomes
 #################
 
-- `[change] Reachable bar chart: show different color for barely reachable #301 <https://github.com/openwisp/openwisp-monitoring/issues/301>`_
-- `[feature] Charts: allow specifying range of dates #26 <https://github.com/openwisp/openwisp-monitoring/issues/26>`_
-- `[ux] Show size in (KB, MB or GB) adaptively in charts #87 <https://github.com/openwisp/openwisp-monitoring/issues/87>`_
-- `[feature] Zooming graphs: reload data in order to provide a detailed view #27 <https://github.com/openwisp/openwisp-monitoring/issues/27>`_
-- `[feature] Add REST API endpoints for device which include monitoring info #290 <https://github.com/openwisp/openwisp-monitoring/issues/290>`_
-- `[docs] Add quickstart tutorial to README #285 <https://github.com/openwisp/openwisp-monitoring/issues/285>`_
-- `[feature] Add possibility to connect to influxdb on unix domain socket #312 <https://github.com/openwisp/openwisp-monitoring/issues/312>`_
+- `[change] Reachable bar chart: show different color for barely reachable #301 <https://github.com/edge-servers/immunity-monitoring/issues/301>`_
+- `[feature] Charts: allow specifying range of dates #26 <https://github.com/edge-servers/immunity-monitoring/issues/26>`_
+- `[ux] Show size in (KB, MB or GB) adaptively in charts #87 <https://github.com/edge-servers/immunity-monitoring/issues/87>`_
+- `[feature] Zooming graphs: reload data in order to provide a detailed view #27 <https://github.com/edge-servers/immunity-monitoring/issues/27>`_
+- `[feature] Add REST API endpoints for device which include monitoring info #290 <https://github.com/edge-servers/immunity-monitoring/issues/290>`_
+- `[docs] Add quickstart tutorial to README #285 <https://github.com/edge-servers/immunity-monitoring/issues/285>`_
+- `[feature] Add possibility to connect to influxdb on unix domain socket #312 <https://github.com/edge-servers/immunity-monitoring/issues/312>`_
 
-Add more timeseries database clients to OpenWISP Monitoring
+Add more timeseries database clients to Immunity Monitoring
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: ../images/gsoc/ideas/tsdb.png
@@ -355,14 +356,14 @@ Add more timeseries database clients to OpenWISP Monitoring
 
   **Difficulty rate**: medium.
 
-The goal of this project is to add more Timseries DB options to OpenWISP
+The goal of this project is to add more Timseries DB options to Immunity
 while keeping good maintainability.
 
 Pre-requisites to work on this project
 ######################################
 
 The student must demonstrate good understanding of
-`OpenWISP Monitoring <https://github.com/openwisp/openwisp-monitoring#openwisp-monitoring>`__,
+`Immunity Monitoring <https://github.com/edge-servers/immunity-monitoring#immunity-monitoring>`__,
 and demonstrate basic knowledge of
 `NetJSON format <https://netjson.org/>`_, **InfluxDB** and **Elasticsearch**.
 
@@ -370,24 +371,24 @@ Expected outcomes
 #################
 
 - Complete the support to `Elasticsearch <https://github.com/elastic/elasticsearch>`_.
-  `Support to Elasticsearch was added in 2020 <https://github.com/openwisp/openwisp-monitoring/pull/164>`_
+  `Support to Elasticsearch was added in 2020 <https://github.com/edge-servers/immunity-monitoring/pull/164>`_
   but was not completed.
 
   - The old pull request has to be updated on the current code base
   - The merge conflicts have to be resolved
   - All the tests must pass, new tests for new charts and
     metrics added to influxdb must be added
-    (see `[feature] Chart mobile (LTE/5G/UMTS/GSM) signal strength #270 <https://github.com/openwisp/openwisp-monitoring/pull/294>`_)
+    (see `[feature] Chart mobile (LTE/5G/UMTS/GSM) signal strength #270 <https://github.com/edge-servers/immunity-monitoring/pull/294>`_)
   - The usage shall be documented, we must make sure there's at
     least one dedicated CI build for **Elasticsearch**
   - We must allow to install and use **Elasticsearch**
     instead of **InfluxDB**
-    from `ansible-openwisp2 <https://github.com/openwisp/ansible-openwisp2>`_
-    and `docker-openwisp <https://github.com/openwisp/docker-openwisp/>`_
+    from `ansible-immunity2 <https://github.com/edge-servers/ansible-immunity2>`_
+    and `docker-immunity <https://github.com/edge-servers/docker-immunity/>`_
   - The requests to Elasticsearch shall be optimizesd as described in
-    `[timeseries] Optimize elasticsearch #168 <https://github.com/openwisp/openwisp-monitoring/issues/168>`_.
+    `[timeseries] Optimize elasticsearch #168 <https://github.com/edge-servers/immunity-monitoring/issues/168>`_.
 
-- `Add support for InfluxDB 2.0 <https://github.com/openwisp/openwisp-monitoring/issues/274>`_
+- `Add support for InfluxDB 2.0 <https://github.com/edge-servers/immunity-monitoring/issues/274>`_
   as a new timeseries backend,
   this way we can support both
   ``InfluxDB <= 1.8`` and ``InfluxDB >= 2.0``.
@@ -399,5 +400,5 @@ Expected outcomes
     dedicated CI build for Elasticsearch
   - We must allow choosing between
     **InfluxDB 1.8** and **InfluxDB 2.0**
-    from `ansible-openwisp2 <https://github.com/openwisp/ansible-openwisp2>`_
-    and `docker-openwisp <https://github.com/openwisp/docker-openwisp/>`_.
+    from `ansible-immunity2 <https://github.com/edge-servers/ansible-immunity2>`_
+    and `docker-immunity <https://github.com/edge-servers/docker-immunity/>`_.

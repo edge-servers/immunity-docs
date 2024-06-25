@@ -1,25 +1,25 @@
 Collection of Usage Metrics
 ===========================
 
-The ``openwisp-utils`` module includes an optional sub-app
-``openwisp_utils.metric_collection``, which allows us to collect of the
-following information from OpenWISP instances:
+The ``immunity-utils`` module includes an optional sub-app
+``immunity_utils.metric_collection``, which allows us to collect of the
+following information from Immunity instances:
 
-- OpenWISP Version
-- List of enabled OpenWISP modules and their version
+- Immunity Version
+- List of enabled Immunity modules and their version
 - Operating System identifier, e.g.: Linux version, Kernel version, target
   platform (e.g. x86)
-- Installation method, if available, e.g. `ansible-openwisp2
-  <https://github.com/openwisp/ansible-openwisp2>`_ or `docker-openwisp
-  <https://github.com/openwisp/docker-openwisp>`_
+- Installation method, if available, e.g. `ansible-immunity2
+  <https://github.com/edge-servers/ansible-immunity2>`_ or `docker-immunity
+  <https://github.com/edge-servers/docker-immunity>`_
 
 The data above is collected during the following events:
 
-- **Install**: when OpenWISP is installed the first time
-- **Upgrade**: when any OpenWISP module is upgraded
+- **Install**: when Immunity is installed the first time
+- **Upgrade**: when any Immunity module is upgraded
 - **Heartbeat**: once every 24 hours
 
-We collect data on OpenWISP usage to gauge user engagement,
+We collect data on Immunity usage to gauge user engagement,
 satisfaction, and upgrade patterns. This informs our development
 decisions, ensuring continuous improvement aligned with user needs.
 
@@ -38,16 +38,16 @@ Opting out from metric collection
 
 You can opt-out from sharing this data any time from the "System Info"
 page. Alternatively, you can also remove the
-``openwisp_utils.metric_collection`` app from ``INSTALLED_APPS`` in one
+``immunity_utils.metric_collection`` app from ``INSTALLED_APPS`` in one
 of the following ways:
 
-- If you are using the `ansible-openwisp2
-  <https://github.com/openwisp/ansible-openwisp2>`_ role, you can set
-  the variable ``openwisp2_usage_metric_collection`` to ``false`` in
+- If you are using the `ansible-immunity2
+  <https://github.com/edge-servers/ansible-immunity2>`_ role, you can set
+  the variable ``immunity2_usage_metric_collection`` to ``false`` in
   your playbook.
 
-- If you are using `docker-openwisp
-  <https://github.com/openwisp/docker-openwisp>`_, you can set the
+- If you are using `docker-immunity
+  <https://github.com/edge-servers/docker-immunity>`_, you can set the
   environment variable ``METRIC_COLLECTION`` to ``False`` in the
   ``.env`` file.
 

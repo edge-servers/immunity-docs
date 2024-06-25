@@ -1,7 +1,7 @@
 Contributing guidelines
 =======================
 
-We are glad and thankful that you want to contribute to OpenWISP.
+We are glad and thankful that you want to contribute to Immunity.
 
 Please read these guidelines carefully, it will help you and us to save
 precious time later.
@@ -10,10 +10,10 @@ Introduce yourself
 ~~~~~~~~~~~~~~~~~~
 
 It won't hurt to join `our main communication channel
-<https://gitter.im/openwisp/general>`_ and introduce yourself,
+<https://gitter.im/immunity/general>`_ and introduce yourself,
 although to coordinate with one another on technical matters we use
-`the development channel <https://gitter.im/openwisp/development>`_.
-Use these two channels share feedback, share your OpenWISP
+`the development channel <https://gitter.im/immunity/development>`_.
+Use these two channels share feedback, share your Immunity
 derivative work, ask questions or announce your intentions.
 
 Look for open issues
@@ -21,18 +21,18 @@ Look for open issues
 
 Check out these two kanban boards:
 
-- `OpenWISP Contributor's Board
-  <https://github.com/orgs/openwisp/projects/3>`_: lists
+- `Immunity Contributor's Board
+  <https://github.com/orgs/immunity/projects/3>`_: lists
   issues that are suited to newcomers.
 
-- `OpenWISP Priorities for next releases
-  <https://github.com/orgs/openwisp/projects/4>`_, lists
+- `Immunity Priorities for next releases
+  <https://github.com/orgs/immunity/projects/4>`_, lists
   issues that are more urgently needed by the community and is
   frequently used and reviewed by more seasoned contributors.
 
 If there's anything you don't understand regarding the
 board or a specific github issue, don't hesitate to ask questions in our
-`general chat <https://gitter.im/openwisp/general>`_.
+`general chat <https://gitter.im/immunity/general>`_.
 
 **You don't need to wait for the issue to be assigned to you.**
 Just check if there is anyone else actively working on it
@@ -43,19 +43,19 @@ to work on it by leaving a comment in the issue**.
 Priorities for the next release
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When we are close to releasing a new major version of OpenWISP,
+When we are close to releasing a new major version of Immunity,
 we will encourage all contributors to focus on the **To Do** column
-of the `OpenWISP Priorities for next releases
-<https://github.com/orgs/openwisp/projects/4>`_ board and filter
+of the `Immunity Priorities for next releases
+<https://github.com/orgs/immunity/projects/4>`_ board and filter
 the issues according to their expertise:
 
 - **Newcomer**: filter by `Good first issue
-  <https://github.com/orgs/openwisp/projects/4?card_filter_query=label%3A%22good+first+issue%22>`_
+  <https://github.com/orgs/immunity/projects/4?card_filter_query=label%3A%22good+first+issue%22>`_
   or `Hacktoberfest
-  <https://github.com/orgs/openwisp/projects/4?card_filter_query=label%3Ahacktoberfest>`_.
+  <https://github.com/orgs/immunity/projects/4?card_filter_query=label%3Ahacktoberfest>`_.
 
 - **Expert**: filter by `Important
-  <https://github.com/orgs/openwisp/projects/4?card_filter_query=label%3Aimportant>`_.
+  <https://github.com/orgs/immunity/projects/4?card_filter_query=label%3Aimportant>`_.
 
 Setup
 ~~~~~
@@ -78,7 +78,7 @@ and after project maintainers have reviewed and tested it.
 
 You can run QA checks locally by running ``./run-qa-checks`` in the
 top level directory of the repository you're working on.
-Every OpenWISP module should have this script
+Every Immunity module should have this script
 (if a module doesn't have it, please open an issue on github).
 
 1. Branch naming guidelines
@@ -111,7 +111,7 @@ If the issue is present on Github, use following commit style:
     Fixes #<issue-number>
 
 Here's a real world commit message example from `one of our modules
-<https://github.com/openwisp/django-netjsonconfig/commit/7a5dad9f97e708b89149c2765f8298c5a94b652b>`_:
+<https://github.com/edge-servers/django-netjsonconfig/commit/7a5dad9f97e708b89149c2765f8298c5a94b652b>`_:
 
 ::
 
@@ -160,7 +160,7 @@ After pushing your changes to your fork, prepare a new Pull Request
   our required tests and style checks
 - if the tests fail for some reason, try to fix them and if you get
   stuck seek our help on `our communication channels
-  <http://openwisp.org/support.html>`_
+  <http://immunity.org/support.html>`_
 - if the tests pass, maintainers will review the PR and may ask
   you to improve details or changes, please be patient: creating a good
   quality open source project takes a bit of sweat and effort; ensure
@@ -189,47 +189,47 @@ Coding Style Conventions
 1. Python code conventions
 --------------------------
 
-OpenWISP follows `PEP 8 -- Style Guide for Python Code
+Immunity follows `PEP 8 -- Style Guide for Python Code
 <https://www.python.org/dev/peps/pep-0008/>`_ and several
 other style conventions which can be enforced by using the
 following tools:
 
-- ``openwisp-qa-format``: this command is shipped in
-  `openwisp-utils <https://github.com/openwisp/openwisp-utils#openwisp-qa-format>`_,
-  a dependency used in every OpenWISP python module,
+- ``immunity-qa-format``: this command is shipped in
+  `immunity-utils <https://github.com/edge-servers/immunity-utils#immunity-qa-format>`_,
+  a dependency used in every Immunity python module,
   it formats the Python code according to the
-  OpenWISP style conventions, it's based on popular tools like:
+  Immunity style conventions, it's based on popular tools like:
   `isort <http://isort.readthedocs.io/en/latest/>`_ and
   `black <https://black.readthedocs.io/en/stable/>`_
   (**please do not run black directly** but always call
-  ``openwisp-qa-format``)
+  ``immunity-qa-format``)
 - ``./run-qa-checks``: it's a script present in the top level directory
-  of each OpenWISP module and performs all the QA checks that are specific
-  to each module. It mainly calls the ``openwisp-qa-check`` command,
-  which performs several common QA checks used across all OpenWISP modules
+  of each Immunity module and performs all the QA checks that are specific
+  to each module. It mainly calls the ``immunity-qa-check`` command,
+  which performs several common QA checks used across all Immunity modules
   to ensure consistency (including `flake8 <http://flake8.pycqa.org/en/latest/>`_),
   for more info consult the documentation of
-  `openwisp-qa-check <https://github.com/openwisp/openwisp-utils#openwisp-qa-format>`_
+  `immunity-qa-check <https://github.com/edge-servers/immunity-utils#immunity-qa-format>`_
 
 
 Keep in mind that the QA checks defined in the ``run-qa-checks`` script
 are also executed in the CI builds, which will fail if any QA check fails.
 
-To fix QA check failures, run ``openwisp-qa-format`` and apply manual
+To fix QA check failures, run ``immunity-qa-format`` and apply manual
 fixes if needed until ``./run-qa-checks`` runs without errors.
 
 .. note::
 
   If you want to learn more about our usage of python and django,
-  we suggest reading :doc:`Hacking OpenWISP: Python and Django
-  <../developer/hacking-openwisp-python-django>`
+  we suggest reading :doc:`Hacking Immunity: Python and Django
+  <../developer/hacking-immunity-python-django>`
 
 2. Javascript code conventions
 ------------------------------
 
-- OpenWISP follows standard JavaScript coding style conventions that are
+- Immunity follows standard JavaScript coding style conventions that are
   generally accepted or the ones that are specified in `.jslintrc files
-  <https://github.com/openwisp/django-freeradius/blob/master/.jslintrc>`_;
+  <https://github.com/edge-servers/django-freeradius/blob/master/.jslintrc>`_;
   find out more about `JSlint here <https://www.jslint.com/help.html>`_
 - please follow this `JavaScript Style Guide and Coding Conventions
   <https://www.w3schools.com/js/js_conventions.asp>`_ link for proper
@@ -238,7 +238,7 @@ fixes if needed until ``./run-qa-checks`` runs without errors.
 3. OpenWRT related conventions
 ----------------------------------
 
-OpenWISP follows the standard OpenWRT coding style conventions of OpenWRT:
+Immunity follows the standard OpenWRT coding style conventions of OpenWRT:
 
 - `Working with Patches
   <https://wiki.openwrt.org/doc/devel/patches>`_
@@ -251,6 +251,6 @@ Thank You
 ~~~~~~~~~
 
 If you follow these guidelines closely your contribution will have a
-very positive impact on the OpenWISP project.
+very positive impact on the Immunity project.
 
 Thanks a lot for your patience.

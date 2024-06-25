@@ -22,7 +22,7 @@ template and Device has same organization.
 1. Configure Self-Hosted ZeroTier Network Controller
 ####################################################
 
-Currently, OpenWISP doesn't support the management
+Currently, Immunity doesn't support the management
 of `ZeroTier Central Controllers <https://my.zerotier.com/>`_
 and only supports `self-hosted ZeroTier controllers
 <https://docs.zerotier.com/self-hosting/introduction/>`_.
@@ -39,11 +39,11 @@ from the `official website <https://www.zerotier.com/download/>`_.
    and **Host** as ``my-zerotier-server.mydomain.com:9993``
    (update this to point to your ZeroTier VPN server).
 3. Select ``ZeroTier`` from the dropdown as **VPN Backend**.
-4. When using ZeroTier, OpenWISP takes care of managing IP addresses
+4. When using ZeroTier, Immunity takes care of managing IP addresses
    (assigning an IP address to each VPN clients (Zerotier network 
    members). You can create a new subnet or select an existing one from
    the dropdown menu.You can also assign an **Internal IP** to the
-   Zerotier controller or leave it empty for OpenWISP to configure.
+   Zerotier controller or leave it empty for Immunity to configure.
    This IP address will be used to assign it to the Zerotier controller
    running on the server.
 5. Set the **Webhook AuthToken**, this will be ZeroTier authorization
@@ -54,25 +54,25 @@ from the `official website <https://www.zerotier.com/download/>`_.
 
         sudo cat /var/lib/zerotier-one/authtoken.secret
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/zerotier-tutorial/vpn-server-1.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/zerotier-tutorial/vpn-server-1.png
    :alt: ZeroTier VPN server configuration example 1
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/zerotier-tutorial/vpn-server-2.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/zerotier-tutorial/vpn-server-2.png
    :alt: ZeroTier VPN server configuration example 2
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/zerotier-tutorial/vpn-server-3.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/zerotier-tutorial/vpn-server-3.png
    :alt: ZeroTier VPN server configuration example 3
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/zerotier-tutorial/vpn-server-4.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/zerotier-tutorial/vpn-server-4.png
    :alt: ZeroTier VPN server configuration example 4
 
-6. After clicking on **Save and continue editing**, OpenWISP
+6. After clicking on **Save and continue editing**, Immunity
    automatically detects the node address of the Zerotier controller
    and creates a Zerotier network. The **network_id**  of this network
    can be viewed in the **System Defined Variables** section, where it
    also provides internal IP address information.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/zerotier-tutorial/vpn-server-5.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/zerotier-tutorial/vpn-server-5.png
    :alt: ZeroTier VPN server configuration example 5
 
 3. Create VPN client template for ZeroTier VPN Server
@@ -87,7 +87,7 @@ from the `official website <https://www.zerotier.com/download/>`_.
 4. Select the correct VPN server from the dropdown for the
    **VPN** field. Here it is ``ZeroTier``.
 5. Ensure that the **Automatic tunnel provisioning** option
-   is checked. This will enable OpenWISP to automatically provision
+   is checked. This will enable Immunity to automatically provision
    an IP address and ZeroTier identity secrets (used for assigning
    member IDs) for each ZeroTier VPN client.
 6. After clicking on **Save and continue editing** button, you will
@@ -96,19 +96,19 @@ from the `official website <https://www.zerotier.com/download/>`_.
    can tweak accordingly. We will use the automatically generated VPN
    client configuration for this example.
 
-**Note:** OpenWISP uses `zerotier-idtool
+**Note:** Immunity uses `zerotier-idtool
 <https://github.com/zerotier/ZeroTierOne/blob/dev/doc/zerotier-idtool.1.md>`_
 to manage **ZeroTier identity secrets**. Please make sure that you have
 `ZeroTier package installed <https://www.zerotier.com/download/>`_ on the server.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/zerotier-tutorial/template.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/zerotier-tutorial/template.png
     :alt: ZeroTier VPN client template example
 
 4. Apply ZeroTier VPN template to devices
 #########################################
 
 **Note**: This step assumes that you already have a
-device registered on OpenWISP. Register or create a
+device registered on Immunity. Register or create a
 device before proceeding.
 
 1. Open the **Configuration** tab of the concerned device.
@@ -119,7 +119,7 @@ device before proceeding.
    the internal **IP address** of the ZeroTier client (network member)
    on the device, along with details of the VPN server.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/zerotier-tutorial/device-configuration-1.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/zerotier-tutorial/device-configuration-1.png
    :alt: ZeroTier VPN device configuration example 1
 
 4. Once the configuration is successfully applied
@@ -128,8 +128,8 @@ device before proceeding.
    name ``owzt89f498`` (where ``owzt`` is followed by the
    last six hexadecimal characters of the ZeroTier **network ID**).
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/zerotier-tutorial/device-configuration-2.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/zerotier-tutorial/device-configuration-2.png
    :alt: ZeroTier VPN device configuration example 2
 
-**Voila!** You have successfully configured OpenWISP
+**Voila!** You have successfully configured Immunity
 to manage ZeroTier tunnels for your devices.

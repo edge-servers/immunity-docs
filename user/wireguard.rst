@@ -28,12 +28,12 @@ organization.
    **Host** as ``wireguard-server.mydomain.com``
    (update this to point to your WireGuard VPN server).
 3. Select ``WireGuard`` from the dropdown as **VPN Backend**.
-4. When using WireGuard, OpenWISP takes care of managing IP addresses
+4. When using WireGuard, Immunity takes care of managing IP addresses
    (assigning an IP address to each VPN peer).
    You can create a new subnet or
    select an existing one from the dropdown menu.
    You can also assign an **Internal IP** to the WireGuard Server
-   or leave it empty for OpenWISP to
+   or leave it empty for Immunity to
    configure. This IP address will be used by the
    WireGuard interface on server.
 5. We have set the **Webhook Endpoint** as
@@ -51,18 +51,18 @@ organization.
 6. Under the configuration section, set the name of WireGuard
    tunnel 1 interface. We have used ``wg0`` in this example.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/wireguard-tutorial/vpn-server-1.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/wireguard-tutorial/vpn-server-1.png
    :alt: WireGuard VPN server configuration example 1
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/wireguard-tutorial/vpn-server-2.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/wireguard-tutorial/vpn-server-2.png
    :alt: WireGuard VPN server configuration example 2
 
 7. After clicking on **Save and continue editing**, you will see
-   that OpenWISP has automatically created public and private key
+   that Immunity has automatically created public and private key
    for WireGuard server in **System Defined Variables**
    along with internal IP address information.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/wireguard-tutorial/vpn-server-3.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/wireguard-tutorial/vpn-server-3.png
    :alt: WireGuard VPN server configuration example 3
 
 2. Deploy Wireguard VPN Server
@@ -72,12 +72,12 @@ If you haven't already setup WireGuard on your VPN server,
 this will be a good time do so.
 
 We recommend using the
-`ansible-wireguard-openwisp <https://github.com/openwisp/ansible-wireguard-openwisp>`_
+`ansible-wireguard-immunity <https://github.com/edge-servers/ansible-wireguard-immunity>`_
 role for installing WireGuard since it also installs scripts that allows
-OpenWISP to manage WireGuard VPN server.
+Immunity to manage WireGuard VPN server.
 
 Pay attention to the VPN server attributes used in your playbook.
-It should be same as VPN server configuration in OpenWISP.
+It should be same as VPN server configuration in Immunity.
 
 3. Create VPN client template for WireGuard VPN Server
 ######################################################
@@ -91,7 +91,7 @@ It should be same as VPN server configuration in OpenWISP.
 4. Select the correct VPN server from the dropdown for the
    **VPN** field. Here it is ``Wireguard``.
 5. Ensure that **Automatic tunnel provisioning** is checked.
-   This will make OpenWISP to automatically generate public
+   This will make Immunity to automatically generate public
    and private keys and provision IP
    address for each WireGuard VPN client.
 6. After clicking on **Save and continue editing** button,
@@ -102,14 +102,14 @@ It should be same as VPN server configuration in OpenWISP.
    generated VPN client configuration
    for this example.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/wireguard-tutorial/template.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/wireguard-tutorial/template.png
     :alt: WireGuard VPN client template example
 
 4. Apply Wireguard VPN template to devices
 ##########################################
 
 **Note**: This step assumes that you already have a device registered on
-OpenWISP. Register or create a device before proceeding.
+Immunity. Register or create a device before proceeding.
 
 1. Open the **Configuration** tab of the concerned device.
 2. Select the *WireGuard Client* template.
@@ -119,10 +119,10 @@ OpenWISP. Register or create a device before proceeding.
    for the WireGuard client on the device along with
    details of WireGuard VPN server.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/wireguard-tutorial/device-configuration.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/wireguard-tutorial/device-configuration.png
    :alt: WireGuard VPN device configuration example
 
-**Voila!** You have successfully configured OpenWISP to manage WireGuard
+**Voila!** You have successfully configured Immunity to manage WireGuard
 tunnels for your devices.
 
 How to setup VXLAN over WireGuard tunnels
@@ -145,11 +145,11 @@ VPN client template and Device has same organization.
    (update this to point to your WireGuard VXLAN VPN server).
 3. Select ``VXLAN over WireGuard`` from the dropdown as
    **VPN Backend**.
-4. When using VXLAN over WireGuard, OpenWISP takes care of
+4. When using VXLAN over WireGuard, Immunity takes care of
    managing IP addresses (assigning an IP address to each VPN peer).
    You can create a new subnet or select an existing one from the
    dropdown menu. You can also assign an **Internal IP** to the
-   WireGuard Server or leave it empty for OpenWISP to configure.
+   WireGuard Server or leave it empty for Immunity to configure.
    This IP address will be used by the WireGuard interface on
    server.
 5. We have set the **Webhook Endpoint** as
@@ -167,18 +167,18 @@ VPN client template and Device has same organization.
 6. Under the configuration section, set the name of
    WireGuard tunnel 1 interface. We have used ``wg0`` in this example.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/wireguard-vxlan-tutorial/vpn-server-1.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/wireguard-vxlan-tutorial/vpn-server-1.png
    :alt: WireGuard VPN VXLAN server configuration example 1
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/wireguard-vxlan-tutorial/vpn-server-2.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/wireguard-vxlan-tutorial/vpn-server-2.png
    :alt: WireGuard VPN VXLAN server configuration example 2
 
 7. After clicking on **Save and continue editing**, you will see
-   that OpenWISP has automatically created public and private key
+   that Immunity has automatically created public and private key
    for WireGuard server in **System Defined Variables** along
    with internal IP address information.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/wireguard-vxlan-tutorial/vpn-server-3.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/wireguard-vxlan-tutorial/vpn-server-3.png
    :alt: WireGuard VXLAN VPN server configuration example 3
 
 2. Deploy Wireguard VXLAN VPN Server
@@ -186,12 +186,12 @@ VPN client template and Device has same organization.
 
 If you haven't already setup WireGuard on your VPN server,
 this will be a good time do so. We recommend using the
-`ansible-wireguard-openwisp <https://github.com/openwisp/ansible-wireguard-openwisp>`_
+`ansible-wireguard-immunity <https://github.com/edge-servers/ansible-wireguard-immunity>`_
 role for installing WireGuard since it also installs scripts that allows
-OpenWISP to manage WireGuard VPN server along with VXLAN tunnels.
+Immunity to manage WireGuard VPN server along with VXLAN tunnels.
 
 Pay attention to the VPN server attributes used in your playbook.
-It should be same as VPN server configuration in OpenWISP.
+It should be same as VPN server configuration in Immunity.
 
 3. Create VPN client template for WireGuard VXLAN VPN Server
 ############################################################
@@ -204,7 +204,7 @@ It should be same as VPN server configuration in OpenWISP.
 4. Select the correct VPN server from the dropdown for the **VPN** field.
    Here it is ``Wireguard VXLAN``.
 5. Ensure that **Automatic tunnel provisioning** is checked.
-   This will make OpenWISP to automatically generate public and
+   This will make Immunity to automatically generate public and
    private keys and provision IP
    address for each WireGuard VPN client along with
    VXLAN Network Indentifier(VNI).
@@ -215,14 +215,14 @@ It should be same as VPN server configuration in OpenWISP.
    accordingly. We will use the automatically generated VPN client
    configuration for this example.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/wireguard-vxlan-tutorial/template.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/wireguard-vxlan-tutorial/template.png
     :alt: WireGuard VXLAN VPN client template example
 
 4. Apply Wireguard VXLAN VPN template to devices
 ################################################
 
 **Note**: This step assumes that you already have a device registered on
-OpenWISP. Register or create a device before proceeding.
+Immunity. Register or create a device before proceeding.
 
 1. Open the **Configuration** tab of the concerned device.
 2. Select the *WireGuard VXLAN Client* template.
@@ -232,8 +232,8 @@ OpenWISP. Register or create a device before proceeding.
    device and details of WireGuard VPN server along with VXLAN Network
    Identifier(VNI) of this device.
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/wireguard-vxlan-tutorial/device-configuration.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/wireguard-vxlan-tutorial/device-configuration.png
    :alt: WireGuard VXLAN VPN device configuration example
 
-**Voila!** You have successfully configured OpenWISP to manage VXLAN over
+**Voila!** You have successfully configured Immunity to manage VXLAN over
 WireGuard tunnels for your devices.

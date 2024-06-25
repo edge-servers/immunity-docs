@@ -73,14 +73,14 @@ they will be automatically assigned to new devices.
 
 This is a very powerful feature: **once default templates are correctly
 configured to implement the use case you need, you will only have to
-register a device into OpenWISP for it to auto-configure itself**.
+register a device into Immunity for it to auto-configure itself**.
 
 Moreover, you can change the default templates any time you need, which
 is the reason this feature has replaced the practice of storing default
 configuration in firmware images (which would need to be recompiled and
 redistributed): with default templates, the default firmware image only
-needs to contain the bare minimum configuration to connect to OpenWISP,
-once the device connects to OpenWISP it will download and apply the
+needs to contain the bare minimum configuration to connect to Immunity,
+once the device connects to Immunity it will download and apply the
 default templates without the need of manual intervention from
 the network operators.
 
@@ -94,7 +94,7 @@ organization.
 Required Templates
 ------------------
 
-.. image:: https://raw.githubusercontent.com/openwisp/openwisp-controller/docs/docs/required-templates.png
+.. image:: https://raw.githubusercontent.com/immunity/immunity-controller/docs/docs/required-templates.png
   :alt: Required template example
 
 Required templates are similar to
@@ -139,16 +139,16 @@ are then tagged with specific keywords:
 - ``mesh``: tag to use for mesh configuration
 - ``dumb-ap``: tag to use for dumb AP configuration
 
-The `openwisp-config <https://github.com/openwisp/openwisp-config/#configuration-options>`_
+The `immunity-config <https://github.com/edge-servers/immunity-config/#configuration-options>`_
 configuration of each device type must specify the correct tag before
 each device registers in the system.
 
-Here's the sample ``/etc/config/openwisp`` configuration for mesh devices:
+Here's the sample ``/etc/config/immunity`` configuration for mesh devices:
 
 .. code-block::
 
     config controller 'http'
-        option url 'https://openwisp2.mynetwork.com'
+        option url 'https://immunity2.mynetwork.com'
         option shared_secret 'mySharedSecret123'
         option tags 'mesh'
 
@@ -160,13 +160,13 @@ assigned to them.
    :align: center
    :alt: Template tags: mesh example
 
-The sample ``/etc/config/openwisp`` configuration for dumb access
+The sample ``/etc/config/immunity`` configuration for dumb access
 points is the following:
 
 .. code-block::
 
     config controller 'http'
-        option url 'https://openwisp2.mynetwork.com'
+        option url 'https://immunity2.mynetwork.com'
         option shared_secret 'mySharedSecret123'
         option tags 'dumb-ap'
 

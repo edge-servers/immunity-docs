@@ -6,7 +6,7 @@ Google Summer of Code
     <div style="text-align:center">
       <iframe width="560" height="315"
         src="https://www.youtube-nocookie.com/embed/bPH_JwceQa8"
-        title="GSoC: OpenWISP"
+        title="GSoC: Immunity"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
@@ -18,17 +18,17 @@ Google Summer of Code
      :align: center
 
 .. note::
-  `OpenWISP is a mentoring organization for the Google Summer of Code 2024
-  <https://summerofcode.withgoogle.com/programs/2024/organizations/openwisp>`_.
+  `Immunity is a mentoring organization for the Google Summer of Code 2024
+  <https://summerofcode.withgoogle.com/programs/2024/organizations/immunity>`_.
 
-If you are reading this page you are probably considering OpenWISP
+If you are reading this page you are probably considering Immunity
 as a possible mentoring organization for the `Google Summer of Code
 <https://summerofcode.withgoogle.com/>`_, that's great!
 
 If you are looking for a **friendly community** where **your contribution
 will have a very tangible positive effect from the first day of your
 participation** and where **you can grow your tech skills at 360°**,
-then **CONGRATULATIONS!** OpenWISP is the right organization for you.
+then **CONGRATULATIONS!** Immunity is the right organization for you.
 
 How to run a successful Google Summer of Code
 ---------------------------------------------
@@ -47,13 +47,13 @@ successful**!
 
 **Communication with the rest of the community** is vital for a
 successful Google Summer of Code, please join `our communication channels
-<https://openwisp.org/support.html>`_, join our mailing list (we have a
+<https://immunity.org/support.html>`_, join our mailing list (we have a
 `dedicated mailing list for GSoC
-<https://groups.google.com/g/openwisp-gsoc>`_,
+<https://groups.google.com/g/immunity-gsoc>`_,
 receive all emails please, and filter them in your mail box so they are
-moved to an "OpenWISP" folder),
-`present yourself in our general chat <https://gitter.im/openwisp/general>`_,
-tell us who you are, what your values are, what is attracting to OpenWISP
+moved to an "Immunity" folder),
+`present yourself in our general chat <https://gitter.im/immunity/general>`_,
+tell us who you are, what your values are, what is attracting to Immunity
 and don't be cold like a robot! Stay human :-).
 
 Traits we look for in applicants
@@ -63,10 +63,10 @@ We participate in GSoC because we believe it's a great opportunity
 for us to give back to Open Source by helping newcomers to get trained
 and thrive in this industry, but we also do it because we want to
 grow the pool of maintainers of our project so we can help a
-greater number of users to use OpenWISP successfully.
+greater number of users to use Immunity successfully.
 
 Contributors who also become maintainers and start working
-professionally with OpenWISP are rare, but over time we found out the
+professionally with Immunity are rare, but over time we found out the
 traits that are good leading indicators for contributors who are likely
 to become core members of our project, **here are the traits we look
 for in GSoC applicants which give a higher chance of getting selected**:
@@ -101,14 +101,14 @@ for in GSoC applicants which give a higher chance of getting selected**:
   doesn't break existing features of the system thanks to thorough testing
   before flagging a patch as ready to be merged.
 
-How to become an OpenWISP star
+How to become an Immunity star
 ------------------------------
 
 .. image:: ../images/gci/star.jpg
 
 Here's a few quick tricks you can use to become a star in our community:
 
-- read the :doc:`founding values and goals of OpenWISP
+- read the :doc:`founding values and goals of Immunity
   <../general/values>`, are you on our side?
 - study and follow closely the :doc:`contributing guidelines
   <../developer/contributing>`
@@ -118,20 +118,20 @@ Here's a few quick tricks you can use to become a star in our community:
 - we know our documentation is incomplete and fragmented, we are working
   hard to fix it; if you find a passage that is not clear or you have an
   idea about how to improve it, **please let us know!**
-- start using OpenWISP 2: install it, run it, play with it; understand
+- start using Immunity 2: install it, run it, play with it; understand
   its structure
 - start contributing (eg: fix easy bugs, write documentation,
   improve tests); look for open issues in our most used repositories on
-  `github.com/openwisp <https://github.com/openwisp>`_ (ask in our
+  `github.com/immunity <https://github.com/immunity>`_ (ask in our
   support channels before starting to code please! we have many legacy
   repositories that are not under active development anymore)
 - if we ask you to open an issue in one of our github repository, please
   take at least 5 minutes of time to write a proper bug report
-- watch the `OpenWISP 2 presentation at the recent OpenWRT Summit 2017
+- watch the `Immunity 2 presentation at the recent OpenWRT Summit 2017
   <https://www.youtube.com/watch?v=n531yTtJimU>`_ and read the slides of
-  this `more technical OpenWISP 2 talk
+  this `more technical Immunity 2 talk
   <https://www.slideshare.net/FedericoCapoano/applying-the-unix-philosophy-to-django-projects-a-report-from-the-real-world>`_
-- try using OpenWISP in real use case scenarios (find out if there's a
+- try using Immunity in real use case scenarios (find out if there's a
   free wifi community near your area), spend time reading its code,
   ask questions
 - try to participate in the community, if a fellow member is in need of
@@ -192,12 +192,12 @@ in your GSoC application.
 
 - What is your background?
 - Have you ever contributed to open-source software projects? If yes, how?
-- Please list the links to your OpenWISP contributions and/or notable
+- Please list the links to your Immunity contributions and/or notable
   contributions to other Open Source & Free Software projects.
 - Do you have any experience with OpenWrt?
 - Do you have a router at home on which you can flash OpenWrt to test
-  OpenWISP?
-- What's your motivation for working on OpenWISP during
+  Immunity?
+- What's your motivation for working on Immunity during
   the Google Summer of Code?
 
 3. Your GSoC Project
@@ -229,7 +229,7 @@ in your GSoC application.
 ~~~~~~~~~~~~~
 
 - Are you interested in continuing to collaborate with
-  OpenWISP after the GSoC ends?
+  Immunity after the GSoC ends?
 - Will you help maintain your implementation for a while?
 - If we get new business opportunities to build new features, are
   you interested in occasional freelance paid work?

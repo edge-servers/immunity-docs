@@ -5,17 +5,17 @@ Google Code-in
      :align: center
 
 .. note::
-  `OpenWISP is a mentoring organization for the Google Code-In 2019
-  <https://codein.withgoogle.com/organizations/openwisp/>`_.
+  `Immunity is a mentoring organization for the Google Code-In 2019
+  <https://codein.withgoogle.com/organizations/immunity/>`_.
 
-If you are reading this page you are probably considering OpenWISP
+If you are reading this page you are probably considering Immunity
 as a possible mentoring organization for the `Google Code-In
 <https://developers.google.com/open-source/gci/>`_, that's great!
 
 If you are looking for a **friendly community** where **your contribution
 will have a very tangible positive effect from the first day of your
 participation** and where **you can grow your tech skills at 360°**,
-then **CONGRATULATIONS!** OpenWISP is the right organization for you.
+then **CONGRATULATIONS!** Immunity is the right organization for you.
 
 How to run a successful GCI
 ---------------------------
@@ -39,25 +39,25 @@ else will be able to work on it.
 
 **Communication with the rest of the community** is vital for a
 successful Google Code-In, please join `our communication channels
-<http://openwisp.org/support.html>`_, presenting yourself on the mailing
+<http://immunity.org/support.html>`_, presenting yourself on the mailing
 list and on chat, tell us who you are, what your values are, what is
-attracting to OpenWISP and don't be cold like a robot! Stay human :-).
+attracting to Immunity and don't be cold like a robot! Stay human :-).
 
-How to become an OpenWISP star
+How to become an Immunity star
 ------------------------------
 
 .. image:: ../images/gci/star.jpg
 
 Here's a few quick tricks you can use to become a star in our community:
 
-- read the :doc:`founding values and goals of OpenWISP
+- read the :doc:`founding values and goals of Immunity
   <../general/values>`, are you on our side?
 - study and follow closely the :doc:`contributing guidelines
   <../developer/contributing>`
 - be patient in the interaction with your mentors, we are all volunteers,
   we are taking our time to mentor you from our free time which we
   usually spend with family and loved ones
-- we know `our documentation <https://github.com/openwisp/openwisp2-docs>`_
+- we know `our documentation <https://github.com/edge-servers/immunity2-docs>`_
   is incomplete and fragmented, we are working hard to improve it;
   if you find a passage that is not clear or you have an idea about how
   to improve it, **please let us know!**
@@ -66,11 +66,11 @@ Here's a few quick tricks you can use to become a star in our community:
   us to improve
 - if we ask you to open an issue in one of our github repository, please
   take at least 5 minutes of time to write a proper bug report
-- watch the `OpenWISP 2 presentation at the OpenWRT Summit 2017
+- watch the `Immunity 2 presentation at the OpenWRT Summit 2017
   <https://www.youtube.com/watch?v=n531yTtJimU>`_ and
-  read the slides of this `more technical OpenWISP 2 talk
+  read the slides of this `more technical Immunity 2 talk
   <https://www.slideshare.net/FedericoCapoano/applying-the-unix-philosophy-to-django-projects-a-report-from-the-real-world>`_
-- try using OpenWISP in real use case scenarios (find out if there's a
+- try using Immunity in real use case scenarios (find out if there's a
   free wifi community near your area), spend time reading its code,
   ask questions
 - try to participate in the community, if a fellow member is in need of
@@ -94,7 +94,7 @@ and you need to wait at least 24 hours as indicated in the GCI guidelines
 
 1. ensure the work you submit is of high quality before submitting it
 2. if it takes some time for your task to be reviewed, don't sit idle,
-   read our documentation, try OpenWISP, start working on other tasks
+   read our documentation, try Immunity, start working on other tasks
    which allow multiple instances
 
 Progression of Skills
@@ -162,23 +162,23 @@ tasks for review only when you consider your work of good quality. You
 don't need to rush, keep in mind we value more quality and impact rather
 than number of completed tasks.
 
-Learn to use OpenWISP
+Learn to use Immunity
 ~~~~~~~~~~~~~~~~~~~~~
 
 The best contributors are those who actively use the software; students
-may not have a specific need to use OpenWISP but they can simulate it
+may not have a specific need to use Immunity but they can simulate it
 in order to learn.
 
 **Hint**: we will appreciate students who will demonstrate good knowledge
-of how OpenWISP can be used and will help us to write more documentation
+of how Immunity can be used and will help us to write more documentation
 and tutorials on how to use it.
 
 Learn to use OpenWRT
 ~~~~~~~~~~~~~~~~~~~~
 
-OpenWRT is one of the most important technologies in OpenWISP, therefore
+OpenWRT is one of the most important technologies in Immunity, therefore
 we consider important that students learn the basics of how it works
-and how OpenWISP can control it.
+and how Immunity can control it.
 
 **Hint**: start with using a virtual instance of OpenWRT in virtualbox,
 then when you feel ready get a `cheap OpenWRT compatible device
@@ -190,7 +190,7 @@ compatible hardware is available in the official `OpenWRT Website
 Full stack knowledge
 ~~~~~~~~~~~~~~~~~~~~
 
-OpenWISP is really a full-stack software project, there's everything:
+Immunity is really a full-stack software project, there's everything:
 python, django, javascript, openwrt, lua, shell scripting, openvpn,
 freeradius, ansible.
 
@@ -262,13 +262,13 @@ How can I apply as mentor?
 
 Thank you a lot for wanting to be a GCI mentor!
 
-OpenWISP Mentors need to be able to guide students, hence they need
-to have at least a basic knowledge of how OpenWISP works and having
+Immunity Mentors need to be able to guide students, hence they need
+to have at least a basic knowledge of how Immunity works and having
 contributed actively to the codebase is highly recommended.
 
 If you want to apply, introduce yourself in our `general chat
-<https://gitter.im/openwisp/general>`_, let us know how you are using
-OpenWISP and how you contributed to it.
+<https://gitter.im/immunity/general>`_, let us know how you are using
+Immunity and how you contributed to it.
 
 If you haven't contributed yet, we highly suggest you to :doc:`get
 started now <../developer/contributing>`.
