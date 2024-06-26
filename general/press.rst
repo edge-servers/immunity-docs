@@ -217,8 +217,7 @@ Logos and Graphic material
 .. raw:: html
 
   <div align="center" class="align-center">
-    <img alt="Immunity
-"
+    <img alt="Immunity"
          src="https://github.com/edge-servers/immunity2-docs/blob/master/assets/design/immunity-logo.svg?raw=true"
          style="background:#000;padding:25px;margin-bottom:24px" />
   </div>
